@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fcbe3f2a09c1545aaa60f7f995858e, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: Assembly-CSharp::GameSettingsSO
-  sfxVolume: 0.5937096
-  musicVolume: 0.2545864
+  sfxVolume: 0.15191808
+  musicVolume: 0.17551494
   defaultWidth: 1920
   defaultHeight: 1080
   menuMusic: {fileID: 8300000, guid: 908719f118f7dab47af8a760ca125c60, type: 3}
   letterMusic: {fileID: 8300000, guid: c0264d4a35d30774bb1265f9ad7c0fe2, type: 3}
-  levelMusic: {fileID: 0}
-  clickSound: {fileID: 8300000, guid: b75a913418545e74886044e95dff9f86, type: 3}
+  levelMusic: {fileID: 8300000, guid: afc88b297f5924849897f18473060ec1, type: 3}
+  clickSound: {fileID: 8300000, guid: 261f019df4aa1f94eb25ca16954d9f1d, type: 3}
   envelopeOpenSound: {fileID: 8300000, guid: 2bff23a76ffcc034a8dda56b73205b31, type: 3}
-  stampSound: {fileID: 8300000, guid: 1dcb5757422e5cd449137d14677f3a5b, type: 3}
+  stampSound: {fileID: 8300000, guid: 51e0ef5a45d48784f941958989af3fad, type: 3}

@@ -8,6 +8,7 @@ public class GameSettingsSO : ScriptableObject
     [Range(0f, 1f)] public float musicVolume = 0.5f;
 
     [Header("Разрешение")]
+    public bool defaultFullscreen = true;
     public int defaultWidth = 1920;
     public int defaultHeight = 1080;
 

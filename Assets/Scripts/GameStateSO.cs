@@ -10,8 +10,8 @@ public class GameStateSO : ScriptableObject
     public int debtAmount = 0;
     
     [Header("Разблокировка уровней")]
-    public int maxUnlockedLevel = 1;  // ← ДОБАВИТЬ
-    public int selectedLevel = 1;     // ← ДОБАВИТЬ
+    public int maxUnlockedLevel = 1; 
+    public int selectedLevel = 1;   
     
     [Header("События")]
     public UnityEvent<int> OnMoneyChanged;
@@ -39,6 +39,5 @@ public class GameStateSO : ScriptableObject
         currentLevel = 1;
         currentMoney = 0;
         debtAmount = 0;
-        // maxUnlockedLevel НЕ сбрасываем — прогресс сохраняется
     }
 }

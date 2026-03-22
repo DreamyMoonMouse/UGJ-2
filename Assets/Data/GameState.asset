@@ -15,7 +15,7 @@ MonoBehaviour:
   currentLevel: 1
   currentMoney: 0
   debtAmount: 0
-  maxUnlockedLevel: 3
+  maxUnlockedLevel: 2
   selectedLevel: 1
   OnMoneyChanged:
     m_PersistentCalls:

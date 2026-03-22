@@ -23,4 +23,4 @@ MonoBehaviour:
   timeLimit: 180
   goalAmount: 50000
   clicksPerStone: 0
-  background: {fileID: 0}
+  background: {fileID: 8373283987182421656, guid: fb0734d07b556ba4db71b3e276184e25, type: 3}
