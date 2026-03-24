@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Cart : MonoBehaviour
@@ -8,7 +9,7 @@ public class Cart : MonoBehaviour
     [Header("Визуал")]
     [SerializeField] private GameObject highlightEffect;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         DragDropItem item = other.GetComponent<DragDropItem>();
         
@@ -28,7 +29,7 @@ public class Cart : MonoBehaviour
         }
     }
 
-    System.Collections.IEnumerator ShowHighlight()
+    private IEnumerator ShowHighlight()
     {
         if (highlightEffect != null)
         {

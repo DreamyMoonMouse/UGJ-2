@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static PauseMenu Instance { get; private set; }
-
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private Button _continueButton;
     [SerializeField] private Button _exitButton;
@@ -16,30 +14,31 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameSettingsSO _settings;
 
     private bool isPaused = false;
+    private Button _currentPauseButton;
 
-    void Awake()
+    private void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         _pausePanel.SetActive(false);
-
-        _continueButton.onClick.AddListener(OnContinueClicked);
-        _exitButton.onClick.AddListener(OnExitClicked);
-        _fullscreenToggle.onValueChanged.AddListener(OnFullscreenChanged);
-        _sfxSlider.onValueChanged.AddListener(OnSfxVolumeChanged);
-        _musicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
+        FindPauseButtonInScene();
+        SetupUI();
     }
 
-    void Start()
+    private void FindPauseButtonInScene()
+    {
+        GameObject pauseBtnObj = GameObject.FindGameObjectWithTag("PauseButton");
+    
+        if (pauseBtnObj != null)
+        {
+            Button pauseButton = pauseBtnObj.GetComponent<Button>();
+            if (pauseButton != null)
+            {
+                _currentPauseButton = pauseButton;
+                pauseButton.onClick.AddListener(Pause);
+            }
+        }
+    }
+
+    private void SetupUI()
     {
         if (_settings != null)
         {
@@ -48,9 +47,15 @@ public class PauseMenu : MonoBehaviour
         }
         
         _fullscreenToggle.isOn = Screen.fullScreen;
+
+        _continueButton.onClick.AddListener(OnContinueClicked);
+        _exitButton.onClick.AddListener(OnExitClicked);
+        _fullscreenToggle.onValueChanged.AddListener(OnFullscreenChanged);
+        _sfxSlider.onValueChanged.AddListener(OnSfxVolumeChanged);
+        _musicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
     }
 
-    void Update()
+    private void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
@@ -79,7 +84,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Resume()
+    private void Resume()
     {
         isPaused = false;
         Time.timeScale = 1f;
@@ -93,13 +98,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void OnContinueClicked()
+    private void OnContinueClicked()
     {
         Audio.Instance.PlayClick();
         Resume();
     }
 
-    void OnExitClicked()
+    private void OnExitClicked()
     {
         Audio.Instance.PlayClick();
         Time.timeScale = 1f;
@@ -122,12 +127,12 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void LoadMainMenu()
+    private void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
-    void OnFullscreenChanged(bool isFullscreen)
+    private void OnFullscreenChanged(bool isFullscreen)
     {
         Audio.Instance.PlayClick();
         Screen.fullScreen = isFullscreen;
@@ -142,7 +147,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void OnSfxVolumeChanged(float volume)
+    private void OnSfxVolumeChanged(float volume)
     {
         if (_settings != null)
         {
@@ -151,7 +156,7 @@ public class PauseMenu : MonoBehaviour
         Audio.Instance.SetSfxVolume(volume);
     }
 
-    void OnMusicVolumeChanged(float volume)
+    private void OnMusicVolumeChanged(float volume)
     {
         if (_settings != null)
         {
@@ -160,8 +165,13 @@ public class PauseMenu : MonoBehaviour
         Audio.Instance.SetMusicVolume(volume);
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
+        if (_currentPauseButton != null)
+        {
+            _currentPauseButton.onClick.RemoveListener(Pause);
+        }
+        
         _continueButton.onClick.RemoveListener(OnContinueClicked);
         _exitButton.onClick.RemoveListener(OnExitClicked);
         _fullscreenToggle.onValueChanged.RemoveListener(OnFullscreenChanged);
@@ -171,12 +181,12 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    void OnApplicationQuit()
+    private void OnApplicationQuit()
     {
         Time.timeScale = 1f;
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         Time.timeScale = 1f;
     }

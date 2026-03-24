@@ -11,7 +11,7 @@ public class Fade : MonoBehaviour
     [SerializeField] private float _fadeDuration = 1f;
     [SerializeField] private GameSettingsSO _settings; 
 
-    void Awake()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -30,7 +30,7 @@ public class Fade : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         if (!PlayerPrefs.HasKey("SettingsInitialized"))
         {
@@ -48,7 +48,7 @@ public class Fade : MonoBehaviour
         StartCoroutine(FadeOutCoroutine());
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         gameObject.SetActive(true);
         
@@ -76,7 +76,7 @@ public class Fade : MonoBehaviour
         }
     }
 
-    IEnumerator FadeInCoroutine()
+    private IEnumerator FadeInCoroutine()
     {
         if (_fadeImage == null) yield break;
 
@@ -97,7 +97,7 @@ public class Fade : MonoBehaviour
         }
     }
 
-    IEnumerator FadeOutCoroutine()
+    private IEnumerator FadeOutCoroutine()
     {
         if (_fadeImage == null) yield break;
 
@@ -120,7 +120,7 @@ public class Fade : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }

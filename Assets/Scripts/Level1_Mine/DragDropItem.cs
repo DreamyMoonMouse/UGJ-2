@@ -27,7 +27,7 @@ public class DragDropItem : MonoBehaviour
         public float spawnChance;
     }
 
-    void Awake()
+    private void Awake()
     {
         mainCamera = Camera.main;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -44,13 +44,13 @@ public class DragDropItem : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         RandomizeItemType();
         SetupCollider();
     }
 
-    void SetupCollider()
+    private void SetupCollider()
     {
         if (spriteRenderer != null && spriteRenderer.sprite != null)
         {
@@ -66,7 +66,7 @@ public class DragDropItem : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         Vector2 mousePos = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
@@ -105,7 +105,7 @@ public class DragDropItem : MonoBehaviour
         mineController = controller;
     }
 
-    public void RandomizeItemType()
+    private void RandomizeItemType()
     {
         if (itemTypes == null || itemTypes.Length == 0)
         {
@@ -130,7 +130,7 @@ public class DragDropItem : MonoBehaviour
         ApplyItemData(itemTypes[0]);
     }
 
-    void ApplyItemData(ItemData data)
+    private void ApplyItemData(ItemData data)
     {
         itemValue = data.value;
         
@@ -140,7 +140,7 @@ public class DragDropItem : MonoBehaviour
         }
     }
 
-    void StartDrag()
+    private void StartDrag()
     {
         isDragging = true;
         
@@ -152,7 +152,7 @@ public class DragDropItem : MonoBehaviour
         }
     }
 
-    void StopDrag()
+    private void StopDrag()
     {
         isDragging = false;
         
@@ -175,7 +175,7 @@ public class DragDropItem : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         if (!isCollected && mineController != null && !isDragging)
         {

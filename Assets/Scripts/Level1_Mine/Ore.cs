@@ -25,7 +25,7 @@ public class Ore : MonoBehaviour
     private bool _isMouseOver = false;
     private Camera _mainCamera;
 
-    void Awake()
+    private void Awake()
     {
         _mainCamera = Camera.main;
         _originalPosition = transform.position;
@@ -33,7 +33,7 @@ public class Ore : MonoBehaviour
         _clicksRemaining = Random.Range(_minClicks, _maxClicks + 1);
     }
 
-    void Update()
+    private void Update()
     {
         if (_isShaking) return;
 
@@ -58,7 +58,7 @@ public class Ore : MonoBehaviour
         }
     }
 
-    void OnClick()
+    private void OnClick()
     {
         _clicksRemaining--;
         _isShaking = true;
@@ -83,7 +83,7 @@ public class Ore : MonoBehaviour
         }
     }
 
-    IEnumerator ShakeAnimation()
+    private IEnumerator ShakeAnimation()
     {
         Vector3 startPosition = transform.position;
         float elapsed = 0;
@@ -101,7 +101,7 @@ public class Ore : MonoBehaviour
         _isShaking = false;
     }
 
-    void SpawnDropItem()
+    private void SpawnDropItem()
     {
         if (_dropPrefab != null)
         {
@@ -122,7 +122,7 @@ public class Ore : MonoBehaviour
         this._spawner = spawner;
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         if (_spawner != null)
         {

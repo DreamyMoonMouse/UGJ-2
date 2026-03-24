@@ -8,17 +8,17 @@ public class LevelDataSO : ScriptableObject
     public int levelNumber;
 
     [Header("Родственник")]
-    public string relativeName;      // "двоюродный дядя Борис"
-    public string deathReason;       // "упал в шахту"
+    public string relativeName;      
+    public string deathReason;      
 
     [Header("Долг")]
-    public int debtAmount;           // 50000
-    public string workType;          // "шахта", "фабрика", "склад"
+    public int debtAmount;          
+    public string workType;        
 
     [Header("Настройки мини-игры")]
-    public float timeLimit;          // 60 секунд
-    public int goalAmount;           // Сколько нужно собрать
-    public int clicksPerStone;       // Для уровня 1
+    public float timeLimit;        
+    public int goalAmount;           
+    public int clicksPerStone;    
 
     [Header("Визуал")]
     public Sprite background;

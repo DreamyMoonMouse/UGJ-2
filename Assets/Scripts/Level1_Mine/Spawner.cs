@@ -17,13 +17,13 @@ public class Spawner : MonoBehaviour
     private Mine mineController;
     private int currentOresOnScreen = 0;
 
-    void Start()
+    private void Start()
     {
         mineController = FindObjectOfType<Mine>();
         StartCoroutine(SpawnLoop());
     }
 
-    IEnumerator SpawnLoop()
+    private IEnumerator SpawnLoop()
     {
         while (mineController != null && mineController.IsGameActive())
         {
@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    void Spawn()
+    private void Spawn()
     {
         float spawnX = spawnAreaCenter.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
         float spawnY = spawnAreaCenter.y + Random.Range(-spawnAreaHeight / 2, spawnAreaHeight / 2);

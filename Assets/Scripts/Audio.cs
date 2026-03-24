@@ -17,7 +17,7 @@ public class Audio : MonoBehaviour
     private float _targetMusicVolume = 0.5f;
     private Coroutine _currentFadeCoroutine = null;
 
-    void Awake() 
+    private void Awake() 
     {
         if (Instance == null) 
         {
@@ -42,7 +42,7 @@ public class Audio : MonoBehaviour
         }
     }
 
-    void Start() 
+    private void Start() 
     {
         _targetMusicVolume = _settings.musicVolume;
         SetSfxVolume(_settings.sfxVolume);
@@ -91,7 +91,7 @@ public class Audio : MonoBehaviour
         }
     }
 
-    AudioSource GetAvailableSFXSource()
+    private AudioSource GetAvailableSFXSource()
     {
         for (int i = 0; i < _sfxSources.Length; i++)
         {
@@ -111,11 +111,10 @@ public class Audio : MonoBehaviour
     {
         if (_musicSource != null && clip != null) 
         {
-            if (_musicSource.clip != clip)
-            {
-                _musicSource.clip = clip;
-                _musicSource.Play();
-            }
+            _musicSource.Stop();
+            _musicSource.clip = clip;
+            _musicSource.time = 0f;
+            _musicSource.Play();
             _isMusicPaused = false;
             _musicSource.volume = 0f;
             
@@ -186,8 +185,32 @@ public class Audio : MonoBehaviour
             _isMusicPaused = false;
         }
     }
+    
+    public void StopAllSfx() 
+    {
+        if (_sfxSources != null)
+        {
+            foreach (AudioSource source in _sfxSources)
+            {
+                if (source != null && source.isPlaying)
+                {
+                    source.Stop();
+                }
+            }
+        }
+    }
 
-    IEnumerator FadeMusicVolume(float targetVolume, float duration = -1f, System.Action onComplete = null)
+    private void OnApplicationQuit()
+    {
+        Time.timeScale = 1f;
+    }
+
+    private void OnDisable()
+    {
+        Time.timeScale = 1f;
+    }
+
+    private IEnumerator FadeMusicVolume(float targetVolume, float duration = -1f, System.Action onComplete = null)
     {
         if (duration < 0) duration = _fadeDuration;
         

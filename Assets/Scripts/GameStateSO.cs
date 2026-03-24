@@ -26,6 +26,7 @@ public class GameStateSO : ScriptableObject
 
     public void SetLevel(int level) {
         currentLevel = level;
+        selectedLevel = level;
         OnLevelChanged?.Invoke(level);
     }
 
@@ -39,5 +40,7 @@ public class GameStateSO : ScriptableObject
         currentLevel = 1;
         currentMoney = 0;
         debtAmount = 0;
+        selectedLevel = 1;
+        maxUnlockedLevel = 1;
     }
 }

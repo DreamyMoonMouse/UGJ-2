@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
     private const int TARGET_WIDTH = 1920;
     private const int TARGET_HEIGHT = 1080;
 
-    void Awake()
+    private void Awake()
     {
         Screen.SetResolution(TARGET_WIDTH, TARGET_HEIGHT, true);
         fullscreenToggle.isOn = true;
@@ -58,12 +58,12 @@ public class MainMenu : MonoBehaviour
         UpdateLevelButtonsVisual();
     }
 
-    void Start()
+    private void Start()
     {
         Audio.Instance.PlayMusic(settings.menuMusic);
     }
 
-    void OnLevelSelected(int level)
+    private void OnLevelSelected(int level)
     {
         if (level > gameState.maxUnlockedLevel)
         {
@@ -77,7 +77,7 @@ public class MainMenu : MonoBehaviour
         UpdateLevelButtonsVisual();
     }
 
-    void UpdateLevelButtonsVisual()
+    private void UpdateLevelButtonsVisual()
     {
         for (int i = 0; i < levelButtonImages.Length; i++)
         {
@@ -101,7 +101,7 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    void OnStartClicked()
+    private void OnStartClicked()
     {
         Audio.Instance.PlayClick();
     
@@ -116,41 +116,41 @@ public class MainMenu : MonoBehaviour
         }
     }
     
-    void LoadLetterAfterFade()
+    private void LoadLetterAfterFade()
     {
         SceneLoader.LoadLetterScene(gameState.selectedLevel);
     }
 
-    void OnCloseClicked()
+    private void OnCloseClicked()
     {
         confirmPanel.Show();
     }
 
-    void OnSfxVolumeChanged(float volume)
+    private void OnSfxVolumeChanged(float volume)
     {
         settings.sfxVolume = volume;
         Audio.Instance.SetSfxVolume(volume);
     }
 
-    void OnMusicVolumeChanged(float volume)
+    private void OnMusicVolumeChanged(float volume)
     {
         settings.musicVolume = volume;
         Audio.Instance.SetMusicVolume(volume);
     }
 
-    void OnFullscreenChanged(bool isFullscreen)
+    private void OnFullscreenChanged(bool isFullscreen)
     {
         Audio.Instance.PlayClick();
         Screen.SetResolution(TARGET_WIDTH, TARGET_HEIGHT, isFullscreen);
     }
 
-    void PlayClickAndAction(System.Action action)
+    private void PlayClickAndAction(System.Action action)
     {
         Audio.Instance.PlayClick();
         action?.Invoke();
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         startButton.onClick.RemoveListener(() => PlayClickAndAction(OnStartClicked));
         closeButton.onClick.RemoveListener(OnCloseClicked);

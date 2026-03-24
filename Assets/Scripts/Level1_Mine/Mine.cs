@@ -6,64 +6,72 @@ using System.Collections;
 public class Mine : MonoBehaviour
 {
     [Header("Ссылки на SO")]
-    [SerializeField] GameStateSO gameState;
-    [SerializeField] GameSettingsSO settings;
-    [SerializeField] LevelDataSO levelData;
-
+    [SerializeField] private GameStateSO _gameState;
+    [SerializeField] private GameSettingsSO _settings;
+    [SerializeField] private LevelDataSO _levelData;
+    
     [Header("UI")]
-    [SerializeField] TextMeshProUGUI textMoney;
-    [SerializeField] TextMeshProUGUI textDebt;
-    [SerializeField] TextMeshProUGUI textTimer;
-    [SerializeField] Slider sliderTimerProgress;
-
+    [SerializeField] private TextMeshProUGUI _textMoney;
+    [SerializeField] private TextMeshProUGUI _textDebt;
+    [SerializeField] private TextMeshProUGUI _textTimer;
+    [SerializeField] private Slider _sliderTimerProgress;
+    
     [Header("Панели")]
-    [SerializeField] GameObject panelIntro;
-    [SerializeField] GameObject panelEndWin;
-    [SerializeField] GameObject panelEndLose;
-
+    [SerializeField] private GameObject _panelIntro;
+    [SerializeField] private GameObject _panelEndWin;
+    [SerializeField] private GameObject _panelEndLose;
+    
     [Header("Тексты концовки")]
-    [SerializeField] TextMeshProUGUI textSummary;
-    [SerializeField] TextMeshProUGUI textExpenses;
-    [SerializeField] TextMeshProUGUI textFinalBalance;
+    [SerializeField] private TextMeshProUGUI _textSummary;
+    [SerializeField] private TextMeshProUGUI _textExpenses;
+    [SerializeField] private TextMeshProUGUI _textFinalBalance;
 
     [Header("Настройки")]
-    [SerializeField] float levelDuration = 150f;
-    [SerializeField] int debtAmount = 50000;
-
+    [SerializeField] private float _levelDuration = 150f;
+    [SerializeField] private int _debtAmount = 50000;
+    
     [Header("Звуки")]
-    [SerializeField] AudioClip levelBGM;
+    [SerializeField] private AudioClip _levelBGM;
+    [SerializeField] private AudioClip _winSound;
+    [SerializeField] private AudioClip _loseSound;
 
-    private float timeRemaining;
-    private int currentMoney;
-    private bool isGameActive = false;
-    private bool isPaused = false;
+    private float _timeRemaining;
+    private int _currentMoney;
+    private bool _isGameActive = false;
+    private bool _isPaused = false;
 
-    void Awake()
+    private void Awake()
     {
-        timeRemaining = levelDuration;
-        currentMoney = gameState.currentMoney;
+        _timeRemaining = _levelDuration;
+        _currentMoney = _gameState.currentMoney;
         
-        panelIntro.SetActive(true);
-        panelEndWin.SetActive(false);
-        panelEndLose.SetActive(false);
+        _panelIntro.SetActive(true);
+        _panelEndWin.SetActive(false);
+        _panelEndLose.SetActive(false);
         
         Time.timeScale = 1f;
     }
 
-    void Start()
+    private void Start()
     {
         UpdateUI();
         Fade.Instance.FadeOut();
+        
+        if (Audio.Instance != null)
+        {
+            Audio.Instance.StopMusic();
+            Audio.Instance.ResumeMusic();
+        }
     }
 
-    void Update()
+    private void Update()
     {
-        if (isGameActive && !isPaused)
+        if (_isGameActive && !_isPaused)
         {
-            timeRemaining -= Time.deltaTime;
+            _timeRemaining -= Time.deltaTime;
             UpdateTimerUI();
             
-            if (timeRemaining <= 0)
+            if (_timeRemaining <= 0)
             {
                 EndLevel();
             }
@@ -72,52 +80,56 @@ public class Mine : MonoBehaviour
 
     public void StartGame()
     {
-        panelIntro.SetActive(false);
-        isGameActive = true;
-        Audio.Instance.PlayMusic(levelBGM);
+        _panelIntro.SetActive(false);
+        _isGameActive = true;
+        
+        if (Audio.Instance != null && _levelBGM != null)
+        {
+            Audio.Instance.PlayMusic(_levelBGM);
+        }
     }
     
     public bool IsGameActive()
     {
-        return isGameActive && !isPaused;
+        return _isGameActive && !_isPaused;
     }
 
     public float GetTimeRemaining()
     {
-        return timeRemaining;
+        return _timeRemaining;
     }
 
     public void AddMoney(int amount)
     {
-        currentMoney += amount;
+        _currentMoney += amount;
         UpdateUI();
     }
 
     public int GetCurrentMoney()
     {
-        return currentMoney;
+        return _currentMoney;
     }
 
-    void UpdateUI()
+    private void UpdateUI()
     {
-        textMoney.text = $"{currentMoney:N0} ₽";
-        textDebt.text = $"{debtAmount:N0} ₽";
+        _textMoney.text = $"{_currentMoney:N0} ₽";
+        _textDebt.text = $"{_debtAmount:N0} ₽";
     }
 
-    void UpdateTimerUI()
+    private void UpdateTimerUI()
     {
-        int minutes = Mathf.FloorToInt(timeRemaining / 60);
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
-        textTimer.text = $"{minutes:00}:{seconds:00}";
+        int minutes = Mathf.FloorToInt(_timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(_timeRemaining % 60);
+        _textTimer.text = $"{minutes:00}:{seconds:00}";
         
-        sliderTimerProgress.value = timeRemaining / levelDuration;
+        _sliderTimerProgress.value = _timeRemaining / _levelDuration;
     }
 
-    void EndLevel()
+    private void EndLevel()
     {
-        isGameActive = false;
+        _isGameActive = false;
         
-        if (currentMoney >= debtAmount)
+        if (_currentMoney >= _debtAmount)
         {
             WinLevel();
         }
@@ -127,62 +139,98 @@ public class Mine : MonoBehaviour
         }
     }
 
-    void WinLevel()
+    private void WinLevel()
     {
-        panelEndWin.SetActive(true);
-        
-        int foodExpense = Mathf.Max(5000, Mathf.FloorToInt(currentMoney * 0.3f));
-        int rentExpense = Mathf.Max(5000, Mathf.FloorToInt(currentMoney * 0.3f));
-        int utilityExpense = Mathf.Max(5000, Mathf.FloorToInt(currentMoney * 0.3f));
+        _panelEndWin.SetActive(true);
+    
+        if (Audio.Instance != null)
+        {
+            Audio.Instance.StopMusic();
+            if (_winSound != null)
+            {
+                Audio.Instance.PlaySfx(_winSound);
+            }
+        }
+    
+        int foodExpense = Mathf.Max(5000, Mathf.FloorToInt(_currentMoney * 0.3f));
+        int rentExpense = Mathf.Max(5000, Mathf.FloorToInt(_currentMoney * 0.3f));
+        int utilityExpense = Mathf.Max(5000, Mathf.FloorToInt(_currentMoney * 0.3f));
         int totalExpenses = foodExpense + rentExpense + utilityExpense;
-        int finalBalance = Mathf.Max(0, currentMoney - totalExpenses);
-        
-        textSummary.text = $"Ура! Долг погашен!\nВаш заработок: {currentMoney:N0} ₽";
-        textExpenses.text = $"Расходы:\nЕда: -{foodExpense:N0} ₽\nАренда: -{rentExpense:N0} ₽\nКоммуналка: -{utilityExpense:N0} ₽\nИтого: -{totalExpenses:N0} ₽";
-        textFinalBalance.text = $"Ваш баланс: {finalBalance:N0} ₽";
-        
-        gameState.currentMoney = finalBalance;
-        gameState.UnlockLevel(2);
+        int finalBalance = Mathf.Max(0, _currentMoney - totalExpenses);
+    
+        _textSummary.text = $"Ура! Долг погашен!\nВаш заработок: {_currentMoney:N0} ₽ \nОсталось оплатить ежемесячные платежи:";
+        _textExpenses.text = $"Расходы:\nЕда: -{foodExpense:N0} ₽\nАренда: -{rentExpense:N0} ₽\nКоммуналка: -{utilityExpense:N0} ₽\nИтого: -{totalExpenses:N0} ₽";
+        _textFinalBalance.text = $"Ваш баланс: {finalBalance:N0} ₽";
+    
+        _gameState.currentMoney = finalBalance;
+        _gameState.UnlockLevel(2);
+        _gameState.currentLevel = 2;
     }
 
-    void LoseLevel()
+    public void OnNextLevelClicked()
     {
-        panelEndLose.SetActive(true);
+        _gameState.selectedLevel = _gameState.currentLevel;
+    
+        if (Audio.Instance != null)
+        {
+            Audio.Instance.FadeOutMusic(1f);
+        }
+    
+        if (Fade.Instance != null)
+        {
+            Fade.Instance.FadeIn();
+        }
+    
+        StartCoroutine(LoadNextSceneAfterDelay(1f));
+    }
+
+    private void LoseLevel()
+    {
+        _panelEndLose.SetActive(true);
         Time.timeScale = 0f;
+        
+        if (Audio.Instance != null)
+        {
+            Audio.Instance.StopMusic();
+            if (_loseSound != null)
+            {
+                Audio.Instance.PlaySfx(_loseSound);
+            }
+        }
     }
 
     public void OnRetryClicked()
     {
         Time.timeScale = 1f;
+        
         if (Audio.Instance != null)
         {
+            Audio.Instance.StopAllSfx();
             Audio.Instance.FadeOutMusic(1f);
         }
-        Fade.Instance.FadeIn();
-        Invoke(nameof(ReloadScene), 1f);
-    }
-
-    public void OnNextLevelClicked()
-    {
-        if (Audio.Instance != null)
+    
+        if (Fade.Instance != null)
         {
-            Audio.Instance.FadeOutMusic(1f);
+            Fade.Instance.FadeIn();
         }
-        Fade.Instance.FadeIn();
-        Invoke(nameof(LoadNextScene), 1f);
+    
+        StartCoroutine(ReloadSceneAfterDelay(1f));
     }
+    
 
-    void ReloadScene()
+    private IEnumerator ReloadSceneAfterDelay(float delay)
     {
+        yield return new WaitForSecondsRealtime(delay);
         SceneLoader.LoadLevel(1);
     }
 
-    void LoadNextScene()
+    private IEnumerator LoadNextSceneAfterDelay(float delay)
     {
+        yield return new WaitForSecondsRealtime(delay);
         SceneLoader.LoadLetterScene(2);
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         Time.timeScale = 1f;
     }

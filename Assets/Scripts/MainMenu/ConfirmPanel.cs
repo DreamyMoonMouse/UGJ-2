@@ -7,7 +7,7 @@ public class ConfirmPanel : MonoBehaviour
     [SerializeField] Button yesButton;
     [SerializeField] Button noButton;
 
-    void Awake() {
+    private void Awake() {
         if (panel != null) {
             panel.SetActive(false);
         }
@@ -26,7 +26,7 @@ public class ConfirmPanel : MonoBehaviour
         Time.timeScale = 1f; // Продолжение игры
     }
 
-    void OnYesClicked() {
+    private void OnYesClicked() {
         Audio.Instance.PlayClick();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -35,12 +35,12 @@ public class ConfirmPanel : MonoBehaviour
 #endif
     }
 
-    void OnNoClicked() {
+    private void OnNoClicked() {
         Audio.Instance.PlayClick();
         Hide();
     }
 
-    void OnDestroy() {
+    private void OnDestroy() {
         yesButton.onClick.RemoveListener(OnYesClicked);
         noButton.onClick.RemoveListener(OnNoClicked);
     }
