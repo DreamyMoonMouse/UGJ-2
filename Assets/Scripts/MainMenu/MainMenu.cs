@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -32,6 +33,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Color lockedColor = new Color(0.5f, 0.5f, 0.5f, 0.7f);
     [SerializeField] private Color availableColor = Color.white;
 
+    [Header("Баланс")]
+    [SerializeField] private TextMeshProUGUI balanceText;
+    [SerializeField] private Button resetBalanceButton;
+    [SerializeField] private GameObject resetConfirmPanel;
+    [SerializeField] private Color positiveColor = Color.green;
+    [SerializeField] private Color negativeColor = Color.red;
+
     private int selectedLevel = 1;
     private const int TARGET_WIDTH = 1920;
     private const int TARGET_HEIGHT = 1080;
@@ -55,12 +63,30 @@ public class MainMenu : MonoBehaviour
         level2Button.onClick.AddListener(() => OnLevelSelected(2));
         level3Button.onClick.AddListener(() => OnLevelSelected(3));
         
+        if (resetBalanceButton != null)
+        {
+            resetBalanceButton.onClick.AddListener(OnResetBalanceClicked);
+        }
+        
+        selectedLevel = gameState.selectedLevel;
+        
+        if (resetConfirmPanel != null)
+        {
+            resetConfirmPanel.SetActive(false);
+        }
+        
         UpdateLevelButtonsVisual();
     }
 
     private void Start()
     {
         Audio.Instance.PlayMusic(settings.menuMusic);
+        UpdateBalanceDisplay();
+    }
+
+    private void Update()
+    {
+        UpdateBalanceDisplay();
     }
 
     private void OnLevelSelected(int level)
@@ -101,6 +127,21 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    private void UpdateBalanceDisplay()
+    {
+        if (Economy.Instance != null && balanceText != null)
+        {
+            int balance = Economy.Instance.GlobalBalance;
+            balanceText.text = $"Баланс: \n{balance:N0} ₽";
+            balanceText.color = balance >= 0 ? positiveColor : negativeColor;
+        
+            if (resetBalanceButton != null)
+            {
+                resetBalanceButton.gameObject.SetActive(balance < 0);
+            }
+        }
+    }
+
     private void OnStartClicked()
     {
         Audio.Instance.PlayClick();
@@ -124,6 +165,43 @@ public class MainMenu : MonoBehaviour
     private void OnCloseClicked()
     {
         confirmPanel.Show();
+    }
+
+    private void OnResetBalanceClicked()
+    {
+        Audio.Instance.PlayClick();
+        
+        if (resetConfirmPanel != null)
+        {
+            resetConfirmPanel.SetActive(true);
+        }
+    }
+
+    public void ConfirmResetBalance()
+    {
+        Audio.Instance.PlayClick();
+        
+        if (Economy.Instance != null)
+        {
+            Economy.Instance.ResetBalance();
+        }
+        
+        if (resetConfirmPanel != null)
+        {
+            resetConfirmPanel.SetActive(false);
+        }
+        
+        UpdateLevelButtonsVisual();
+    }
+
+    public void CancelResetBalance()
+    {
+        Audio.Instance.PlayClick();
+        
+        if (resetConfirmPanel != null)
+        {
+            resetConfirmPanel.SetActive(false);
+        }
     }
 
     private void OnSfxVolumeChanged(float volume)
@@ -158,5 +236,10 @@ public class MainMenu : MonoBehaviour
         sfxSlider.onValueChanged.RemoveListener(OnSfxVolumeChanged);
         musicSlider.onValueChanged.RemoveListener(OnMusicVolumeChanged);
         fullscreenToggle.onValueChanged.RemoveListener(OnFullscreenChanged);
+        
+        if (resetBalanceButton != null)
+        {
+            resetBalanceButton.onClick.RemoveListener(OnResetBalanceClicked);
+        }
     }
 }

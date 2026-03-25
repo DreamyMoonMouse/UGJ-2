@@ -18,12 +18,12 @@ public class ConfirmPanel : MonoBehaviour
 
     public void Show() {
         panel.SetActive(true);
-        Time.timeScale = 0f; // Пауза игры
+        Time.timeScale = 0f; 
     }
 
     public void Hide() {
         panel.SetActive(false);
-        Time.timeScale = 1f; // Продолжение игры
+        Time.timeScale = 1f; 
     }
 
     private void OnYesClicked() {
