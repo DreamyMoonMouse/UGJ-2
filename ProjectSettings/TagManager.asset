@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ore
   - PauseButton
+  - 'PushZone '
+  - 'EndZone '
+  - Ground
   layers:
   - Default
   - TransparentFX
