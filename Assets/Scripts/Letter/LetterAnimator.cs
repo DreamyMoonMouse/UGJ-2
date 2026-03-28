@@ -9,9 +9,23 @@ public class LetterAnimator : MonoBehaviour
     [SerializeField] private float _fadeDuration = 1.0f;
     [SerializeField] private float _scaleDuration = 1.0f;
     [SerializeField] private float _textTypingSpeed = 0.03f;
+    [SerializeField] private AudioClip _typingSound;
 
     private bool _isTyping = false;
+    private AudioSource _typingAudioSource;
     public bool IsTyping => _isTyping;
+
+    private void Awake()
+    {
+        if (_typingSound != null)
+        {
+            _typingAudioSource = gameObject.AddComponent<AudioSource>();
+            _typingAudioSource.playOnAwake = false;
+            _typingAudioSource.loop = true;
+            _typingAudioSource.spatialBlend = 0f;
+            _typingAudioSource.volume = 0.5f;
+        }
+    }
 
     public IEnumerator FadeAlpha(Image target, float from, float to, float duration = -1f)
     {
@@ -80,10 +94,21 @@ public class LetterAnimator : MonoBehaviour
         _isTyping = true;
         textField.text = "";
 
+        if (_typingAudioSource != null && _typingSound != null)
+        {
+            _typingAudioSource.clip = _typingSound;
+            _typingAudioSource.Play();
+        }
+
         foreach (char c in fullText)
         {
             textField.text += c;
             yield return new WaitForSeconds(_textTypingSpeed);
+        }
+
+        if (_typingAudioSource != null)
+        {
+            _typingAudioSource.Stop();
         }
 
         _isTyping = false;

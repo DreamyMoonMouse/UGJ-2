@@ -13,15 +13,11 @@ public class Factory : MonoBehaviour
     [SerializeField] private GameObject _panelIntro;
     [SerializeField] private GameObject _panelEndWin;
     [SerializeField] private GameObject _panelEndLose;
-    [SerializeField] private TextMeshProUGUI _textSummary;
-    [SerializeField] private TextMeshProUGUI _textExpenses;
-    [SerializeField] private TextMeshProUGUI _textFinalBalance;
     [SerializeField] private float _levelDuration = 150f;
     [SerializeField] private int _debtAmount = 75000;
     [SerializeField] private AudioClip _levelBGM;
     [SerializeField] private AudioClip _introMusic;
-    [SerializeField] private AudioClip _winSound;
-    [SerializeField] private AudioClip _loseSound;
+    [SerializeField] private FactoryAmbientSound _ambientSound;
     [SerializeField] private Color _positiveColor = Color.green;
     [SerializeField] private Color _negativeColor = Color.red;
 
@@ -88,12 +84,17 @@ public class Factory : MonoBehaviour
     {
         _panelIntro.SetActive(false);
         _isGameActive = true;
-        
+    
         if (_spawner != null)
         {
             _spawner.StartSpawning();
         }
-        
+    
+        if (_ambientSound != null)
+        {
+            _ambientSound.StartAmbient();
+        }
+    
         if (Audio.Instance != null && _levelBGM != null)
         {
             Audio.Instance.PlayMusic(_levelBGM);
@@ -149,8 +150,13 @@ public class Factory : MonoBehaviour
             _spawner.StopSpawning();
         }
         
-        bool isVictory = _levelEarnings >= _debtAmount;
+        if (_ambientSound != null)
+        {
+            _ambientSound.StopAmbient();
+        }
+        
         int finalBalance = _startBalance + _levelEarnings;
+        bool isVictory = finalBalance >= 0;
         
         if (_levelEndHandler != null)
         {
@@ -186,18 +192,31 @@ public class Factory : MonoBehaviour
     public void OnRetryClicked()
     {
         Time.timeScale = 1f;
-        
+    
+        if (_ambientSound != null)
+        {
+            _ambientSound.StopAmbient();
+        }
+    
+        int balanceWithoutDebt = _startBalance + _debtAmount;
+        int balanceWithEarnings = balanceWithoutDebt + _levelEarnings;
+    
+        if (Economy.Instance != null)
+        {
+            Economy.Instance.SetBalance(balanceWithEarnings);
+        }
+    
         if (Audio.Instance != null)
         {
             Audio.Instance.StopAllSfx();
             Audio.Instance.FadeOutMusic(1f);
         }
-    
+
         if (Fade.Instance != null)
         {
             Fade.Instance.FadeIn();
         }
-    
+
         StartCoroutine(ReloadSceneAfterDelay(1f));
     }
     

@@ -9,6 +9,7 @@ public class Figurine : MonoBehaviour
     [SerializeField] private float _pushForce = 5f;
     [SerializeField] private AudioClip _pushSound;
     [SerializeField] private AudioClip _endZoneSound;
+    [SerializeField] private AudioClip _shredderSound;
 
     private Factory _factory;
     private bool _isPushed = false;
@@ -142,13 +143,13 @@ public class Figurine : MonoBehaviour
         {
             if (hit.CompareTag("Ground"))
             {
-                Push();
+                PushToShredder();
                 return;
             }
         }
     }
 
-    public void Push()
+    public void PushToShredder()
     {
         if (_isPushed || _isProcessed) return;
         
@@ -203,14 +204,20 @@ public class Figurine : MonoBehaviour
         {
             ProcessAtEnd();
         }
-        
+    
         if (other.CompareTag("Ground"))
         {
-            if (_isPushed && !_isProcessed)
+            if (_collider != null)
             {
-                _isProcessed = true;
-                Destroy(gameObject, 1f);
+                _collider.enabled = false;
             }
+        
+            if (_rb != null)
+            {
+                _rb.gravityScale = 1f;
+            }
+        
+            PushToShredder();
         }
     }
 }

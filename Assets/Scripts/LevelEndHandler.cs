@@ -56,7 +56,6 @@ public class LevelEndHandler : MonoBehaviour
         if (Economy.Instance != null)
         {
             finalBalance = Economy.Instance.CalculateFinalBalance(finalBalance);
-            expenses = Economy.Instance.CalculateExpenses(finalBalance);
             Economy.Instance.SetBalance(finalBalance);
         }
         else
@@ -64,10 +63,13 @@ public class LevelEndHandler : MonoBehaviour
             Debug.Log("Economy instance не найден. Смотри сцену мэйнменю.");
         }
         
-        _textSummary.text = $"Ура! Долг погашен!\nЗаработано за уровень: {balance:N0} ₽";
-        _textExpenses.text = $"Ежемесячные платежи:\nЕда: -{Mathf.Max(5000, Mathf.FloorToInt(finalBalance * 0.3f)):N0} ₽" +
-                             $"\nАренда: -{Mathf.Max(5000, Mathf.FloorToInt(finalBalance * 0.3f)):N0} ₽" +
-                             $"\nКоммуналка: -{Mathf.Max(5000, Mathf.FloorToInt(finalBalance * 0.3f)):N0} ₽" +
+        int result = Mathf.Max(5000, Mathf.FloorToInt(balance * 0.3f));
+        expenses = Economy.Instance.CalculateExpenses(balance);
+        
+        _textSummary.text = $"Ура! Долг погашен!\nЗаработано за уровень: \n{balance:N0} ₽";
+        _textExpenses.text = $"Ежемесячные платежи:\nЕда: -{(result):N0} ₽" +
+                             $"\nАренда: -{(result):N0} ₽" +
+                             $"\nКоммуналка: -{(result):N0} ₽" +
                              $"\nИтого: -{expenses:N0} ₽";
         _textFinalBalance.text = $"Итоговый баланс: {finalBalance:N0} ₽";
     }
@@ -86,14 +88,5 @@ public class LevelEndHandler : MonoBehaviour
                 Audio.Instance.PlaySfx(_loseSound);
             }
         }
-        
-        if (Economy.Instance != null)
-        {
-            Economy.Instance.SetBalance(finalBalance);
-        }
-        
-        _textSummary.text = $"Время вышло!\nДолг не погашен!";
-        _textExpenses.text = $"Попробуйте снова!";
-        _textFinalBalance.text = $"Ваш баланс: {finalBalance:N0} ₽";
     }
 }

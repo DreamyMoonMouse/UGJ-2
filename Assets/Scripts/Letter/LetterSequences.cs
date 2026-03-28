@@ -7,6 +7,7 @@ public class LetterSequences : MonoBehaviour
     [SerializeField] private LetterUI _ui;
     [SerializeField] private LetterAnimator _animator;
     [SerializeField] private Letter _letterController;
+    [SerializeField] private GameObject _runawayButton;
     [SerializeField] private float _envelopeOpenDuration = 0.5f;
     [SerializeField] private float _fadeDuration = 1.0f;
     [SerializeField] private float _scaleDuration = 1.0f;
@@ -62,6 +63,11 @@ public class LetterSequences : MonoBehaviour
             _ui.ShowRefuseButton(true);
         }
         
+        if (_letterController.GetCurrentLevel() == 3 && _runawayButton != null)
+        {
+            _runawayButton.SetActive(true);
+        }
+        
         _ui.ButtonAccept.gameObject.SetActive(true);
         Image acceptBtnImage = _ui.ButtonAccept.GetComponent<Image>();
         
@@ -78,6 +84,11 @@ public class LetterSequences : MonoBehaviour
         if (_letterController.GetCurrentLevel() == 2)
         {
             _ui.ShowRefuseButton(false);
+        }
+        
+        if (_letterController.GetCurrentLevel() == 3 && _runawayButton != null)
+        {
+            _runawayButton.SetActive(false);
         }
         
         _ui.ShowLetter2();

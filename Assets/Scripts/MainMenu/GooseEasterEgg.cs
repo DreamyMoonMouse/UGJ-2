@@ -7,16 +7,27 @@ public class GooseEasterEgg : MonoBehaviour
     [SerializeField] private AudioClip _easterEggSound;
     [SerializeField] private GameObject _beakClosed;
     [SerializeField] private GameObject _beakOpen;
+    [SerializeField] private Transform _gooseTransform;
     [SerializeField] private int _clicksNeeded = 7;
     [SerializeField] private float _resetTime = 3f;
     [SerializeField] private float _beakOpenDuration = 0.2f;
+    [SerializeField] private float _shakeDuration = 0.5f;
+    [SerializeField] private float _shakeIntensity = 0.3f;
 
     private int _clickCount = 0;
     private float _lastClickTime = 0f;
     private bool _isAnimating = false;
+    private Vector3 _originalPosition;
 
     void Start()
     {
+        if (_gooseTransform == null)
+        {
+            _gooseTransform = transform;
+        }
+        
+        _originalPosition = _gooseTransform.position;
+        
         if (_beakClosed != null) _beakClosed.SetActive(true);
         if (_beakOpen != null) _beakOpen.SetActive(false);
     }
@@ -39,6 +50,8 @@ public class GooseEasterEgg : MonoBehaviour
             {
                 _clickCount++;
                 _lastClickTime = Time.time;
+                
+                StartCoroutine(ShakeOnTick());
 
                 if (_clickCount >= _clicksNeeded)
                 {
@@ -47,6 +60,23 @@ public class GooseEasterEgg : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator ShakeOnTick()
+    {
+        float elapsed = 0f;
+        Vector3 startPos = _gooseTransform.position;
+        
+        while (elapsed < 0.1f)
+        {
+            elapsed += Time.deltaTime;
+            float offsetX = Random.Range(-_shakeIntensity, _shakeIntensity);
+            float offsetY = Random.Range(-_shakeIntensity, _shakeIntensity);
+            _gooseTransform.position = startPos + new Vector3(offsetX, offsetY, 0);
+            yield return null;
+        }
+        
+        _gooseTransform.position = startPos;
     }
 
     private void TriggerEasterEgg()
@@ -61,6 +91,8 @@ public class GooseEasterEgg : MonoBehaviour
         {
             Audio.Instance.PlaySfx(_easterEggSound);
         }
+        
+        StartCoroutine(ShakeGoose());
 
         for (int i = 0; i < 2; i++)
         {
@@ -76,5 +108,22 @@ public class GooseEasterEgg : MonoBehaviour
         }
 
         _isAnimating = false;
+    }
+
+    private IEnumerator ShakeGoose()
+    {
+        float elapsed = 0f;
+        Vector3 startPos = _gooseTransform.position;
+        
+        while (elapsed < _shakeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float offsetX = Random.Range(-_shakeIntensity, _shakeIntensity);
+            float offsetY = Random.Range(-_shakeIntensity, _shakeIntensity);
+            _gooseTransform.position = startPos + new Vector3(offsetX, offsetY, 0);
+            yield return null;
+        }
+        
+        _gooseTransform.position = startPos;
     }
 }

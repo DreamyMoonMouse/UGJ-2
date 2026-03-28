@@ -9,6 +9,7 @@ TagManager:
   - 'PushZone '
   - 'EndZone '
   - Ground
+  - Killzone
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - Ore
   - DropItem
-  - 
+  - Goose
   - 
   - 
   - 

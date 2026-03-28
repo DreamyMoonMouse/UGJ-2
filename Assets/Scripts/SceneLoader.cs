@@ -31,7 +31,7 @@ public static class SceneLoader
         {
             1 => "Level1_Mine",
             2 => "Level2_Factory",
-            3 => "Level3_Warehouse",
+            3 => "Level3_EggsPlant",
             _ => "MainMenu"
         };
         SceneManager.LoadScene(sceneName);

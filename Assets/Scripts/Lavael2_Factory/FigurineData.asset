@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: White
   spriteGood: {fileID: 4293692548314825895, guid: 291a3bee9f1cede43b5e55186d520952, type: 3}
-  spriteCracked: {fileID: 7384955507904212013, guid: 672ad8171adbe9f4da3e1b5abf5e063e, type: 3}
+  spriteCrackedVariants:
+  - {fileID: 7384955507904212013, guid: 672ad8171adbe9f4da3e1b5abf5e063e, type: 3}
   baseValue: 100
   spawnChance: 50
-  canHaveColor: 0
-  possibleColors: []
+  canHaveColor: 1
+  minAlpha: 0.9
+  maxAlpha: 1

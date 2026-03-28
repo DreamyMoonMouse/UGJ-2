@@ -21,6 +21,9 @@ public class Mine : MonoBehaviour
     [Header("Level End")]
     [SerializeField] private LevelEndHandler _levelEndHandler;
     [SerializeField] private int _debtAmount = 50000;
+    
+    [Header("Tutorial Hints")]
+    [SerializeField] private TutorialHint[] _tutorialHints;
 
     private float _timeRemaining;
     private int _startBalance;
@@ -77,6 +80,14 @@ public class Mine : MonoBehaviour
         _panelIntro.SetActive(false);
         _isGameActive = true;
         
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StartHint();
+            }
+        }
+        
         if (Audio.Instance != null && _levelBGM != null)
         {
             Audio.Instance.PlayMusic(_levelBGM);
@@ -127,8 +138,16 @@ public class Mine : MonoBehaviour
         _isLevelEnded = true;
         _isGameActive = false;
         
-        bool isVictory = _levelEarnings >= _debtAmount;
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StopHint();
+            }
+        }
+        
         int finalBalance = _startBalance + _levelEarnings;
+        bool isVictory = finalBalance >= 0;
         
         if (_levelEndHandler != null)
         {
