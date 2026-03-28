@@ -66,6 +66,7 @@ public class MainMenu : MonoBehaviour
         if (resetBalanceButton != null)
         {
             resetBalanceButton.onClick.AddListener(OnResetBalanceClicked);
+            resetBalanceButton.gameObject.SetActive(true);
         }
         
         selectedLevel = gameState.selectedLevel;
@@ -134,11 +135,6 @@ public class MainMenu : MonoBehaviour
             int balance = Economy.Instance.GlobalBalance;
             balanceText.text = $"Баланс: \n{balance:N0} ₽";
             balanceText.color = balance >= 0 ? positiveColor : negativeColor;
-        
-            if (resetBalanceButton != null)
-            {
-                resetBalanceButton.gameObject.SetActive(balance < 0);
-            }
         }
     }
 

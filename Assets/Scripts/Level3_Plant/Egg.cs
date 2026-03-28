@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Egg : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Egg : MonoBehaviour
     [SerializeField] private AudioClip _breakSound;
     [SerializeField] private AudioClip _attractSound;
     [SerializeField] private PhysicsMaterial2D _rollPhysics;
+    [SerializeField] private float _fadeDuration = 0.3f;
 
     private EggsPlant _eggsPlant;
     private bool _isCaught = false;
@@ -37,6 +39,10 @@ public class Egg : MonoBehaviour
             _spriteRenderer.sprite = _data.spriteGood;
             float eggScale = _data.scale > 0 ? _data.scale : 1f;
             transform.localScale = Vector3.one * eggScale;
+            
+            Color color = _spriteRenderer.color;
+            color.a = 1f;
+            _spriteRenderer.color = color;
         }
         
         if (_rb != null && _data != null)
@@ -61,7 +67,6 @@ public class Egg : MonoBehaviour
             _rb.linearVelocity = direction * _attractionForce;
             
             float distance = Vector2.Distance(transform.position, _attractionTarget);
-            
             if (distance < 0.5f)
             {
                 Catch();
@@ -120,7 +125,7 @@ public class Egg : MonoBehaviour
             _eggsPlant.AddMoney(Mathf.FloorToInt(_data.baseValue));
         }
         
-        Destroy(gameObject);
+        StartCoroutine(FadeAndDestroy());
     }
 
     public void Break()
@@ -155,6 +160,28 @@ public class Egg : MonoBehaviour
             _rb.simulated = false;
         }
         
-        Destroy(gameObject, 2f);
+        StartCoroutine(FadeAndDestroy());
+    }
+
+    private IEnumerator FadeAndDestroy()
+    {
+        if (_spriteRenderer != null)
+        {
+            float elapsed = 0f;
+            Color startColor = _spriteRenderer.color;
+            startColor.a = 1f;
+            
+            while (elapsed < _fadeDuration)
+            {
+                elapsed += Time.deltaTime;
+                float alpha = Mathf.Lerp(1f, 0f, elapsed / _fadeDuration);
+                _spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, alpha);
+                yield return null;
+            }
+            
+            _spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
+        }
+        
+        Destroy(gameObject);
     }
 }

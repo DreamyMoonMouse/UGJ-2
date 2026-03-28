@@ -26,6 +26,9 @@ public class EggsPlant : MonoBehaviour
 
     [Header("Spawners")]
     [SerializeField] private EggSpawner[] _spawners;
+    
+    [Header("Tutorial Hints")]
+    [SerializeField] private TutorialHint[] _tutorialHints;
 
     private float _timeRemaining;
     private int _startBalance;
@@ -94,6 +97,14 @@ public class EggsPlant : MonoBehaviour
             if (spawner != null)
             {
                 spawner.StartSpawning();
+            }
+        }
+        
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StartHint();
             }
         }
     
@@ -167,6 +178,14 @@ public class EggsPlant : MonoBehaviour
             }
         }
         
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StopHint();
+            }
+        }
+        
         if (_ambientSound != null)
         {
             _ambientSound.StopAmbient();
@@ -192,6 +211,8 @@ public class EggsPlant : MonoBehaviour
             Economy.Instance.UnlockLevel(1);
             _gameState.currentLevel = 1;
         }
+        
+        StartCoroutine(LoadEndSceneAfterDelay(2f, finalBalance));
     }
 
     public void OnNextLevelClicked()
@@ -259,6 +280,20 @@ public class EggsPlant : MonoBehaviour
         }
     
         StartCoroutine(LoadMainMenuAfterDelay(1f));
+    }
+
+    private IEnumerator LoadEndSceneAfterDelay(float delay, int finalBalance)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        
+        if (finalBalance > 0)
+        {
+            SceneLoader.LoadVictory();
+        }
+        else
+        {
+            SceneLoader.LoadLoseVictory();
+        }
     }
 
     private IEnumerator ReloadSceneAfterDelay(float delay)

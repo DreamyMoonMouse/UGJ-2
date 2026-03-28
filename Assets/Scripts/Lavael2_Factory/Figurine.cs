@@ -44,11 +44,17 @@ public class Figurine : MonoBehaviour
         }
     }
 
-    public void Initialize(Factory factory, bool isCracked)
+    public void Initialize(Factory factory, bool isCracked, FigurineData data) 
     {
         _factory = factory;
         _isCracked = isCracked;
-        
+        _data = data; 
+    
+        if (_data != null)
+        {
+            _value = _data.baseValue;
+        }
+    
         if (_spriteRenderer != null)
         {
             if (isCracked && _data != null && _data.spriteCrackedVariants != null && _data.spriteCrackedVariants.Length > 0)
@@ -59,7 +65,7 @@ public class Figurine : MonoBehaviour
             {
                 _spriteRenderer.sprite = _data.spriteGood;
             }
-            
+        
             if (_data != null && _data.canHaveColor)
             {
                 Color randomColor = new Color(

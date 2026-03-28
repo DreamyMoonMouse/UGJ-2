@@ -54,4 +54,13 @@ public static class SceneLoader
         }
         SceneManager.LoadScene("Victory");
     }
+
+    public static void LoadLoseVictory()
+    {
+        if (Audio.Instance != null)
+        {
+            Audio.Instance.FadeOutMusic(1f);
+        }
+        SceneManager.LoadScene("LoseVictory");
+    }
 }

@@ -45,15 +45,18 @@ public class FigurineSpawner : MonoBehaviour
     private void SpawnFigurine()
     {
         if (_figurinePrefab == null || !_isSpawning) return;
-        
+    
         FigurineData data = GetRandomFigurineData();
+    
+        Debug.Log($"Spawning: {data.figurineName}");  
+    
         bool isCracked = Random.value < _crackedChance;
-        
+    
         Figurine figurine = Instantiate(_figurinePrefab, _spawnPoint.position, Quaternion.identity);
-        
+    
         if (figurine != null)
         {
-            figurine.Initialize(_factory, isCracked);
+            figurine.Initialize(_factory, isCracked, data);  
         }
     }
 
@@ -64,21 +67,30 @@ public class FigurineSpawner : MonoBehaviour
             return null;
         }
         
+        for (int i = 0; i < _figurineTypes.Length; i++)
+        {
+            if (_figurineTypes[i] == null)
+            {
+                Debug.LogWarning($"Element {i} is NULL!");
+            }
+        }
+    
         float random = Random.value;
         float cumulativeChance = 0;
-        
+    
         foreach (FigurineData data in _figurineTypes)
         {
             if (data == null) continue;
-            
+        
             cumulativeChance += data.spawnChance;
-            
+        
             if (random <= cumulativeChance)
             {
+                Debug.Log($"Selected: {data.figurineName} (random={random:F2}, cumulative={cumulativeChance:F2})");
                 return data;
             }
         }
-        
+    
         return _figurineTypes[0];
     }
 }

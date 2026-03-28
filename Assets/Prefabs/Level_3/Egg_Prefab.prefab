@@ -134,10 +134,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Egg
   _spriteRenderer: {fileID: 3729302652931068656}
-  _catchSound: {fileID: 0}
-  _breakSound: {fileID: 0}
+  _catchSound: {fileID: 8300000, guid: 70e02441ad3cd8f488092b6a4933e446, type: 3}
+  _breakSound: {fileID: 8300000, guid: 0677d71a2dbe16f40b797ee936704ac9, type: 3}
   _attractSound: {fileID: 0}
-  _rollPhysics: {fileID: 0}
+  _rollPhysics: {fileID: 6200000, guid: 8c8fc901d1f2e4b418ee71580eaed48b, type: 2}
+  _fadeDuration: 0.3
 --- !u!70 &3595878511526308919
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

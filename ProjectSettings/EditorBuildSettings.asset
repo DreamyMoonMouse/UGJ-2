@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3_EggsPlant.unity
     guid: 8652f6dc46c427248a545076fdcff117
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 1c15b5a54993a734cb3224813604b9f9
+  - enabled: 1
+    path: Assets/Scenes/LoseVictory.unity
+    guid: e45ab388ee7b184458bcc8b872679f52
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

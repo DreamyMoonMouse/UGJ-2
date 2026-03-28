@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8542891c62a3247afae2f51b051e7f, type: 3}
+  m_Name: FigurineData 5
+  m_EditorClassIdentifier: Assembly-CSharp::FigurineData
+  figurineName: Red3
+  spriteGood: {fileID: 8672895523140216882, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  spriteCrackedVariants:
+  - {fileID: -8234826677668293520, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  - {fileID: 2193751942632205574, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  baseValue: 100
+  spawnChance: 0.1
+  canHaveColor: 0
+  minAlpha: 0.9
+  maxAlpha: 1

@@ -8,6 +8,8 @@ public class GooseGun : MonoBehaviour
     [SerializeField] private Transform _handGun;
     [SerializeField] private SpriteRenderer _gooseSpriteRenderer;
     [SerializeField] private SpriteRenderer _handSpriteRenderer;
+    [SerializeField] private SpriteRenderer _gooseShadowRenderer;
+    [SerializeField] private SpriteRenderer _handShadowRenderer;
     [SerializeField] private Transform _catchZone;
     [SerializeField] private float _rotationSpeed = 5f;
     [SerializeField] private bool _isLeftGoose = false;
@@ -15,6 +17,9 @@ public class GooseGun : MonoBehaviour
     [Header("Настройка углов")]
     [SerializeField] private float _angleOffset = 0f;
     [SerializeField] private bool _invertAngleForLeft = false;
+    [SerializeField] private float _minAngle = -45f;
+    [SerializeField] private float _maxAngle = 45f;
+    [SerializeField] private bool _useAngleLimits = true;
     
     [Header("Зона притяжения")]
     [SerializeField] private Collider2D _attractionZone;
@@ -33,7 +38,6 @@ public class GooseGun : MonoBehaviour
             _attractionZone = GetComponent<Collider2D>();
         }
         
-        // Скрываем гуся при старте
         SetVisualsActive(false);
     }
 
@@ -58,6 +62,16 @@ public class GooseGun : MonoBehaviour
         if (_handSpriteRenderer != null)
         {
             _handSpriteRenderer.enabled = active;
+        }
+        
+        if (_gooseShadowRenderer != null)
+        {
+            _gooseShadowRenderer.enabled = active;
+        }
+        
+        if (_handShadowRenderer != null)
+        {
+            _handShadowRenderer.enabled = active;
         }
     }
 
@@ -108,6 +122,11 @@ public class GooseGun : MonoBehaviour
         }
         
         angle += _angleOffset;
+        
+        if (_useAngleLimits)
+        {
+            angle = Mathf.Clamp(angle, _minAngle, _maxAngle);
+        }
         
         Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
         _handPivot.rotation = Quaternion.Lerp(_handPivot.rotation, targetRotation, _rotationSpeed * Time.deltaTime);

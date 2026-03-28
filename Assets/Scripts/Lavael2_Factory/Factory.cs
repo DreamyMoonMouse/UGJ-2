@@ -26,6 +26,9 @@ public class Factory : MonoBehaviour
 
     [Header("Spawner")]
     [SerializeField] private FigurineSpawner _spawner;
+    
+    [Header("Tutorial Hints")]
+    [SerializeField] private TutorialHint[] _tutorialHints;
 
     private float _timeRemaining;
     private int _startBalance;
@@ -94,6 +97,14 @@ public class Factory : MonoBehaviour
         {
             _ambientSound.StartAmbient();
         }
+        
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StartHint();
+            }
+        }
     
         if (Audio.Instance != null && _levelBGM != null)
         {
@@ -153,6 +164,14 @@ public class Factory : MonoBehaviour
         if (_ambientSound != null)
         {
             _ambientSound.StopAmbient();
+        }
+        
+        foreach (TutorialHint hint in _tutorialHints)
+        {
+            if (hint != null)
+            {
+                hint.StopHint();
+            }
         }
         
         int finalBalance = _startBalance + _levelEarnings;

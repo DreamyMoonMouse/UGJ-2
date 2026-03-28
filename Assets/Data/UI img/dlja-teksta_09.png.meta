@@ -1,0 +1,5902 @@
+fileFormatVersion: 2
+guid: 7464c5f91555ef34385c9c58cb3bc376
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7395414087657588890
+    second: dlja-teksta_09_0
+  - first:
+      213: 5025512242319266124
+    second: dlja-teksta_09_1
+  - first:
+      213: -4017658557904253313
+    second: dlja-teksta_09_2
+  - first:
+      213: -5373262850316004947
+    second: dlja-teksta_09_3
+  - first:
+      213: 3082936625002579141
+    second: dlja-teksta_09_4
+  - first:
+      213: -5132793538625238381
+    second: dlja-teksta_09_5
+  - first:
+      213: 7052741683330523228
+    second: dlja-teksta_09_6
+  - first:
+      213: -4629553483559874833
+    second: dlja-teksta_09_7
+  - first:
+      213: 831562870831340592
+    second: dlja-teksta_09_8
+  - first:
+      213: -7783458243991728025
+    second: dlja-teksta_09_9
+  - first:
+      213: -2146569423632251167
+    second: dlja-teksta_09_10
+  - first:
+      213: -8793958966394421482
+    second: dlja-teksta_09_11
+  - first:
+      213: -6492301126821907213
+    second: dlja-teksta_09_12
+  - first:
+      213: -1454506246837126313
+    second: dlja-teksta_09_13
+  - first:
+      213: 1275117377787978041
+    second: dlja-teksta_09_14
+  - first:
+      213: -7658734109014425037
+    second: dlja-teksta_09_15
+  - first:
+      213: -8569168436031283287
+    second: dlja-teksta_09_16
+  - first:
+      213: 6278899081532240929
+    second: dlja-teksta_09_17
+  - first:
+      213: -9014994140260031021
+    second: dlja-teksta_09_18
+  - first:
+      213: -871919480412187341
+    second: dlja-teksta_09_19
+  - first:
+      213: -563267282335690656
+    second: dlja-teksta_09_20
+  - first:
+      213: -494902087845077705
+    second: dlja-teksta_09_21
+  - first:
+      213: -5117497447700035156
+    second: dlja-teksta_09_22
+  - first:
+      213: -1499567937125528342
+    second: dlja-teksta_09_23
+  - first:
+      213: 2091404803241854824
+    second: dlja-teksta_09_24
+  - first:
+      213: -7547600069679025443
+    second: dlja-teksta_09_25
+  - first:
+      213: 3457105244414419524
+    second: dlja-teksta_09_26
+  - first:
+      213: -3425205913301447242
+    second: dlja-teksta_09_27
+  - first:
+      213: -3309811242714805492
+    second: dlja-teksta_09_28
+  - first:
+      213: 5680947926996318689
+    second: dlja-teksta_09_29
+  - first:
+      213: -6226552243928398166
+    second: dlja-teksta_09_30
+  - first:
+      213: -7095477844304594997
+    second: dlja-teksta_09_31
+  - first:
+      213: 2774991421891855546
+    second: dlja-teksta_09_32
+  - first:
+      213: 8573519930327818484
+    second: dlja-teksta_09_33
+  - first:
+      213: -5696027350273754156
+    second: dlja-teksta_09_34
+  - first:
+      213: 9189612374652980761
+    second: dlja-teksta_09_35
+  - first:
+      213: -6779822333200509790
+    second: dlja-teksta_09_36
+  - first:
+      213: -2681400458964232939
+    second: dlja-teksta_09_37
+  - first:
+      213: 1273955680508196051
+    second: dlja-teksta_09_38
+  - first:
+      213: -2703968571432615854
+    second: dlja-teksta_09_39
+  - first:
+      213: -6266149165609544919
+    second: dlja-teksta_09_40
+  - first:
+      213: -3106458390003660702
+    second: dlja-teksta_09_41
+  - first:
+      213: 4839132480080344694
+    second: dlja-teksta_09_42
+  - first:
+      213: 4628063857887274945
+    second: dlja-teksta_09_43
+  - first:
+      213: 3909082875777133814
+    second: dlja-teksta_09_44
+  - first:
+      213: -8072704305383504484
+    second: dlja-teksta_09_45
+  - first:
+      213: -2687538712918307768
+    second: dlja-teksta_09_46
+  - first:
+      213: 7550994163229732163
+    second: dlja-teksta_09_47
+  - first:
+      213: 1198227809920922264
+    second: dlja-teksta_09_48
+  - first:
+      213: -6278696374692820114
+    second: dlja-teksta_09_49
+  - first:
+      213: 5961524885394065200
+    second: dlja-teksta_09_50
+  - first:
+      213: -2268190475623738446
+    second: dlja-teksta_09_51
+  - first:
+      213: -4680239998184598589
+    second: dlja-teksta_09_52
+  - first:
+      213: -1021370120729246563
+    second: dlja-teksta_09_53
+  - first:
+      213: 2616630673981750307
+    second: dlja-teksta_09_54
+  - first:
+      213: -7108390944484408530
+    second: dlja-teksta_09_55
+  - first:
+      213: -8118657502074407161
+    second: dlja-teksta_09_56
+  - first:
+      213: -810104000118062018
+    second: dlja-teksta_09_57
+  - first:
+      213: -7770372143997721838
+    second: dlja-teksta_09_58
+  - first:
+      213: 6383228567729967206
+    second: dlja-teksta_09_59
+  - first:
+      213: 320953578544527229
+    second: dlja-teksta_09_60
+  - first:
+      213: -7982088962966019257
+    second: dlja-teksta_09_61
+  - first:
+      213: 8822865109019875201
+    second: dlja-teksta_09_62
+  - first:
+      213: -7494173430376510521
+    second: dlja-teksta_09_63
+  - first:
+      213: 1589470697579605125
+    second: dlja-teksta_09_64
+  - first:
+      213: -8831575206623134531
+    second: dlja-teksta_09_65
+  - first:
+      213: -1920598904639843451
+    second: dlja-teksta_09_66
+  - first:
+      213: -3831462614056727843
+    second: dlja-teksta_09_67
+  - first:
+      213: -7141572776329002183
+    second: dlja-teksta_09_68
+  - first:
+      213: 2702330028733066014
+    second: dlja-teksta_09_69
+  - first:
+      213: 8296007124732032060
+    second: dlja-teksta_09_70
+  - first:
+      213: -328332133797080790
+    second: dlja-teksta_09_71
+  - first:
+      213: -114311023916705264
+    second: dlja-teksta_09_72
+  - first:
+      213: -7991930454695365997
+    second: dlja-teksta_09_73
+  - first:
+      213: 4787207043072762559
+    second: dlja-teksta_09_74
+  - first:
+      213: 8377458968912413645
+    second: dlja-teksta_09_75
+  - first:
+      213: 1287056205967900869
+    second: dlja-teksta_09_76
+  - first:
+      213: 6080319890741245180
+    second: dlja-teksta_09_77
+  - first:
+      213: 1897387885738197205
+    second: dlja-teksta_09_78
+  - first:
+      213: -8469502044265787358
+    second: dlja-teksta_09_79
+  - first:
+      213: -3369976610878970509
+    second: dlja-teksta_09_80
+  - first:
+      213: 8025734365167694752
+    second: dlja-teksta_09_81
+  - first:
+      213: -4255888715853765752
+    second: dlja-teksta_09_82
+  - first:
+      213: -1879702620741394752
+    second: dlja-teksta_09_83
+  - first:
+      213: 213852621756749721
+    second: dlja-teksta_09_84
+  - first:
+      213: -3906064405677861587
+    second: dlja-teksta_09_85
+  - first:
+      213: -1618189050181307324
+    second: dlja-teksta_09_86
+  - first:
+      213: 6817257154134334615
+    second: dlja-teksta_09_87
+  - first:
+      213: 2239531802922833247
+    second: dlja-teksta_09_88
+  - first:
+      213: 3337363969167916766
+    second: dlja-teksta_09_89
+  - first:
+      213: 6964666223407132227
+    second: dlja-teksta_09_90
+  - first:
+      213: 6463925808987411447
+    second: dlja-teksta_09_91
+  - first:
+      213: 7117961998761577753
+    second: dlja-teksta_09_92
+  - first:
+      213: 419602542858021304
+    second: dlja-teksta_09_93
+  - first:
+      213: 2389212573313549287
+    second: dlja-teksta_09_94
+  - first:
+      213: 4873716556952671631
+    second: dlja-teksta_09_95
+  - first:
+      213: 3900337467829674276
+    second: dlja-teksta_09_96
+  - first:
+      213: -6684023586131175399
+    second: dlja-teksta_09_97
+  - first:
+      213: -6356935265708270413
+    second: dlja-teksta_09_98
+  - first:
+      213: -3223643854055850278
+    second: dlja-teksta_09_99
+  - first:
+      213: 3709679225095332905
+    second: dlja-teksta_09_100
+  - first:
+      213: 8925504165044263913
+    second: dlja-teksta_09_101
+  - first:
+      213: -7358034396480695513
+    second: dlja-teksta_09_102
+  - first:
+      213: 5568283875777114908
+    second: dlja-teksta_09_103
+  - first:
+      213: -8739634218343992030
+    second: dlja-teksta_09_104
+  - first:
+      213: -1480479354032933026
+    second: dlja-teksta_09_105
+  - first:
+      213: 9167187383644591406
+    second: dlja-teksta_09_106
+  - first:
+      213: -3717374198506609613
+    second: dlja-teksta_09_107
+  - first:
+      213: -8547624397971341921
+    second: dlja-teksta_09_108
+  - first:
+      213: -957585544833655665
+    second: dlja-teksta_09_109
+  - first:
+      213: 1610025453711246006
+    second: dlja-teksta_09_110
+  - first:
+      213: -6039378311001382306
+    second: dlja-teksta_09_111
+  - first:
+      213: 8170850872242788778
+    second: dlja-teksta_09_112
+  - first:
+      213: 7170992574807704510
+    second: dlja-teksta_09_113
+  - first:
+      213: 931365393414356712
+    second: dlja-teksta_09_114
+  - first:
+      213: -1327746292585660209
+    second: dlja-teksta_09_115
+  - first:
+      213: -3296655871266656640
+    second: dlja-teksta_09_116
+  - first:
+      213: 6189425855420578567
+    second: dlja-teksta_09_117
+  - first:
+      213: -3151600141176101348
+    second: dlja-teksta_09_118
+  - first:
+      213: -2458308535293600435
+    second: dlja-teksta_09_119
+  - first:
+      213: 8931500613627238539
+    second: dlja-teksta_09_120
+  - first:
+      213: 7882762322991325212
+    second: dlja-teksta_09_121
+  - first:
+      213: 2182373812080864029
+    second: dlja-teksta_09_122
+  - first:
+      213: 3099543601089509591
+    second: dlja-teksta_09_123
+  - first:
+      213: -8315057848726006653
+    second: dlja-teksta_09_124
+  - first:
+      213: 8289121013533858947
+    second: dlja-teksta_09_125
+  - first:
+      213: -6879046217830671233
+    second: dlja-teksta_09_126
+  - first:
+      213: 7639420396495389733
+    second: dlja-teksta_09_127
+  - first:
+      213: 6871589283466986779
+    second: dlja-teksta_09_128
+  - first:
+      213: 7656039057276970512
+    second: dlja-teksta_09_129
+  - first:
+      213: 2179888401161609568
+    second: dlja-teksta_09_130
+  - first:
+      213: 1011058773458003043
+    second: dlja-teksta_09_131
+  - first:
+      213: -1232413260146004559
+    second: dlja-teksta_09_132
+  - first:
+      213: -1339484959797976542
+    second: dlja-teksta_09_133
+  - first:
+      213: 4852760920711056265
+    second: dlja-teksta_09_134
+  - first:
+      213: 3694992203401995953
+    second: dlja-teksta_09_135
+  - first:
+      213: -4746522804256917117
+    second: dlja-teksta_09_136
+  - first:
+      213: 3743283716900670729
+    second: dlja-teksta_09_137
+  - first:
+      213: 2303894930780176579
+    second: dlja-teksta_09_138
+  - first:
+      213: -5702081656411281516
+    second: dlja-teksta_09_139
+  - first:
+      213: 8796855420939010188
+    second: dlja-teksta_09_140
+  - first:
+      213: 7307563236743539032
+    second: dlja-teksta_09_141
+  - first:
+      213: -572732934615937818
+    second: dlja-teksta_09_142
+  - first:
+      213: -7894848625580527835
+    second: dlja-teksta_09_143
+  - first:
+      213: 5689304198313926344
+    second: dlja-teksta_09_144
+  - first:
+      213: -7411500790563289384
+    second: dlja-teksta_09_145
+  - first:
+      213: 512405339228109932
+    second: dlja-teksta_09_146
+  - first:
+      213: 1032162237512371809
+    second: dlja-teksta_09_147
+  - first:
+      213: -5962650254761428774
+    second: dlja-teksta_09_148
+  - first:
+      213: -2078857360449691897
+    second: dlja-teksta_09_149
+  - first:
+      213: 7650856608661853119
+    second: dlja-teksta_09_150
+  - first:
+      213: 5947295833363343413
+    second: dlja-teksta_09_151
+  - first:
+      213: 9193208529598777920
+    second: dlja-teksta_09_152
+  - first:
+      213: 5514885989005172904
+    second: dlja-teksta_09_153
+  - first:
+      213: -3240413079961772611
+    second: dlja-teksta_09_154
+  - first:
+      213: 7068811650086090745
+    second: dlja-teksta_09_155
+  - first:
+      213: 4289741222467322388
+    second: dlja-teksta_09_156
+  - first:
+      213: 1673678282373704331
+    second: dlja-teksta_09_157
+  - first:
+      213: -3192742976853746380
+    second: dlja-teksta_09_158
+  - first:
+      213: 2421791421149741482
+    second: dlja-teksta_09_159
+  - first:
+      213: -1972735145854253066
+    second: dlja-teksta_09_160
+  - first:
+      213: -3501237566839997598
+    second: dlja-teksta_09_161
+  - first:
+      213: 7800966107600657822
+    second: dlja-teksta_09_162
+  - first:
+      213: 527907750957490385
+    second: dlja-teksta_09_163
+  - first:
+      213: -7603637457520797222
+    second: dlja-teksta_09_164
+  - first:
+      213: -8355389977450202891
+    second: dlja-teksta_09_165
+  - first:
+      213: 1126243931355329776
+    second: dlja-teksta_09_166
+  - first:
+      213: -8024791503666209798
+    second: dlja-teksta_09_167
+  - first:
+      213: 9640559838043208
+    second: dlja-teksta_09_168
+  - first:
+      213: 1977076823990990423
+    second: dlja-teksta_09_169
+  - first:
+      213: 2902092228999829174
+    second: dlja-teksta_09_170
+  - first:
+      213: -3267882015031437588
+    second: dlja-teksta_09_171
+  - first:
+      213: 9173739927408900319
+    second: dlja-teksta_09_172
+  - first:
+      213: 8677288582427297818
+    second: dlja-teksta_09_173
+  - first:
+      213: -2405789226632246848
+    second: dlja-teksta_09_174
+  - first:
+      213: -3447805416343107824
+    second: dlja-teksta_09_175
+  - first:
+      213: 8194983041507948142
+    second: dlja-teksta_09_176
+  - first:
+      213: 7935897373454480806
+    second: dlja-teksta_09_177
+  - first:
+      213: -3863992981487484251
+    second: dlja-teksta_09_178
+  - first:
+      213: 8778155077939580011
+    second: dlja-teksta_09_179
+  - first:
+      213: 2409739441855863919
+    second: dlja-teksta_09_180
+  - first:
+      213: 3338834021935750827
+    second: dlja-teksta_09_181
+  - first:
+      213: 7877307080870977583
+    second: dlja-teksta_09_182
+  - first:
+      213: -5639733167886133473
+    second: dlja-teksta_09_183
+  - first:
+      213: 8057992682704907584
+    second: dlja-teksta_09_184
+  - first:
+      213: 7666481962870901986
+    second: dlja-teksta_09_185
+  - first:
+      213: -519664520681715048
+    second: dlja-teksta_09_186
+  - first:
+      213: -6359603147024357586
+    second: dlja-teksta_09_187
+  - first:
+      213: 2305175034466813691
+    second: dlja-teksta_09_188
+  - first:
+      213: 4102752497259209238
+    second: dlja-teksta_09_189
+  - first:
+      213: -5669952991262594191
+    second: dlja-teksta_09_190
+  - first:
+      213: -4390976145350413569
+    second: dlja-teksta_09_191
+  - first:
+      213: 8695428644887022335
+    second: dlja-teksta_09_192
+  - first:
+      213: -3785978970104318023
+    second: dlja-teksta_09_193
+  - first:
+      213: -8077525268394295845
+    second: dlja-teksta_09_194
+  - first:
+      213: 5354635403807370570
+    second: dlja-teksta_09_195
+  - first:
+      213: 1754722764622599254
+    second: dlja-teksta_09_196
+  - first:
+      213: -5318490651760793
+    second: dlja-teksta_09_197
+  - first:
+      213: -7679987905220677339
+    second: dlja-teksta_09_198
+  - first:
+      213: 6488808502073520199
+    second: dlja-teksta_09_199
+  - first:
+      213: 4581800975462828483
+    second: dlja-teksta_09_200
+  - first:
+      213: 6478712479415825642
+    second: dlja-teksta_09_201
+  - first:
+      213: -2094429025319941732
+    second: dlja-teksta_09_202
+  - first:
+      213: 1715415813206607782
+    second: dlja-teksta_09_203
+  - first:
+      213: -6672682711563534441
+    second: dlja-teksta_09_204
+  - first:
+      213: 8428200470121335952
+    second: dlja-teksta_09_205
+  - first:
+      213: -1044605240633754284
+    second: dlja-teksta_09_206
+  - first:
+      213: 6016220465546141480
+    second: dlja-teksta_09_207
+  - first:
+      213: 3306799133861022819
+    second: dlja-teksta_09_208
+  - first:
+      213: 6357216680276370380
+    second: dlja-teksta_09_209
+  - first:
+      213: 6889657755727387397
+    second: dlja-teksta_09_210
+  - first:
+      213: 3469107807133992238
+    second: dlja-teksta_09_211
+  - first:
+      213: 6014415365701056766
+    second: dlja-teksta_09_212
+  - first:
+      213: -1028751701810589455
+    second: dlja-teksta_09_213
+  - first:
+      213: -550757447199888210
+    second: dlja-teksta_09_214
+  - first:
+      213: -1971548887328704711
+    second: dlja-teksta_09_215
+  - first:
+      213: -6542931327417636569
+    second: dlja-teksta_09_216
+  - first:
+      213: 1765353914583664348
+    second: dlja-teksta_09_217
+  - first:
+      213: 6939999363610473897
+    second: dlja-teksta_09_218
+  - first:
+      213: -211378992974146912
+    second: dlja-teksta_09_219
+  - first:
+      213: -2950602684087120725
+    second: dlja-teksta_09_220
+  - first:
+      213: 8507104675641271225
+    second: dlja-teksta_09_221
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dlja-teksta_09_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4037
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9800cd1ee9c1a660800000000000000
+      internalID: 7395414087657588890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3933
+        width: 2828
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4111d112c43eb540800000000000000
+      internalID: 5025512242319266124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3930
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e0f4bf3d86e38c0800000000000000
+      internalID: -4017658557904253313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3852
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da19c1a08e55e65b0800000000000000
+      internalID: -5373262850316004947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_4
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3930
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4025eb68ac8ca20800000000000000
+      internalID: 3082936625002579141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_5
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3905
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a82d8a877a4c8b0800000000000000
+      internalID: -5132793538625238381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_6
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3827
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50a187a13f50e160800000000000000
+      internalID: 7052741683330523228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3850
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feecdb792a580cfb0800000000000000
+      internalID: -4629553483559874833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3824
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c5e44760e4a8b00800000000000000
+      internalID: 831562870831340592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3746
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76099c237f99bf390800000000000000
+      internalID: -7783458243991728025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_10
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3824
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e64fa27b7ad532e0800000000000000
+      internalID: -2146569423632251167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_11
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3799
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ff2b699e495f580800000000000000
+      internalID: -8793958966394421482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_12
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3721
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f479e8d586b6e5a0800000000000000
+      internalID: -6492301126821907213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3744
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bbfa9564e80dbe0800000000000000
+      internalID: -1454506246837126313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3718
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931eafdcf7022b110800000000000000
+      internalID: 1275117377787978041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3640
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3320703d7e5b6b590800000000000000
+      internalID: -7658734109014425037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_16
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3718
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af9dd575b2341980800000000000000
+      internalID: -8569168436031283287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_17
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3693
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12471479271232750800000000000000
+      internalID: 6278899081532240929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_18
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3614
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5a299c79e44e280800000000000000
+      internalID: -9014994140260031021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3637
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335d9492ad156e3f0800000000000000
+      internalID: -871919480412187341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3612
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06018ca146fde28f0800000000000000
+      internalID: -563267282335690656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3534
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d15675c21c129f0800000000000000
+      internalID: -494902087845077705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_22
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3612
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca90fda5f2ffaf8b0800000000000000
+      internalID: -5117497447700035156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_23
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3586
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec411ff7e6703be0800000000000000
+      internalID: -1499567937125528342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_24
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3508
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867c6ca7699260d10800000000000000
+      internalID: 2091404803241854824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3531
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2711cb9b9814790800000000000000
+      internalID: -7547600069679025443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3506
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442267c37ea1aff20800000000000000
+      internalID: 3457105244414419524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3427
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd891f8e593770d0800000000000000
+      internalID: -3425205913301447242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_28
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3506
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bc36cf5303112d0800000000000000
+      internalID: -3309811242714805492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_29
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3480
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e97b186a08c6de40800000000000000
+      internalID: 5680947926996318689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_30
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3402
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa68c3d49b7d699a0800000000000000
+      internalID: -6226552243928398166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3425
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7f19a7e7cc78d90800000000000000
+      internalID: -7095477844304594997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3399
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4ce94eeffb28620800000000000000
+      internalID: 2774991421891855546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3321
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0ebe1c3f24bf670800000000000000
+      internalID: 8573519930327818484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_34
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3400
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbf504cd45a3f0b0800000000000000
+      internalID: -5696027350273754156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_35
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3374
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e89be14cf088f70800000000000000
+      internalID: 9189612374652980761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_36
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3296
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4d25d428b39e1a0800000000000000
+      internalID: -6779822333200509790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_37
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3319
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5151ede3d70c9cad0800000000000000
+      internalID: -2681400458964232939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_38
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3293
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4384411fffda110800000000000000
+      internalID: 1273955680508196051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_39
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3215
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25040f719e2997ad0800000000000000
+      internalID: -2703968571432615854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_40
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3293
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9239b3a888a2a09a0800000000000000
+      internalID: -6266149165609544919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_41
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3268
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268cc429d84a3e4d0800000000000000
+      internalID: -3106458390003660702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_42
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3190
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6767e301a5d082340800000000000000
+      internalID: 4839132480080344694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3213
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7e137ee8f2a3040800000000000000
+      internalID: 4628063857887274945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3187
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc22401a2adf3630800000000000000
+      internalID: 3909082875777133814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3109
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9589dc843ef7ff80800000000000000
+      internalID: -8072704305383504484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_46
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3187
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cc460a7c1f3bad0800000000000000
+      internalID: -2687538712918307768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_47
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3162
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d2b504f258ac860800000000000000
+      internalID: 7550994163229732163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_48
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3083
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892b45a38d5f0a010800000000000000
+      internalID: 1198227809920922264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_49
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3106
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bc6e5c9e69dd8a0800000000000000
+      internalID: -6278696374692820114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_50
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3081
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03780993c479bb250800000000000000
+      internalID: 5961524885394065200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_51
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3003
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3d581a7c4c580e0800000000000000
+      internalID: -2268190475623738446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_52
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3081
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3d1a4c4827c0fb0800000000000000
+      internalID: -4680239998184598589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_53
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3055
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d944cb1694d53d1f0800000000000000
+      internalID: -1021370120729246563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_54
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2977
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cb2170cb3205420800000000000000
+      internalID: 2616630673981750307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_55
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3000
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23476d091ce95d90800000000000000
+      internalID: -7108390944484408530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2975
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7077bcf240cb45f80800000000000000
+      internalID: -8118657502074407161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_57
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2897
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3407d934bee1c4f0800000000000000
+      internalID: -810104000118062018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_58
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2975
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213ec6844b71a2490800000000000000
+      internalID: -7770372143997721838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_59
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2949
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6609ba30098c59850800000000000000
+      internalID: 6383228567729967206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_60
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2871
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7779864491447400800000000000000
+      internalID: 320953578544527229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_61
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2894
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74328dc016ce93190800000000000000
+      internalID: -7982088962966019257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_62
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2869
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1875154321d117a70800000000000000
+      internalID: 8822865109019875201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2790
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cbcc3d88f85ff790800000000000000
+      internalID: -7494173430376510521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_64
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2869
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cef169d2fee0610800000000000000
+      internalID: 1589470697579605125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_65
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2843
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcb41a2421ff6580800000000000000
+      internalID: -8831575206623134531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_66
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2765
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58310f4d879a855e0800000000000000
+      internalID: -1920598904639843451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_67
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2788
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda85fe6d09e3dac0800000000000000
+      internalID: -3831462614056727843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_68
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2762
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9334f49c56904ec90800000000000000
+      internalID: -7141572776329002183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_69
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2684
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b6184f7da908520800000000000000
+      internalID: 2702330028733066014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_70
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2762
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3433cb9686512370800000000000000
+      internalID: 8296007124732032060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_71
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2737
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21dda4f9a7817bf0800000000000000
+      internalID: -328332133797080790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_72
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2659
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a9889bab2e96ef0800000000000000
+      internalID: -114311023916705264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_73
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2682
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392b1423895f61190800000000000000
+      internalID: -7991930454695365997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_74
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2656
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2a99421739f6240800000000000000
+      internalID: 4787207043072762559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_75
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2578
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc34f6aeb86b24470800000000000000
+      internalID: 8377458968912413645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_76
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2656
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0cdaadcca8cd110800000000000000
+      internalID: 1287056205967900869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_77
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2631
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4bf58c9b2a16450800000000000000
+      internalID: 6080319890741245180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_78
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2553
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d00e82ba30e45a10800000000000000
+      internalID: 1897387885738197205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_79
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2576
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220d71b93c8467a80800000000000000
+      internalID: -8469502044265787358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2550
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3752f2790207b31d0800000000000000
+      internalID: -3369976610878970509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_81
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2472
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3377902e2216f60800000000000000
+      internalID: 8025734365167694752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_82
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2550
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88361f7f2cb00f4c0800000000000000
+      internalID: -4255888715853765752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_83
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2525
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce965fec64f9e5e0800000000000000
+      internalID: -1879702620741394752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_84
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2446
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997d81293d1c7f200800000000000000
+      internalID: 213852621756749721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_85
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2469
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2516c54e1fdac9c0800000000000000
+      internalID: -3906064405677861587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_86
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2444
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4443484e1a90b89e0800000000000000
+      internalID: -1618189050181307324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_87
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2366
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cdaa62343cb9e50800000000000000
+      internalID: 6817257154134334615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_88
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2444
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55d7682f4a641f10800000000000000
+      internalID: 2239531802922833247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_89
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2418
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edef07c09d2b05e20800000000000000
+      internalID: 3337363969167916766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_90
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2340
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ee751a70777a060800000000000000
+      internalID: 6964666223407132227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_91
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2363
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f39c23a64a74b950800000000000000
+      internalID: 6463925808987411447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_92
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2338
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dc9eca9b418c260800000000000000
+      internalID: 7117961998761577753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_93
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2259
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b927e12a4ab2d500800000000000000
+      internalID: 419602542858021304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_94
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2338
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e340454d20382120800000000000000
+      internalID: 2389212573313549287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_95
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2312
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f859a11f26be2a340800000000000000
+      internalID: 4873716556952671631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_96
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2234
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421622a1348c02630800000000000000
+      internalID: 3900337467829674276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_97
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2257
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918915e36f39d33a0800000000000000
+      internalID: -6684023586131175399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_98
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2231
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc1e4b6e01a7c7a0800000000000000
+      internalID: -6356935265708270413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_99
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2153
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade31ac8ef05343d0800000000000000
+      internalID: -3223643854055850278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_100
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2232
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924247ab99d6b7330800000000000000
+      internalID: 3709679225095332905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_101
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2206
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb9bbeafb2cddb70800000000000000
+      internalID: 8925504165044263913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_102
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2128
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72399a073b203e990800000000000000
+      internalID: -7358034396480695513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_103
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2151
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13fa38dea4864d40800000000000000
+      internalID: 5568283875777114908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_104
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2125
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225f1c4abf496b680800000000000000
+      internalID: -8739634218343992030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_105
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2047
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5731951fd7447be0800000000000000
+      internalID: -1480479354032933026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_106
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2125
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2514970b54683f70800000000000000
+      internalID: 9167187383644591406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_107
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 2100
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334afc8acdb396cc0800000000000000
+      internalID: -3717374198506609613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_108
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 2022
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9db475b5ecb06980800000000000000
+      internalID: -8547624397971341921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_109
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2045
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c142e3509f5b2f0800000000000000
+      internalID: -957585544833655665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_110
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2019
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2cbcfae95f75610800000000000000
+      internalID: 1610025453711246006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_111
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1941
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5260949c61df2ca0800000000000000
+      internalID: -6039378311001382306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_112
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2019
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9d8b8c391b46170800000000000000
+      internalID: 8170850872242788778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_113
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1994
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb38064d0cb748360800000000000000
+      internalID: 7170992574807704510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_114
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1915
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eefd8604efdcec00800000000000000
+      internalID: 931365393414356712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_115
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1938
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0079618c5e29de0800000000000000
+      internalID: -1327746292585660209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_116
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1913
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ee17693fcef32d0800000000000000
+      internalID: -3296655871266656640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_117
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1835
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b36f3c50245e550800000000000000
+      internalID: 6189425855420578567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_118
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1913
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16a0279e544344d0800000000000000
+      internalID: -3151600141176101348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_119
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1887
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d938d696552edd0800000000000000
+      internalID: -2458308535293600435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_120
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1809
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b885f6aac7013fb70800000000000000
+      internalID: 8931500613627238539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_121
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1832
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c102bbe6192356d60800000000000000
+      internalID: 7882762322991325212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_122
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1807
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1be13c5b69594e10800000000000000
+      internalID: 2182373812080864029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_123
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1729
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d876ccab7ac30b20800000000000000
+      internalID: 3099543601089509591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_124
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1807
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384dcdf01fafa9c80800000000000000
+      internalID: -8315057848726006653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_125
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1781
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c59e7e4afd80370800000000000000
+      internalID: 8289121013533858947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_126
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1703
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c55b069e7b880a0800000000000000
+      internalID: -6879046217830671233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_127
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1726
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5244bfe006ca40a60800000000000000
+      internalID: 7639420396495389733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_128
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1701
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b154e6bcb0acc5f50800000000000000
+      internalID: 6871589283466986779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_129
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1622
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016a28b85f6bf3a60800000000000000
+      internalID: 7656039057276970512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_130
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1701
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0616b3983f4804e10800000000000000
+      internalID: 2179888401161609568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_131
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1675
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364a10ff890080e00800000000000000
+      internalID: 1011058773458003043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_132
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1597
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd24846ba695eee0800000000000000
+      internalID: -1232413260146004559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_133
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1620
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2226345a681396de0800000000000000
+      internalID: -1339484959797976542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_134
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1594
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b41eaa858785340800000000000000
+      internalID: 4852760920711056265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_135
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1516
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b62d9305df374330800000000000000
+      internalID: 3694992203401995953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_136
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1594
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389b9fd58a6f02eb0800000000000000
+      internalID: -4746522804256917117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_137
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1569
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d4e5f25b0d2f330800000000000000
+      internalID: 3743283716900670729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_138
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1491
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0c9f4ab3419ff10800000000000000
+      internalID: 2303894930780176579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_139
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1514
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497a555c1f22ed0b0800000000000000
+      internalID: -5702081656411281516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_140
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1488
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c800a89c565b41a70800000000000000
+      internalID: 8796855420939010188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_141
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1410
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8596dc3fb0ea96560800000000000000
+      internalID: 7307563236743539032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_142
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1488
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eccc013e6e3d08f0800000000000000
+      internalID: -572732934615937818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_143
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1463
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52faac4f00ddf6290800000000000000
+      internalID: -7894848625580527835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_144
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1385
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ced3af660874fe40800000000000000
+      internalID: 5689304198313926344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_145
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1408
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6c2fd7c4f052990800000000000000
+      internalID: -7411500790563289384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_146
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1382
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c74b1f0fd6c1700800000000000000
+      internalID: 512405339228109932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_147
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1304
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e4f7d161af25e00800000000000000
+      internalID: 1032162237512371809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_148
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1382
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad87d0d4f29604da0800000000000000
+      internalID: -5962650254761428774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_149
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1357
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f90b3be3a6623e0800000000000000
+      internalID: -2078857360449691897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_150
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1278
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb35db2bc8d4d2a60800000000000000
+      internalID: 7650856608661853119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_151
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1301
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53868c1ec0a098250800000000000000
+      internalID: 5947295833363343413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_152
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1276
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a83d03376d49f70800000000000000
+      internalID: 9193208529598777920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_153
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1198
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0ae6f769fc88c40800000000000000
+      internalID: 5514885989005172904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_154
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1276
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd5953e87db703d0800000000000000
+      internalID: -3240413079961772611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_155
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1250
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7368b5eb6791260800000000000000
+      internalID: 7068811650086090745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_156
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1172
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412c38fe9e8388b30800000000000000
+      internalID: 4289741222467322388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_157
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1195
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8aab21c7891a3710800000000000000
+      internalID: 1673678282373704331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_158
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1170
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d528dad2911b3d0800000000000000
+      internalID: -3192742976853746380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_159
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1091
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa108b1677eeb9120800000000000000
+      internalID: 2421791421149741482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_160
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1170
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7cd6b36df6f94e0800000000000000
+      internalID: -1972735145854253066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_161
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1144
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bbf3abbfa196fc0800000000000000
+      internalID: -3501237566839997598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_162
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1066
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d1664f759924c60800000000000000
+      internalID: 7800966107600657822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_163
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1089
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d02ff17d41835700800000000000000
+      internalID: 527907750957490385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_164
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1063
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad95e97a4047a7690800000000000000
+      internalID: -7603637457520797222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_165
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 985
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8b8329511bb0c80800000000000000
+      internalID: -8355389977450202891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_166
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1064
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4bfd273e831af00800000000000000
+      internalID: 1126243931355329776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_167
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1038
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb176305a632a090800000000000000
+      internalID: -8024791503666209798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_168
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 960
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c1590c900422000800000000000000
+      internalID: 9640559838043208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_169
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 983
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756f3ab75ecff6b10800000000000000
+      internalID: 1977076823990990423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_170
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 957
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6d4fe918d464820800000000000000
+      internalID: 2902092228999829174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_171
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 879
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6d92e0f9626a2d0800000000000000
+      internalID: -3267882015031437588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_172
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 957
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd876030cdbaf4f70800000000000000
+      internalID: 9173739927408900319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_173
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 932
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18c121ddfbeb6870800000000000000
+      internalID: 8677288582427297818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_174
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 854
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c98f1ed17bec9ed0800000000000000
+      internalID: -2405789226632246848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_175
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 877
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0178338bd3fe620d0800000000000000
+      internalID: -3447805416343107824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_176
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 851
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e667e6948ad6ab170800000000000000
+      internalID: 8194983041507948142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_177
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 773
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5b5be6d98f12e60800000000000000
+      internalID: 7935897373454480806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_178
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 851
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a206db0bd6506ac0800000000000000
+      internalID: -3863992981487484251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_179
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 826
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c41e3e88542d970800000000000000
+      internalID: 8778155077939580011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_180
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 748
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c1119414d117120800000000000000
+      internalID: 2409739441855863919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_181
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 770
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae18716adbe55e20800000000000000
+      internalID: 3338834021935750827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_182
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 745
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20ebf5ed01d15d60800000000000000
+      internalID: 7877307080870977583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_183
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 667
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17982c7094abb1b0800000000000000
+      internalID: -5639733167886133473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_184
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 745
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04da25fd6adb3df60800000000000000
+      internalID: 8057992682704907584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_185
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 720
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec0cd9f9b0d46a60800000000000000
+      internalID: 7666481962870901986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_186
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 641
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a846a2fd7c9c8f0800000000000000
+      internalID: -519664520681715048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_187
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 664
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e272825e1a62eb7a0800000000000000
+      internalID: -6359603147024357586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_188
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 639
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf64e720b70adff10800000000000000
+      internalID: 2305175034466813691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_189
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 561
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6126b70b8a7efe830800000000000000
+      internalID: 4102752497259209238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_190
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 639
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b21ae8bc74051b0800000000000000
+      internalID: -5669952991262594191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_191
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 613
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2bc2fc57e1013c0800000000000000
+      internalID: -4390976145350413569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_192
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 535
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa4f3c384e5ca870800000000000000
+      internalID: 8695428644887022335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_193
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 558
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b735d78f20857bc0800000000000000
+      internalID: -3785978970104318023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_194
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 533
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddbd11a09dd6ef80800000000000000
+      internalID: -8077525268394295845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_195
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 454
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d2ba9978c7f4a40800000000000000
+      internalID: 5354635403807370570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_196
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 533
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6541f98be070a5810800000000000000
+      internalID: 1754722764622599254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_197
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 507
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767e5f56cda1deff0800000000000000
+      internalID: -5318490651760793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_198
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 429
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5217606c0b33b6590800000000000000
+      internalID: -7679987905220677339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_199
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 452
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74070a514f0ec0a50800000000000000
+      internalID: 6488808502073520199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_200
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 426
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9000636b3d59f30800000000000000
+      internalID: 4581800975462828483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_201
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 348
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae47871aca209e950800000000000000
+      internalID: 6478712479415825642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_202
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 427
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c998982f5e71fe2e0800000000000000
+      internalID: -2094429025319941732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_203
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 401
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7844ce7916ec710800000000000000
+      internalID: 1715415813206607782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_204
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 323
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f7d5e5d6ed563a0800000000000000
+      internalID: -6672682711563534441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_205
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 346
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ccc5d4cabf6f470800000000000000
+      internalID: 8428200470121335952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_206
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 320
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d73857111d081f0800000000000000
+      internalID: -1044605240633754284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_207
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 242
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f105b53a8ed7350800000000000000
+      internalID: 6016220465546141480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_208
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c0b55ca4c14ed20800000000000000
+      internalID: 3306799133861022819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_209
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 295
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3af0483ee593850800000000000000
+      internalID: 6357216680276370380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_210
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 217
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b5522d93bfc9f50800000000000000
+      internalID: 6889657755727387397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_211
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 240
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2581c3ab2fb42030800000000000000
+      internalID: 3469107807133992238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_212
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 214
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8334cc8ee777350800000000000000
+      internalID: 6014415365701056766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_213
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 136
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0508b17c329b1f0800000000000000
+      internalID: -1028751701810589455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_214
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 214
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacef3215015b58f0800000000000000
+      internalID: -550757447199888210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_215
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 189
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937b4719bb6a3a4e0800000000000000
+      internalID: -1971548887328704711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_216
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 110
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7292f77af96d235a0800000000000000
+      internalID: -6542931327417636569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_217
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 133
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6ca95380ccf7810800000000000000
+      internalID: 1765353914583664348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_218
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 108
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a57079c6a4df4060800000000000000
+      internalID: 6939999363610473897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_219
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 2828
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2dbc20de7011df0800000000000000
+      internalID: -211378992974146912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_220
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 108
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac4ca5ed7a5d07d0800000000000000
+      internalID: -2950602684087120725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dlja-teksta_09_221
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3a9a241ae4f0670800000000000000
+      internalID: 8507104675641271225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dlja-teksta_09_0: 7395414087657588890
+      dlja-teksta_09_1: 5025512242319266124
+      dlja-teksta_09_10: -2146569423632251167
+      dlja-teksta_09_100: 3709679225095332905
+      dlja-teksta_09_101: 8925504165044263913
+      dlja-teksta_09_102: -7358034396480695513
+      dlja-teksta_09_103: 5568283875777114908
+      dlja-teksta_09_104: -8739634218343992030
+      dlja-teksta_09_105: -1480479354032933026
+      dlja-teksta_09_106: 9167187383644591406
+      dlja-teksta_09_107: -3717374198506609613
+      dlja-teksta_09_108: -8547624397971341921
+      dlja-teksta_09_109: -957585544833655665
+      dlja-teksta_09_11: -8793958966394421482
+      dlja-teksta_09_110: 1610025453711246006
+      dlja-teksta_09_111: -6039378311001382306
+      dlja-teksta_09_112: 8170850872242788778
+      dlja-teksta_09_113: 7170992574807704510
+      dlja-teksta_09_114: 931365393414356712
+      dlja-teksta_09_115: -1327746292585660209
+      dlja-teksta_09_116: -3296655871266656640
+      dlja-teksta_09_117: 6189425855420578567
+      dlja-teksta_09_118: -3151600141176101348
+      dlja-teksta_09_119: -2458308535293600435
+      dlja-teksta_09_12: -6492301126821907213
+      dlja-teksta_09_120: 8931500613627238539
+      dlja-teksta_09_121: 7882762322991325212
+      dlja-teksta_09_122: 2182373812080864029
+      dlja-teksta_09_123: 3099543601089509591
+      dlja-teksta_09_124: -8315057848726006653
+      dlja-teksta_09_125: 8289121013533858947
+      dlja-teksta_09_126: -6879046217830671233
+      dlja-teksta_09_127: 7639420396495389733
+      dlja-teksta_09_128: 6871589283466986779
+      dlja-teksta_09_129: 7656039057276970512
+      dlja-teksta_09_13: -1454506246837126313
+      dlja-teksta_09_130: 2179888401161609568
+      dlja-teksta_09_131: 1011058773458003043
+      dlja-teksta_09_132: -1232413260146004559
+      dlja-teksta_09_133: -1339484959797976542
+      dlja-teksta_09_134: 4852760920711056265
+      dlja-teksta_09_135: 3694992203401995953
+      dlja-teksta_09_136: -4746522804256917117
+      dlja-teksta_09_137: 3743283716900670729
+      dlja-teksta_09_138: 2303894930780176579
+      dlja-teksta_09_139: -5702081656411281516
+      dlja-teksta_09_14: 1275117377787978041
+      dlja-teksta_09_140: 8796855420939010188
+      dlja-teksta_09_141: 7307563236743539032
+      dlja-teksta_09_142: -572732934615937818
+      dlja-teksta_09_143: -7894848625580527835
+      dlja-teksta_09_144: 5689304198313926344
+      dlja-teksta_09_145: -7411500790563289384
+      dlja-teksta_09_146: 512405339228109932
+      dlja-teksta_09_147: 1032162237512371809
+      dlja-teksta_09_148: -5962650254761428774
+      dlja-teksta_09_149: -2078857360449691897
+      dlja-teksta_09_15: -7658734109014425037
+      dlja-teksta_09_150: 7650856608661853119
+      dlja-teksta_09_151: 5947295833363343413
+      dlja-teksta_09_152: 9193208529598777920
+      dlja-teksta_09_153: 5514885989005172904
+      dlja-teksta_09_154: -3240413079961772611
+      dlja-teksta_09_155: 7068811650086090745
+      dlja-teksta_09_156: 4289741222467322388
+      dlja-teksta_09_157: 1673678282373704331
+      dlja-teksta_09_158: -3192742976853746380
+      dlja-teksta_09_159: 2421791421149741482
+      dlja-teksta_09_16: -8569168436031283287
+      dlja-teksta_09_160: -1972735145854253066
+      dlja-teksta_09_161: -3501237566839997598
+      dlja-teksta_09_162: 7800966107600657822
+      dlja-teksta_09_163: 527907750957490385
+      dlja-teksta_09_164: -7603637457520797222
+      dlja-teksta_09_165: -8355389977450202891
+      dlja-teksta_09_166: 1126243931355329776
+      dlja-teksta_09_167: -8024791503666209798
+      dlja-teksta_09_168: 9640559838043208
+      dlja-teksta_09_169: 1977076823990990423
+      dlja-teksta_09_17: 6278899081532240929
+      dlja-teksta_09_170: 2902092228999829174
+      dlja-teksta_09_171: -3267882015031437588
+      dlja-teksta_09_172: 9173739927408900319
+      dlja-teksta_09_173: 8677288582427297818
+      dlja-teksta_09_174: -2405789226632246848
+      dlja-teksta_09_175: -3447805416343107824
+      dlja-teksta_09_176: 8194983041507948142
+      dlja-teksta_09_177: 7935897373454480806
+      dlja-teksta_09_178: -3863992981487484251
+      dlja-teksta_09_179: 8778155077939580011
+      dlja-teksta_09_18: -9014994140260031021
+      dlja-teksta_09_180: 2409739441855863919
+      dlja-teksta_09_181: 3338834021935750827
+      dlja-teksta_09_182: 7877307080870977583
+      dlja-teksta_09_183: -5639733167886133473
+      dlja-teksta_09_184: 8057992682704907584
+      dlja-teksta_09_185: 7666481962870901986
+      dlja-teksta_09_186: -519664520681715048
+      dlja-teksta_09_187: -6359603147024357586
+      dlja-teksta_09_188: 2305175034466813691
+      dlja-teksta_09_189: 4102752497259209238
+      dlja-teksta_09_19: -871919480412187341
+      dlja-teksta_09_190: -5669952991262594191
+      dlja-teksta_09_191: -4390976145350413569
+      dlja-teksta_09_192: 8695428644887022335
+      dlja-teksta_09_193: -3785978970104318023
+      dlja-teksta_09_194: -8077525268394295845
+      dlja-teksta_09_195: 5354635403807370570
+      dlja-teksta_09_196: 1754722764622599254
+      dlja-teksta_09_197: -5318490651760793
+      dlja-teksta_09_198: -7679987905220677339
+      dlja-teksta_09_199: 6488808502073520199
+      dlja-teksta_09_2: -4017658557904253313
+      dlja-teksta_09_20: -563267282335690656
+      dlja-teksta_09_200: 4581800975462828483
+      dlja-teksta_09_201: 6478712479415825642
+      dlja-teksta_09_202: -2094429025319941732
+      dlja-teksta_09_203: 1715415813206607782
+      dlja-teksta_09_204: -6672682711563534441
+      dlja-teksta_09_205: 8428200470121335952
+      dlja-teksta_09_206: -1044605240633754284
+      dlja-teksta_09_207: 6016220465546141480
+      dlja-teksta_09_208: 3306799133861022819
+      dlja-teksta_09_209: 6357216680276370380
+      dlja-teksta_09_21: -494902087845077705
+      dlja-teksta_09_210: 6889657755727387397
+      dlja-teksta_09_211: 3469107807133992238
+      dlja-teksta_09_212: 6014415365701056766
+      dlja-teksta_09_213: -1028751701810589455
+      dlja-teksta_09_214: -550757447199888210
+      dlja-teksta_09_215: -1971548887328704711
+      dlja-teksta_09_216: -6542931327417636569
+      dlja-teksta_09_217: 1765353914583664348
+      dlja-teksta_09_218: 6939999363610473897
+      dlja-teksta_09_219: -211378992974146912
+      dlja-teksta_09_22: -5117497447700035156
+      dlja-teksta_09_220: -2950602684087120725
+      dlja-teksta_09_221: 8507104675641271225
+      dlja-teksta_09_23: -1499567937125528342
+      dlja-teksta_09_24: 2091404803241854824
+      dlja-teksta_09_25: -7547600069679025443
+      dlja-teksta_09_26: 3457105244414419524
+      dlja-teksta_09_27: -3425205913301447242
+      dlja-teksta_09_28: -3309811242714805492
+      dlja-teksta_09_29: 5680947926996318689
+      dlja-teksta_09_3: -5373262850316004947
+      dlja-teksta_09_30: -6226552243928398166
+      dlja-teksta_09_31: -7095477844304594997
+      dlja-teksta_09_32: 2774991421891855546
+      dlja-teksta_09_33: 8573519930327818484
+      dlja-teksta_09_34: -5696027350273754156
+      dlja-teksta_09_35: 9189612374652980761
+      dlja-teksta_09_36: -6779822333200509790
+      dlja-teksta_09_37: -2681400458964232939
+      dlja-teksta_09_38: 1273955680508196051
+      dlja-teksta_09_39: -2703968571432615854
+      dlja-teksta_09_4: 3082936625002579141
+      dlja-teksta_09_40: -6266149165609544919
+      dlja-teksta_09_41: -3106458390003660702
+      dlja-teksta_09_42: 4839132480080344694
+      dlja-teksta_09_43: 4628063857887274945
+      dlja-teksta_09_44: 3909082875777133814
+      dlja-teksta_09_45: -8072704305383504484
+      dlja-teksta_09_46: -2687538712918307768
+      dlja-teksta_09_47: 7550994163229732163
+      dlja-teksta_09_48: 1198227809920922264
+      dlja-teksta_09_49: -6278696374692820114
+      dlja-teksta_09_5: -5132793538625238381
+      dlja-teksta_09_50: 5961524885394065200
+      dlja-teksta_09_51: -2268190475623738446
+      dlja-teksta_09_52: -4680239998184598589
+      dlja-teksta_09_53: -1021370120729246563
+      dlja-teksta_09_54: 2616630673981750307
+      dlja-teksta_09_55: -7108390944484408530
+      dlja-teksta_09_56: -8118657502074407161
+      dlja-teksta_09_57: -810104000118062018
+      dlja-teksta_09_58: -7770372143997721838
+      dlja-teksta_09_59: 6383228567729967206
+      dlja-teksta_09_6: 7052741683330523228
+      dlja-teksta_09_60: 320953578544527229
+      dlja-teksta_09_61: -7982088962966019257
+      dlja-teksta_09_62: 8822865109019875201
+      dlja-teksta_09_63: -7494173430376510521
+      dlja-teksta_09_64: 1589470697579605125
+      dlja-teksta_09_65: -8831575206623134531
+      dlja-teksta_09_66: -1920598904639843451
+      dlja-teksta_09_67: -3831462614056727843
+      dlja-teksta_09_68: -7141572776329002183
+      dlja-teksta_09_69: 2702330028733066014
+      dlja-teksta_09_7: -4629553483559874833
+      dlja-teksta_09_70: 8296007124732032060
+      dlja-teksta_09_71: -328332133797080790
+      dlja-teksta_09_72: -114311023916705264
+      dlja-teksta_09_73: -7991930454695365997
+      dlja-teksta_09_74: 4787207043072762559
+      dlja-teksta_09_75: 8377458968912413645
+      dlja-teksta_09_76: 1287056205967900869
+      dlja-teksta_09_77: 6080319890741245180
+      dlja-teksta_09_78: 1897387885738197205
+      dlja-teksta_09_79: -8469502044265787358
+      dlja-teksta_09_8: 831562870831340592
+      dlja-teksta_09_80: -3369976610878970509
+      dlja-teksta_09_81: 8025734365167694752
+      dlja-teksta_09_82: -4255888715853765752
+      dlja-teksta_09_83: -1879702620741394752
+      dlja-teksta_09_84: 213852621756749721
+      dlja-teksta_09_85: -3906064405677861587
+      dlja-teksta_09_86: -1618189050181307324
+      dlja-teksta_09_87: 6817257154134334615
+      dlja-teksta_09_88: 2239531802922833247
+      dlja-teksta_09_89: 3337363969167916766
+      dlja-teksta_09_9: -7783458243991728025
+      dlja-teksta_09_90: 6964666223407132227
+      dlja-teksta_09_91: 6463925808987411447
+      dlja-teksta_09_92: 7117961998761577753
+      dlja-teksta_09_93: 419602542858021304
+      dlja-teksta_09_94: 2389212573313549287
+      dlja-teksta_09_95: 4873716556952671631
+      dlja-teksta_09_96: 3900337467829674276
+      dlja-teksta_09_97: -6684023586131175399
+      dlja-teksta_09_98: -6356935265708270413
+      dlja-teksta_09_99: -3223643854055850278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

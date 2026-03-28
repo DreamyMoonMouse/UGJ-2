@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7913900722444553391}
   - component: {fileID: 2218788806465609249}
-  - component: {fileID: 272589907413020017}
   - component: {fileID: 6012658713494065831}
   - component: {fileID: 1515707482014692889}
+  - component: {fileID: 5180638418848544740}
   m_Layer: 0
   m_Name: Figurine_Prefab
   m_TagString: Untagged
@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7633, y: -0.45959, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4258987957726239871}
   - {fileID: 2161605870338450802}
@@ -91,82 +91,11 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 2.99}
+  m_Size: {x: 0.65, y: 0.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
---- !u!60 &272589907413020017
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3055171730036350846}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 2.99}
-    newSize: {x: 1.95, y: 2.99}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.42844725, y: 1.0282633}
-      - {x: 0.6152904, y: 1.3873969}
-      - {x: 0.41156983, y: 1.5094756}
-      - {x: -0.020278454, y: 1.5137196}
-      - {x: -0.3523233, y: 1.5155786}
-      - {x: -0.5332687, y: 1.4726145}
-      - {x: -0.63056326, y: 1.3557473}
-      - {x: -0.54262424, y: 1.1808188}
-      - {x: -0.43319654, y: 1.0037292}
-      - {x: -0.38326126, y: 0.6469904}
-      - {x: -0.48530316, y: 0.43263617}
-      - {x: -0.81722355, y: 0.14509425}
-      - {x: -0.99335307, y: -0.34937307}
-      - {x: -0.96365476, y: -0.6419616}
-      - {x: -0.8097949, y: -0.91641355}
-      - {x: -0.512289, y: -1.3992203}
-      - {x: 0.009925365, y: -1.3861159}
-      - {x: 0.49941123, y: -1.3861169}
-      - {x: 0.67343557, y: -1.1844773}
-      - {x: 0.80907655, y: -0.9098556}
-      - {x: 0.9783602, y: -0.58524525}
-      - {x: 0.97983444, y: -0.30205643}
-      - {x: 0.834599, y: 0.08614227}
-      - {x: 0.36298275, y: 0.640231}
-  m_UseDelaunayMesh: 1
 --- !u!50 &6012658713494065831
 Rigidbody2D:
   serializedVersion: 5
@@ -213,6 +142,69 @@ MonoBehaviour:
   _pushSound: {fileID: 8300000, guid: ed6eb5276b5f082459a408cd70f22c5e, type: 3}
   _endZoneSound: {fileID: 8300000, guid: dda706918dc259e499a95d7b940259dd, type: 3}
   _shredderSound: {fileID: 8300000, guid: ed6eb5276b5f082459a408cd70f22c5e, type: 3}
+--- !u!60 &5180638418848544740
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055171730036350846}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.65, y: 0.97}
+    newSize: {x: 0.65, y: 0.97}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.24499999, y: 0.085}
+      - {x: 0.145, y: 0.175}
+      - {x: 0.225, y: 0.465}
+      - {x: 0.205, y: 0.48499998}
+      - {x: -0.24499999, y: 0.48499998}
+      - {x: -0.21499999, y: 0.42499998}
+      - {x: -0.145, y: 0.185}
+      - {x: -0.285, y: 0.044999998}
+      - {x: -0.325, y: -0.044999998}
+      - {x: -0.325, y: -0.265}
+      - {x: -0.185, y: -0.465}
+      - {x: -0.145, y: -0.48499998}
+      - {x: 0.13499999, y: -0.48499998}
+      - {x: 0.275, y: -0.33499998}
+      - {x: 0.325, y: -0.21499999}
+      - {x: 0.325, y: -0.024999999}
+  m_UseDelaunayMesh: 1
 --- !u!1 &7818505212099693812
 GameObject:
   m_ObjectHideFlags: 0
