@@ -10,6 +10,8 @@ TagManager:
   - 'EndZone '
   - Ground
   - Killzone
+  - Basket
+  - Egg
   layers:
   - Default
   - TransparentFX

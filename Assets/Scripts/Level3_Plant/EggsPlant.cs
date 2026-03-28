@@ -88,7 +88,7 @@ public class EggsPlant : MonoBehaviour
         _panelIntro.SetActive(false);
         _isIntroActive = false;
         _isGameActive = true;
-        
+    
         foreach (EggSpawner spawner in _spawners)
         {
             if (spawner != null)
@@ -96,21 +96,22 @@ public class EggsPlant : MonoBehaviour
                 spawner.StartSpawning();
             }
         }
-        
+    
         if (_ambientSound != null)
         {
             _ambientSound.StartAmbient();
         }
-        
+    
         if (Audio.Instance != null && _levelBGM != null)
         {
             Audio.Instance.PlayMusic(_levelBGM);
         }
         
-        GooseGun gooseGun = FindObjectOfType<GooseGun>();
-        if (gooseGun != null)
+        GooseGun[] gooseGuns = FindObjectsOfType<GooseGun>();
+        
+        foreach (GooseGun gun in gooseGuns)
         {
-            gooseGun.StartGame();
+            gun.StartGame();
         }
     }
     

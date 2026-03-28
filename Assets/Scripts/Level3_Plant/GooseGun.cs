@@ -6,19 +6,23 @@ public class GooseGun : MonoBehaviour
     [Header("Ссылки на объекты")]
     [SerializeField] private Transform _handPivot;
     [SerializeField] private Transform _handGun;
-    [SerializeField] private Transform _gooseSprite;
+    [SerializeField] private SpriteRenderer _gooseSpriteRenderer;
+    [SerializeField] private SpriteRenderer _handSpriteRenderer;
     [SerializeField] private Transform _catchZone;
     [SerializeField] private float _rotationSpeed = 5f;
-    [SerializeField] private float _flipThreshold = 0.1f;
-    [SerializeField] private float _spriteOffset = 90f;
-
+    [SerializeField] private bool _isLeftGoose = false;
+    
+    [Header("Настройка углов")]
+    [SerializeField] private float _angleOffset = 0f;
+    [SerializeField] private bool _invertAngleForLeft = false;
+    
     [Header("Зона притяжения")]
     [SerializeField] private Collider2D _attractionZone;
     [SerializeField] private float _attractionForce = 10f;
 
     private Camera _mainCamera;
-    private bool _isFacingRight = true;
     private bool _isGameActive = false;
+    private bool _isCurrentlyActive = false;
 
     private void Awake()
     {
@@ -28,6 +32,9 @@ public class GooseGun : MonoBehaviour
         {
             _attractionZone = GetComponent<Collider2D>();
         }
+        
+        // Скрываем гуся при старте
+        SetVisualsActive(false);
     }
 
     public void StartGame()
@@ -38,6 +45,20 @@ public class GooseGun : MonoBehaviour
     public void StopGame()
     {
         _isGameActive = false;
+        SetVisualsActive(false);
+    }
+
+    private void SetVisualsActive(bool active)
+    {
+        if (_gooseSpriteRenderer != null)
+        {
+            _gooseSpriteRenderer.enabled = active;
+        }
+        
+        if (_handSpriteRenderer != null)
+        {
+            _handSpriteRenderer.enabled = active;
+        }
     }
 
     private void Update()
@@ -45,49 +66,32 @@ public class GooseGun : MonoBehaviour
         if (!_isGameActive) return;
         
         Vector2 mousePos = Mouse.current.position.ReadValue();
-        Vector3 worldMousePos = _mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));
         
-        FlipObjects(worldMousePos);
-        RotateHand(worldMousePos);
-    }
-
-    private void FlipObjects(Vector3 mousePos)
-    {
-        float direction = mousePos.x - transform.position.x;
+        CheckIfShouldBeActive(mousePos);
         
-        bool shouldBeRight = direction > _flipThreshold;
-        bool shouldBeLeft = direction < -_flipThreshold;
-        
-        if (shouldBeRight && !_isFacingRight)
+        if (_isCurrentlyActive)
         {
-            _isFacingRight = true;
-            ApplyFlip(1f);
-        }
-        else if (shouldBeLeft && _isFacingRight)
-        {
-            _isFacingRight = false;
-            ApplyFlip(-1f);
+            Vector3 worldMousePos = _mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));
+            RotateHand(worldMousePos);
         }
     }
 
-    private void ApplyFlip(float direction)
+    private void CheckIfShouldBeActive(Vector2 mousePos)
     {
-        if (_gooseSprite != null)
-        {
-            _gooseSprite.localScale = new Vector3(
-                direction * Mathf.Abs(_gooseSprite.localScale.x),
-                _gooseSprite.localScale.y,
-                _gooseSprite.localScale.z
-            );
-        }
+        float screenCenterX = _mainCamera.pixelWidth / 2f;
+        bool mouseIsLeft = mousePos.x < screenCenterX;
         
-        if (_handGun != null)
+        bool shouldBeActive = _isLeftGoose ? mouseIsLeft : !mouseIsLeft;
+        
+        if (shouldBeActive && !_isCurrentlyActive)
         {
-            _handGun.localScale = new Vector3(
-                direction * Mathf.Abs(_handGun.localScale.x),
-                _handGun.localScale.y,
-                _handGun.localScale.z
-            );
+            _isCurrentlyActive = true;
+            SetVisualsActive(true);
+        }
+        else if (!shouldBeActive && _isCurrentlyActive)
+        {
+            _isCurrentlyActive = false;
+            SetVisualsActive(false);
         }
     }
 
@@ -98,12 +102,12 @@ public class GooseGun : MonoBehaviour
         Vector3 direction = mousePos - _handPivot.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         
-        if (!_isFacingRight)
+        if (_invertAngleForLeft)
         {
             angle = 180f - angle;
         }
         
-        angle += _spriteOffset;
+        angle += _angleOffset;
         
         Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
         _handPivot.rotation = Quaternion.Lerp(_handPivot.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
@@ -111,13 +115,18 @@ public class GooseGun : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!_isGameActive) return;
+        Debug.Log($"OnTriggerEnter: {other.gameObject.name}, Tag: {other.tag}");
+        
+        if (!_isGameActive || !_isCurrentlyActive) return;
         
         if (other.CompareTag("Egg"))
         {
+            Debug.Log("Яйцо найдено! Начинаем притяжение...");
+            
             Egg egg = other.GetComponent<Egg>();
             if (egg != null && !egg.IsAttracted)
             {
+                Debug.Log($"StartAttraction к {_catchZone.position}");
                 egg.StartAttraction(_catchZone.position, _attractionForce);
             }
         }
@@ -125,7 +134,7 @@ public class GooseGun : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (!_isGameActive) return;
+        if (!_isGameActive || !_isCurrentlyActive) return;
         
         if (other.CompareTag("Egg"))
         {
