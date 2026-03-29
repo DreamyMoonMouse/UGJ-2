@@ -1453,7 +1453,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54f0ba6554e94c5409a196d39070c089, type: 2}
   - {fileID: 11400000, guid: 083b382204636a94393fe42af840ce1d, type: 2}
   - {fileID: 11400000, guid: 20217e7c256318848833693c01049c46, type: 2}
-  - {fileID: 11400000, guid: 175db14ff658bec4d9cd6895845e8a3f, type: 2}
   - {fileID: 11400000, guid: a892b64aa1012b240baf95687b218bf6, type: 2}
   - {fileID: 11400000, guid: c8a17db4d15ca7a48b4c6d31052559fb, type: 2}
   _figurinePrefab: {fileID: 1515707482014692889, guid: 33c9eaee5ad51154791e952de77a7c60, type: 3}
@@ -2630,7 +2629,9 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u0412\u0430\u0448 \u0434\u043E\u043B\u0433 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
         \n2 500 000 \u0440\u0443\u0431\u043B\u0435\u0439.\n\r\n\u0412\u0420\u0415\u041C\u042F
-        - \u0414\u0415\u041D\u042C\u0413\u0418!"
+        - \u0414\u0415\u041D\u042C\u0413\u0418!\n\nP.S. \u0418\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0439
+        \u0444\u0430\u043A\u0442!\n\n\u041A\u0440\u044F\u043A\u0430\u043D\u044C\u0435
+        \u0443\u0442\u043A\u0438 \u043D\u0435 \u0438\u043C\u0435\u0435\u0442 \u044D\u0445\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 8264065552154979814, guid: 43f92d3e56927604193af107ac2f2e82, type: 3}
       propertyPath: m_VerticalAlignment

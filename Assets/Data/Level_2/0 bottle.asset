@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: 0 bottle
   baseValue: 20000
-  spawnChance: 0.01
-  spriteGood: {fileID: 0}
-  spriteBadVariants: []
-  spriteBad: {fileID: 9102899102746149857, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  spawnChance: 0.005
+  itemSprite: {fileID: 9102899102746149857, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants: []
   isBadItem: 1
   isEdible: 0
+  canBeBadVariant: 0
   canHaveColor: 0
   minAlpha: 0.9
   maxAlpha: 1

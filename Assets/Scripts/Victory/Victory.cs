@@ -8,21 +8,12 @@ public class Victory : MonoBehaviour
     [Header("Аудио")]
     [SerializeField] private AudioClip _bgmMusic;
     [SerializeField] private AudioClip _ambientSound;
-    [SerializeField] private AudioClip _typingSound;
 
-    [Header("Текст благодарностей")]
-    [SerializeField] private TextMeshProUGUI _creditsText;
-    [SerializeField] private float _typingSpeed = 0.03f;
-    [SerializeField] private string[] _creditsLines;
+    [Header("Конверт")]
+    [SerializeField] private VictoryEnvelope _envelopeAnimator;
 
     [Header("Кнопки")]
     [SerializeField] private Button _closeButton;
-
-    [Header("Настройки")]
-    [SerializeField] private float _startDelay = 1f;
-
-    private bool _isTyping = false;
-    private string _fullText = "";
 
     private void Awake()
     {
@@ -32,8 +23,6 @@ public class Victory : MonoBehaviour
         {
             _closeButton.onClick.AddListener(OnCloseClicked);
         }
-        
-        BuildFullText();
     }
 
     private void Start()
@@ -50,48 +39,6 @@ public class Victory : MonoBehaviour
                 Audio.Instance.PlayAmbient(_ambientSound);
             }
         }
-        
-        Invoke(nameof(StartCredits), _startDelay);
-    }
-
-    private void BuildFullText()
-    {
-        foreach (string line in _creditsLines)
-        {
-            _fullText += line + "\n";
-        }
-    }
-
-    private void StartCredits()
-    {
-        if (_creditsText != null)
-        {
-            StartCoroutine(TypeCredits());
-        }
-    }
-
-    private IEnumerator TypeCredits()
-    {
-        _isTyping = true;
-        _creditsText.text = "";
-
-        if (Audio.Instance != null && _typingSound != null)
-        {
-            Audio.Instance.PlaySfxLoop(_typingSound);
-        }
-
-        foreach (char c in _fullText)
-        {
-            _creditsText.text += c;
-            yield return new WaitForSeconds(_typingSpeed);
-        }
-
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.StopSfxLoop();
-        }
-
-        _isTyping = false;
     }
 
     private void OnCloseClicked()
@@ -102,11 +49,11 @@ public class Victory : MonoBehaviour
             Audio.Instance.StopAmbient();
         }
 
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
             Application.Quit();
-        #endif
+#endif
     }
 
     private void OnDestroy()

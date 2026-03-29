@@ -15,11 +15,11 @@ MonoBehaviour:
   figurineName: 18 duck 2
   baseValue: 20000
   spawnChance: 0.01
-  spriteGood: {fileID: 0}
-  spriteBadVariants: []
-  spriteBad: {fileID: -8535047843916677600, guid: 2f3d68b66a9af1c42806c99293a8d495, type: 3}
+  itemSprite: {fileID: -8535047843916677600, guid: 2f3d68b66a9af1c42806c99293a8d495, type: 3}
+  badSpriteVariants: []
   isBadItem: 1
   isEdible: 0
+  canBeBadVariant: 0
   canHaveColor: 0
   minAlpha: 0.9
   maxAlpha: 1

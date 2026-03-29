@@ -8,17 +8,29 @@ public class FigurineData : ScriptableObject
     public float baseValue;
     public float spawnChance;
 
-    [Header("Спрайты")]
-    public Sprite spriteGood;
-    public Sprite[] spriteBadVariants;
-    public Sprite spriteBad;
+    [Header("Спрайт")]
+    public Sprite itemSprite;
+    public Sprite[] badSpriteVariants;
 
     [Header("Тип предмета (галочки)")]
     public bool isBadItem = false;
     public bool isEdible = false;
+    public bool canBeBadVariant = false;
 
     [Header("Визуал")]
     public bool canHaveColor = false;
     public float minAlpha = 0.9f;
     public float maxAlpha = 1f;
+
+    public float GetEffectiveSpawnChance()
+    {
+        float multiplier = 1f;
+        
+        if (canBeBadVariant && badSpriteVariants != null)
+        {
+            multiplier += badSpriteVariants.Length;
+        }
+        
+        return spawnChance * multiplier;
+    }
 }

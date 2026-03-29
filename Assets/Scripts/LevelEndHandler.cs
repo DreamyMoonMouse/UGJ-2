@@ -67,11 +67,11 @@ public class LevelEndHandler : MonoBehaviour
         expenses = Economy.Instance.CalculateExpenses(balance);
         
         _textSummary.text = $"Ура! Долг погашен!\nЗаработано за уровень: \n{balance:N0} ₽";
-        _textExpenses.text = $"Ежемесячные платежи:\nКутеж по рестаранам: -{(result):N0} ₽" +
-                             $"\nАренда презеденского люкса: -{(result):N0} ₽" +
-                             $"\nVIP услуги: -{(result):N0} ₽" +
-                             $"\nИтого: -{expenses:N0} ₽";
-        _textFinalBalance.text = $"Итоговый баланс: {finalBalance:N0} ₽";
+        _textExpenses.text = $"Ежемесячные платежи:\nКутёж по ресторанам: \n-{(result):N0} ₽" +
+                             $"\nАренда президентского люкса: \n-{(result):N0} ₽" +
+                             $"\nVIP услуги: \n-{(result):N0} ₽" +
+                             $"\n\nИтого: -{expenses:N0} ₽";
+        _textFinalBalance.text = $"\nИтоговый баланс: {finalBalance:N0} ₽";
     }
 
     private void HandleDefeat(int finalBalance)

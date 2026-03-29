@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 1 Green Vase
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: Green Vase
-  baseValue: 100
-  spawnChance: 0.1
-  spriteGood: {fileID: -969318573402961507, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBadVariants:
-  - {fileID: 7012129196075965493, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  baseValue: 30000
+  spawnChance: 0.03
+  itemSprite: {fileID: -969318573402961507, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants:
   - {fileID: -6314062427418281078, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBad: {fileID: 0}
+  - {fileID: 7012129196075965493, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
   isBadItem: 0
   isEdible: 0
+  canBeBadVariant: 1
   canHaveColor: 0
   minAlpha: 0.9
   maxAlpha: 1

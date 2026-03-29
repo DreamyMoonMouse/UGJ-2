@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 2 Red Vase1
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: 2 Red Vase1
-  baseValue: 100
-  spawnChance: 0.1
-  spriteGood: {fileID: 5940831415586268176, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBadVariants:
+  baseValue: 30000
+  spawnChance: 0.03
+  itemSprite: {fileID: 5940831415586268176, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants:
   - {fileID: -7229500522322449322, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
   - {fileID: -6510666358717994183, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBad: {fileID: 0}
   isBadItem: 0
   isEdible: 0
+  canBeBadVariant: 1
   canHaveColor: 0
   minAlpha: 0.9
   maxAlpha: 1

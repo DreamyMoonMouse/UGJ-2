@@ -52,7 +52,7 @@ public class Figurine : MonoBehaviour
         }
     }
 
-    public void Initialize(Factory factory, FigurineData data, bool isBadVariant = false) 
+    public void Initialize(Factory factory, FigurineData data, bool forceBadVariant = false) 
     {
         _factory = factory;
         _data = data; 
@@ -60,7 +60,7 @@ public class Figurine : MonoBehaviour
         if (_data != null)
         {
             _value = _data.baseValue;
-            _isBadItem = _data.isBadItem || isBadVariant;
+            _isBadItem = _data.isBadItem || forceBadVariant;
             _isEdible = _data.isEdible;
         }
     
@@ -68,20 +68,20 @@ public class Figurine : MonoBehaviour
         {
             if (_isBadItem)
             {
-                if (_data.spriteBad != null)
+                if (_data.badSpriteVariants != null && _data.badSpriteVariants.Length > 0)
                 {
-                    _spriteRenderer.sprite = _data.spriteBad;
+                    _spriteRenderer.sprite = _data.badSpriteVariants[Random.Range(0, _data.badSpriteVariants.Length)];
                 }
-                else if (_data.spriteBadVariants != null && _data.spriteBadVariants.Length > 0)
+                else if (_data.itemSprite != null)
                 {
-                    _spriteRenderer.sprite = _data.spriteBadVariants[Random.Range(0, _data.spriteBadVariants.Length)];
+                    _spriteRenderer.sprite = _data.itemSprite;
                 }
             }
             else
             {
-                if (_data.spriteGood != null)
+                if (_data.itemSprite != null)
                 {
-                    _spriteRenderer.sprite = _data.spriteGood;
+                    _spriteRenderer.sprite = _data.itemSprite;
                 }
             }
         
@@ -197,15 +197,15 @@ public class Figurine : MonoBehaviour
         
         if (_isBadItem)
         {
-            reward = 50;
+            reward = Mathf.FloorToInt(_value * 0.25f);
         }
         else if (_isEdible)
         {
-            reward = -25;
+            reward = -Mathf.FloorToInt(_value * 0.25f);
         }
         else
         {
-            reward = -50;
+            reward = -Mathf.FloorToInt(_value * 0.5f);
         }
         
         if (_factory != null)
@@ -235,7 +235,7 @@ public class Figurine : MonoBehaviour
         
         if (_isBadItem)
         {
-            reward = -Mathf.FloorToInt(_value / 2);
+            reward = -Mathf.FloorToInt(_value * 0.5f);
         }
         else if (_isEdible)
         {

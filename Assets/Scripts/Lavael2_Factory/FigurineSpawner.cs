@@ -12,10 +12,30 @@ public class FigurineSpawner : MonoBehaviour
 
     private Factory _factory;
     private bool _isSpawning = false;
+    private float _totalEffectiveChance = 0f;
 
     private void Start()
     {
         _factory = FindObjectOfType<Factory>();
+        CalculateTotalChance();
+    }
+
+    private void CalculateTotalChance()
+    {
+        _totalEffectiveChance = 0f;
+        
+        if (_figurineTypes != null)
+        {
+            foreach (FigurineData data in _figurineTypes)
+            {
+                if (data != null)
+                {
+                    _totalEffectiveChance += data.GetEffectiveSpawnChance();
+                }
+            }
+        }
+        
+        Debug.Log($"Total effective spawn chance: {_totalEffectiveChance}");
     }
 
     public void StartSpawning()
@@ -50,43 +70,45 @@ public class FigurineSpawner : MonoBehaviour
     
         if (data == null) return;
         
-        bool isBadVariant = false;
+        bool forceBadVariant = false;
         
-        if (!data.isBadItem && data.spriteBadVariants != null && data.spriteBadVariants.Length > 0)
+        if (!data.isBadItem && data.canBeBadVariant && data.badSpriteVariants != null && data.badSpriteVariants.Length > 0)
         {
-            isBadVariant = Random.value < _badVariantChance;
+            forceBadVariant = Random.value < _badVariantChance;
         }
     
         Figurine figurine = Instantiate(_figurinePrefab, _spawnPoint.position, Quaternion.identity);
     
         if (figurine != null)
         {
-            figurine.Initialize(_factory, data, isBadVariant);
+            figurine.Initialize(_factory, data, forceBadVariant);
         }
     }
 
     private FigurineData GetRandomFigurineData()
     {
-        if (_figurineTypes == null || _figurineTypes.Length == 0)
+        if (_figurineTypes == null || _figurineTypes.Length == 0 || _totalEffectiveChance <= 0f)
         {
             return null;
         }
     
-        float random = Random.value;
-        float cumulativeChance = 0;
+        float random = Random.value * _totalEffectiveChance;
+        float cumulativeChance = 0f;
     
         foreach (FigurineData data in _figurineTypes)
         {
             if (data == null) continue;
         
-            cumulativeChance += data.spawnChance;
+            float effectiveChance = data.GetEffectiveSpawnChance();
+            cumulativeChance += effectiveChance;
         
             if (random <= cumulativeChance)
             {
+                Debug.Log($"Selected: {data.figurineName} (effectiveChance={effectiveChance:F2}, total={_totalEffectiveChance:F2})");
                 return data;
             }
         }
     
-        return _figurineTypes[0];
+        return _figurineTypes[_figurineTypes.Length - 1];
     }
 }

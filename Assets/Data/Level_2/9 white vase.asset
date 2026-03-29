@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 9 white vase
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: 9 white vase
-  baseValue: 100
-  spawnChance: 0.11
-  spriteGood: {fileID: -6589550044525895, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBadVariants:
+  baseValue: 30000
+  spawnChance: 0.04
+  itemSprite: {fileID: -6589550044525895, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants:
   - {fileID: 4378499344017087010, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
   - {fileID: 8597603973336562058, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBad: {fileID: 0}
   isBadItem: 0
   isEdible: 0
+  canBeBadVariant: 1
   canHaveColor: 1
   minAlpha: 0.9
   maxAlpha: 1

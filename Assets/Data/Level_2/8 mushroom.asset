@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: 8 mushroom
   baseValue: 20000
-  spawnChance: 0.01
-  spriteGood: {fileID: -8374906395961527538, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBadVariants: []
-  spriteBad: {fileID: 0}
+  spawnChance: 0.005
+  itemSprite: {fileID: -8374906395961527538, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants: []
   isBadItem: 1
   isEdible: 1
-  canHaveColor: 0
+  canBeBadVariant: 0
+  canHaveColor: 1
   minAlpha: 0.9
   maxAlpha: 1

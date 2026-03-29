@@ -23,6 +23,7 @@ public class GooseGun : MonoBehaviour
     
     [Header("Зона притяжения")]
     [SerializeField] private Collider2D _attractionZone;
+    [SerializeField] private Collider2D _catchZoneCollider;
     [SerializeField] private float _attractionForce = 10f;
 
     private Camera _mainCamera;
@@ -36,6 +37,11 @@ public class GooseGun : MonoBehaviour
         if (_attractionZone == null)
         {
             _attractionZone = GetComponent<Collider2D>();
+        }
+        
+        if (_catchZoneCollider == null && _catchZone != null)
+        {
+            _catchZoneCollider = _catchZone.GetComponent<Collider2D>();
         }
         
         SetVisualsActive(false);
@@ -72,6 +78,16 @@ public class GooseGun : MonoBehaviour
         if (_handShadowRenderer != null)
         {
             _handShadowRenderer.enabled = active;
+        }
+        
+        if (_attractionZone != null)
+        {
+            _attractionZone.enabled = active;
+        }
+        
+        if (_catchZoneCollider != null)
+        {
+            _catchZoneCollider.enabled = active;
         }
     }
 

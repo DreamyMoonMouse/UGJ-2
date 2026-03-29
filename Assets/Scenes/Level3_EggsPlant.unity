@@ -1016,7 +1016,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3396771835739914126, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3656432055987228405, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_Name
@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3656432055987228405, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4291610530800265620, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_Pivot.x
@@ -1124,11 +1124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6225608501201594873, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7842364560437054246, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8312736073981788093, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_RenderMode
@@ -1136,7 +1136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8546967760161744052, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1766,6 +1766,7 @@ MonoBehaviour:
   _maxAngle: 30
   _useAngleLimits: 1
   _attractionZone: {fileID: 725718261}
+  _catchZoneCollider: {fileID: 0}
   _attractionForce: 5
 --- !u!1 &727689162
 GameObject:
@@ -1945,8 +1946,8 @@ MonoBehaviour:
   _panelIntro: {fileID: 1101368772}
   _panelEndWin: {fileID: 2040118621}
   _panelEndLose: {fileID: 1315401759}
-  _levelDuration: 14
-  _debtAmount: 10000
+  _levelDuration: 140
+  _debtAmount: 5000000
   _levelBGM: {fileID: 8300000, guid: c1140175f5e10e4479243fa23b8620cb, type: 3}
   _introMusic: {fileID: 8300000, guid: 292aa3efea14fc24c9eeb8a055e363de, type: 3}
   _ambientSound: {fileID: 1687560325}
@@ -3727,6 +3728,7 @@ MonoBehaviour:
   _maxAngle: 175
   _useAngleLimits: 1
   _attractionZone: {fileID: 1525177943}
+  _catchZoneCollider: {fileID: 0}
   _attractionForce: 5
 --- !u!1 &1542402926
 GameObject:
@@ -4212,7 +4214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5521762326722925411, guid: cd03afa92149f6342bd8901414839aa4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7051168962533897046, guid: cd03afa92149f6342bd8901414839aa4, type: 3}
       propertyPath: m_LocalScale.x

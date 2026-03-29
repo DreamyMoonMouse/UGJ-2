@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 6 spacial_vase 1
   m_EditorClassIdentifier: Assembly-CSharp::FigurineData
   figurineName: 6 spacial_vase 1
-  baseValue: 100
-  spawnChance: 0.11
-  spriteGood: {fileID: 3612452085222301062, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
-  spriteBadVariants: []
-  spriteBad: {fileID: 0}
+  baseValue: 30000
+  spawnChance: 0.04
+  itemSprite: {fileID: 3612452085222301062, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  badSpriteVariants: []
   isBadItem: 0
   isEdible: 0
+  canBeBadVariant: 0
   canHaveColor: 0
   minAlpha: 0.9
   maxAlpha: 1
