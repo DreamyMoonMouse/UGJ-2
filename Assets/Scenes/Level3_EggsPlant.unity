@@ -1947,7 +1947,7 @@ MonoBehaviour:
   _panelEndLose: {fileID: 1315401759}
   _levelDuration: 14
   _debtAmount: 10000
-  _levelBGM: {fileID: 8300000, guid: d31cd3cb115860544a0a6c3d6db99256, type: 3}
+  _levelBGM: {fileID: 8300000, guid: c1140175f5e10e4479243fa23b8620cb, type: 3}
   _introMusic: {fileID: 8300000, guid: 292aa3efea14fc24c9eeb8a055e363de, type: 3}
   _ambientSound: {fileID: 1687560325}
   _positiveColor: {r: 0, g: 1, b: 0, a: 1}

@@ -49,73 +49,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDropItem
   itemTypes:
-  - itemName: "\u0427\u0435\u0440\u043D\u044B\u0439 \u0448\u0430\u0440\u0438\u043A"
+  - itemName: 
     itemSprite: {fileID: 7931299053164605263, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 500
-    spawnChance: 0.06
-  - itemName: "\u041E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u0439 \u0448\u0430\u0440\u0438\u043A"
-    itemSprite: {fileID: 5997240611924738317, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
     value: 1000
-    spawnChance: 0.06
-  - itemName: "\u0417\u0435\u043B\u0435\u043D\u044B\u0439 \u0448\u0430\u0440\u0438\u043A"
-    itemSprite: {fileID: 3990095199853865095, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 4000
-    spawnChance: 0.06
-  - itemName: "\u0421\u0438\u043D\u0438\u0439 \u0448\u0430\u0440\u0438\u043A"
-    itemSprite: {fileID: -4343709477047807482, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0416\u0435\u043B\u0442\u044B\u0439 \u0448\u0430\u0440\u0438\u043A"
-    itemSprite: {fileID: 8535313354227054368, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0421\u0443\u043D\u0434\u0443\u043A \u0437\u043E\u043B\u043E\u0442\u0430"
-    itemSprite: {fileID: -8375937872162424576, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0410\u043B\u043C\u0430\u0437"
-    itemSprite: {fileID: 7541676385468247007, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0418\u0437\u043A\u043C\u0440\u0443\u0434"
-    itemSprite: {fileID: 6967689430095561934, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0417\u043E\u043B\u043E\u0442\u0430\u044F \u0440\u0443\u0434\u0430"
-    itemSprite: {fileID: 6771614253337303288, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0424\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u044B\u0439 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B"
-    itemSprite: {fileID: -7960353296787647115, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B"
-    itemSprite: {fileID: -7144544582411511585, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u041C\u0435\u0434\u043D\u0430\u044F \u0440\u0443\u0434\u0430 1"
-    itemSprite: {fileID: 5542043471590563922, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u041C\u0435\u0434\u043D\u0430\u044F \u0440\u0443\u0434\u0430 2"
-    itemSprite: {fileID: -243655188463689770, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u041C\u0435\u0434\u043D\u0430\u044F \u0440\u0443\u0434\u0430 3"
-    itemSprite: {fileID: -243655188463689770, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0411\u043E\u0433\u0430\u0442\u0430\u044F \u0437\u043E\u043B\u043E\u0442\u0430\u044F
-      \u0436\u0438\u043B\u0430"
-    itemSprite: {fileID: 648429979678601031, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.06
-  - itemName: "\u0413\u043E\u043B\u0443\u0431\u043E\u0439 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B"
-    itemSprite: {fileID: 5450460947127596, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 10000
-    spawnChance: 0.1
+    spawnChance: 0.9
   itemRigidbody: {fileID: 3333958168048448638}
   dragSmoothness: 10
+  _floatingTextPrefab: {fileID: 4341076053612158216, guid: 337f0608609e8124c8ea796023b89fa7, type: 3}
 --- !u!225 &6082301326878488218
 CanvasGroup:
   m_ObjectHideFlags: 0

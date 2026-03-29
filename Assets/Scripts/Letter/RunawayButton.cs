@@ -10,9 +10,13 @@ public class RunawayButton : MonoBehaviour
     [SerializeField] private Vector2 _minAnchor = new Vector2(-800, -400);
     [SerializeField] private Vector2 _maxAnchor = new Vector2(800, 400);
     [SerializeField] private bool _isButtonActive = false;
+    [SerializeField] private AudioClip _easterEggSound;
+    [SerializeField] private Image _easterEggImage;
+    [SerializeField] private Animator _easterEggAnimator;
 
     private Canvas _canvas;
     private Vector2 _buttonLocalPos;
+    private bool _isEasterEggPlaying = false;
 
     private void Awake()
     {
@@ -22,6 +26,11 @@ public class RunawayButton : MonoBehaviour
         }
         
         _canvas = GetComponentInParent<Canvas>();
+        
+        if (_easterEggImage != null)
+        {
+            _easterEggImage.gameObject.SetActive(false);
+        }
     }
 
     private void OnEnable()
@@ -36,7 +45,7 @@ public class RunawayButton : MonoBehaviour
 
     private void Update()
     {
-        if (!_isButtonActive) return;
+        if (!_isButtonActive || _isEasterEggPlaying) return;
         
         Vector2 mousePos = Mouse.current.position.ReadValue();
         
@@ -70,6 +79,40 @@ public class RunawayButton : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log("Кнопка поймана!");
+        if (_isEasterEggPlaying) return;
+        
+        _isEasterEggPlaying = true;
+        _isButtonActive = false;
+        
+        if (_easterEggImage != null)
+        {
+            _easterEggImage.gameObject.SetActive(true);
+        }
+        
+        if (_easterEggAnimator != null)
+        {
+            _easterEggAnimator.SetTrigger("Play");
+        }
+        
+        if (Audio.Instance != null && _easterEggSound != null)
+        {
+            Audio.Instance.PlaySfx(_easterEggSound);
+            Invoke(nameof(HideEasterEgg), _easterEggSound.length);
+        }
+        else
+        {
+            Invoke(nameof(HideEasterEgg), 2f);
+        }
+    }
+
+    private void HideEasterEgg()
+    {
+        if (_easterEggImage != null)
+        {
+            _easterEggImage.gameObject.SetActive(false);
+        }
+        
+        _isEasterEggPlaying = false;
+        gameObject.SetActive(false);
     }
 }

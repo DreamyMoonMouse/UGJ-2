@@ -1830,9 +1830,9 @@ MonoBehaviour:
   _panelIntro: {fileID: 846733556}
   _panelEndWin: {fileID: 2058930333}
   _panelEndLose: {fileID: 2124910955}
-  _levelDuration: 30
+  _levelDuration: 174
   _debtAmount: -100000
-  _levelBGM: {fileID: 8300000, guid: c1140175f5e10e4479243fa23b8620cb, type: 3}
+  _levelBGM: {fileID: 8300000, guid: 72c8ba4f1681d3142a35f72d2c1e97dd, type: 3}
   _introMusic: {fileID: 8300000, guid: 292aa3efea14fc24c9eeb8a055e363de, type: 3}
   _ambientSound: {fileID: 833627840}
   _positiveColor: {r: 0, g: 1, b: 0, a: 1}

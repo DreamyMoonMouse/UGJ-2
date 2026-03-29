@@ -10,6 +10,9 @@ public class DragDropItem : MonoBehaviour
     [SerializeField] private Rigidbody2D itemRigidbody;
     [SerializeField] private float dragSmoothness = 10f;
 
+    [Header("Floating Text")]
+    [SerializeField] private FloatingText _floatingTextPrefab;
+
     private Mine mineController;
     private Camera mainCamera;
     private bool isDragging = false;
@@ -167,12 +170,29 @@ public class DragDropItem : MonoBehaviour
         if (isCollected) return;
         isCollected = true;
         
+        int reward = Mathf.FloorToInt(itemValue);
+        
         if (mineController != null)
         {
-            mineController.AddMoney(Mathf.FloorToInt(itemValue));
+            mineController.AddMoney(reward);
+        }
+        
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(reward);
         }
         
         Destroy(gameObject);
+    }
+
+    private void ShowFloatingText(int amount)
+    {
+        FloatingText text = Instantiate(_floatingTextPrefab, transform.position, Quaternion.identity);
+        
+        string textString = amount >= 0 ? $"+{amount:N0} ₽" : $"{amount:N0} ₽";
+        bool isPositive = amount >= 0;
+        
+        text.Initialize(textString, isPositive, transform.position);
     }
 
     private void OnDestroy()

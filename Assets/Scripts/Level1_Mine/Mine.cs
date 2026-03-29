@@ -94,15 +94,15 @@ public class Mine : MonoBehaviour
         }
     }
     
-    public bool IsGameActive()
-    {
-        return _isGameActive && !_isPaused;
-    }
-
     public void AddMoney(int amount)
     {
         _levelEarnings += amount;
         UpdateUI();
+    }
+    
+    public bool IsGameActive()
+    {
+        return _isGameActive && !_isPaused;
     }
 
     private void UpdateUI()
