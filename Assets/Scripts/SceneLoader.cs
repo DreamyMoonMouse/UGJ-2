@@ -37,15 +37,6 @@ public static class SceneLoader
         SceneManager.LoadScene(sceneName);
     }
 
-    public static void LoadGameOver()
-    {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        SceneManager.LoadScene("GameOver");
-    }
-
     public static void LoadVictory()
     {
         if (Audio.Instance != null)

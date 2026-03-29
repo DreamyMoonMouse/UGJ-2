@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: GameState
   m_EditorClassIdentifier: Assembly-CSharp::GameStateSO
   currentLevel: 1
-  currentMoney: 0
+  currentMoney: 1000
   debtAmount: 0
-  maxUnlockedLevel: 3
+  maxUnlockedLevel: 1
   selectedLevel: 1
   OnMoneyChanged:
     m_PersistentCalls:

@@ -10,6 +10,7 @@ public class LevelEndHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textFinalBalance;
     [SerializeField] private AudioClip _winSound;
     [SerializeField] private AudioClip _loseSound;
+    [SerializeField] private GameStateSO _gameState;
 
     private bool _isLevelEnded = false;
 
@@ -63,8 +64,10 @@ public class LevelEndHandler : MonoBehaviour
             Debug.Log("Economy instance не найден. Смотри сцену мэйнменю.");
         }
         
+        Economy.Instance.SetBalance(finalBalance);
         int result = Mathf.Max(50000, Mathf.FloorToInt(balance * 0.3f));
         expenses = Economy.Instance.CalculateExpenses(balance);
+        _gameState.currentMoney = finalBalance;
         
         _textSummary.text = $"Ура! Долг погашен!\nЗаработано за уровень: \n{balance:N0} ₽";
         _textExpenses.text = $"Ежемесячные платежи:\nКутёж по ресторанам: \n-{(result):N0} ₽" +

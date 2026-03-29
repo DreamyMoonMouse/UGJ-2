@@ -1016,7 +1016,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3396771835739914126, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3656432055987228405, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_Name
@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3656432055987228405, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4291610530800265620, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_Pivot.x
@@ -1124,11 +1124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6225608501201594873, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7842364560437054246, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8312736073981788093, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_RenderMode
@@ -1136,7 +1136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8546967760161744052, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1236,6 +1236,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &452831205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2087236916803580007, guid: 7ecc9740c8c5f41499f4d766d8f04ca4, type: 3}
+  m_PrefabInstance: {fileID: 334124081}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e12e60beec2a64abd5708cfcfa977f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &486529596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +1937,7 @@ MonoBehaviour:
   _textFinalBalance: {fileID: 1504001559}
   _winSound: {fileID: 8300000, guid: 94897159c575f4540885404c67989d17, type: 3}
   _loseSound: {fileID: 8300000, guid: cc226b2b84c37654386a553b28eae461, type: 3}
+  _gameState: {fileID: 11400000, guid: 020f3b89110d25340af79889fe31f619, type: 2}
 --- !u!114 &783568726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2681,6 +2693,14 @@ PrefabInstance:
     - target: {fileID: 4466810111622871211, guid: 7ed0c6b26c584f24cb9ae4b75604ad8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063964373427068400, guid: 7ed0c6b26c584f24cb9ae4b75604ad8f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452831205}
+    - target: {fileID: 5063964373427068400, guid: 7ed0c6b26c584f24cb9ae4b75604ad8f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
       objectReference: {fileID: 0}
     - target: {fileID: 7088705036073622510, guid: 7ed0c6b26c584f24cb9ae4b75604ad8f, type: 3}
       propertyPath: m_Name
@@ -4214,7 +4234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5521762326722925411, guid: cd03afa92149f6342bd8901414839aa4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7051168962533897046, guid: cd03afa92149f6342bd8901414839aa4, type: 3}
       propertyPath: m_LocalScale.x

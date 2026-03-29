@@ -33,7 +33,7 @@ public class EggsPlant : MonoBehaviour
     private float _timeRemaining;
     private int _startBalance;
     private int _levelEarnings = 0;
-    private int _finalBalance = 0;
+    private int _finalBalance;
     private bool _isGameActive = false;
     private bool _isPaused = false;
     private bool _isLevelEnded = false;
@@ -284,6 +284,7 @@ public class EggsPlant : MonoBehaviour
     private IEnumerator LoadEndSceneAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
+        _finalBalance = _gameState.currentMoney;
         
         if (_finalBalance > 0)
         {
