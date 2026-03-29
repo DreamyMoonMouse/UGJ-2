@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Figurine : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Figurine : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private float _moveSpeed = 2f;
     [SerializeField] private float _pushForce = 5f;
+    [SerializeField] private float _fadeDuration = 0.5f;
     [SerializeField] private AudioClip _pushSound;
     [SerializeField] private AudioClip _endZoneSound;
     [SerializeField] private AudioClip _shredderSound;
@@ -180,7 +182,7 @@ public class Figurine : MonoBehaviour
             _factory.AddMoney(reward);
         }
         
-        Destroy(gameObject, 3f);
+        StartCoroutine(FadeAndDestroy());
     }
 
     public void ProcessAtEnd()
@@ -225,5 +227,28 @@ public class Figurine : MonoBehaviour
         
             PushToShredder();
         }
+    }
+
+    private IEnumerator FadeAndDestroy()
+    {
+        yield return new WaitForSeconds(2.5f);
+        
+        if (_spriteRenderer != null)
+        {
+            float elapsed = 0f;
+            Color startColor = _spriteRenderer.color;
+            
+            while (elapsed < _fadeDuration)
+            {
+                elapsed += Time.deltaTime;
+                float alpha = Mathf.Lerp(1f, 0f, elapsed / _fadeDuration);
+                _spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, alpha);
+                yield return null;
+            }
+            
+            _spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
+        }
+        
+        Destroy(gameObject);
     }
 }
