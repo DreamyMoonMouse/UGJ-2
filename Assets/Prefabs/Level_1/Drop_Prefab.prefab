@@ -48,14 +48,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f224014fd74dceb4c95b00178edee75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDropItem
-  itemTypes:
-  - itemName: 
-    itemSprite: {fileID: 7931299053164605263, guid: 3f5dac66fb22e834990521e56b15cada, type: 3}
-    value: 1000
-    spawnChance: 0.9
   itemRigidbody: {fileID: 3333958168048448638}
   dragSmoothness: 10
   _floatingTextPrefab: {fileID: 4341076053612158216, guid: 337f0608609e8124c8ea796023b89fa7, type: 3}
+  _itemTypes:
+  - {fileID: 11400000, guid: 37c921c3cbea0d14ea120502d466a03a, type: 2}
+  - {fileID: 11400000, guid: c7daf72db81fe144fa72217d7c6ae615, type: 2}
+  - {fileID: 11400000, guid: 222694f85e76c7d4792003ea3db269ee, type: 2}
+  - {fileID: 11400000, guid: 0ceee9ba681f35d42879a9d51a17e21a, type: 2}
+  - {fileID: 11400000, guid: ab19be2d434a9f94f8fcd74f2d8aaa6c, type: 2}
+  - {fileID: 11400000, guid: 9f6285ad7d44bee48862602c0a8e5bd1, type: 2}
+  - {fileID: 11400000, guid: 8ec1531f9bb54e44492c9d29b752d475, type: 2}
+  - {fileID: 11400000, guid: 30e0691a73f5dd544927c7517227a607, type: 2}
+  - {fileID: 11400000, guid: dced81cc1785b034db7122ac91c910d4, type: 2}
+  - {fileID: 11400000, guid: a60e2856598e9d64b85a882490caca69, type: 2}
+  - {fileID: 11400000, guid: 6a9995e8d4867d243b8028e68ca69213, type: 2}
+  - {fileID: 11400000, guid: 096ed5157cb24144c8ebee854a556feb, type: 2}
+  - {fileID: 11400000, guid: 7c01965279fc0884bab7952ab970817c, type: 2}
+  - {fileID: 11400000, guid: f3d760540be00c847a611549fe6961af, type: 2}
+  - {fileID: 11400000, guid: c8db907705017244ea0c53ff8f6d185b, type: 2}
+  - {fileID: 11400000, guid: 77bc8f5e2a4d72742aecfa34cc844a45, type: 2}
 --- !u!225 &6082301326878488218
 CanvasGroup:
   m_ObjectHideFlags: 0

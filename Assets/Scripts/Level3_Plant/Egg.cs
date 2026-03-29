@@ -9,6 +9,7 @@ public class Egg : MonoBehaviour
     [SerializeField] private AudioClip _attractSound;
     [SerializeField] private PhysicsMaterial2D _rollPhysics;
     [SerializeField] private float _fadeDuration = 0.3f;
+    [SerializeField] private FloatingText _floatingTextPrefab;
 
     private EggsPlant _eggsPlant;
     private bool _isCaught = false;
@@ -115,6 +116,8 @@ public class Egg : MonoBehaviour
         _isCaught = true;
         _isProcessed = true;
         
+        int reward = Mathf.FloorToInt(_data.baseValue);
+        
         if (Audio.Instance != null && _catchSound != null)
         {
             Audio.Instance.PlaySfx(_catchSound);
@@ -122,7 +125,12 @@ public class Egg : MonoBehaviour
         
         if (_eggsPlant != null)
         {
-            _eggsPlant.AddMoney(Mathf.FloorToInt(_data.baseValue));
+            _eggsPlant.AddMoney(reward);
+        }
+        
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(reward);
         }
         
         StartCoroutine(FadeAndDestroy());
@@ -134,6 +142,8 @@ public class Egg : MonoBehaviour
         
         _isProcessed = true;
         
+        int penalty = -Mathf.FloorToInt(_data.baseValue / 2);
+        
         if (Audio.Instance != null && _breakSound != null)
         {
             Audio.Instance.PlaySfx(_breakSound);
@@ -141,7 +151,7 @@ public class Egg : MonoBehaviour
         
         if (_eggsPlant != null)
         {
-            _eggsPlant.AddMoney(-Mathf.FloorToInt(_data.baseValue / 2));
+            _eggsPlant.AddMoney(penalty);
         }
         
         if (_data != null && _data.spriteBroken != null && _spriteRenderer != null)
@@ -160,7 +170,22 @@ public class Egg : MonoBehaviour
             _rb.simulated = false;
         }
         
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(penalty);
+        }
+        
         StartCoroutine(FadeAndDestroy());
+    }
+
+    private void ShowFloatingText(int amount)
+    {
+        FloatingText text = Instantiate(_floatingTextPrefab, transform.position, Quaternion.identity);
+        
+        string textString = amount >= 0 ? $"+{amount:N0} ₽" : $"{amount:N0} ₽";
+        bool isPositive = amount >= 0;
+        
+        text.Initialize(textString, isPositive, transform.position);
     }
 
     private IEnumerator FadeAndDestroy()

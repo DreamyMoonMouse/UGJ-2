@@ -8,6 +8,8 @@ public class Audio : MonoBehaviour
     [SerializeField] private GameSettingsSO _settings;
     [SerializeField] private AudioSource _musicSource;
     [SerializeField] private AudioSource[] _sfxSources;
+    [SerializeField] private AudioSource _ambientSource;
+    [SerializeField] private AudioSource _loopSfxSource;
     [SerializeField] private int _maxSimultaneousSFX = 8;
     [SerializeField] private float _fadeDuration = 1f;
 
@@ -23,6 +25,30 @@ public class Audio : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            
+            if (_musicSource == null)
+            {
+                _musicSource = gameObject.AddComponent<AudioSource>();
+                _musicSource.playOnAwake = false;
+                _musicSource.loop = true;
+                _musicSource.spatialBlend = 0f;
+            }
+            
+            if (_ambientSource == null)
+            {
+                _ambientSource = gameObject.AddComponent<AudioSource>();
+                _ambientSource.playOnAwake = false;
+                _ambientSource.loop = true;
+                _ambientSource.spatialBlend = 0f;
+            }
+            
+            if (_loopSfxSource == null)
+            {
+                _loopSfxSource = gameObject.AddComponent<AudioSource>();
+                _loopSfxSource.playOnAwake = false;
+                _loopSfxSource.loop = true;
+                _loopSfxSource.spatialBlend = 0f;
+            }
             
             if (_sfxSources == null || _sfxSources.Length == 0)
             {
@@ -70,6 +96,16 @@ public class Audio : MonoBehaviour
                 }
             }
         }
+        
+        if (_loopSfxSource != null)
+        {
+            _loopSfxSource.volume = volume;
+        }
+        
+        if (_ambientSource != null)
+        {
+            _ambientSource.volume = volume * 0.5f;
+        }
     }
 
     public void PlayClick() 
@@ -88,6 +124,44 @@ public class Audio : MonoBehaviour
         if (source != null)
         {
             source.PlayOneShot(clip);
+        }
+    }
+
+    public void PlayAmbient(AudioClip clip)
+    {
+        if (_ambientSource != null && clip != null)
+        {
+            _ambientSource.Stop();
+            _ambientSource.clip = clip;
+            _ambientSource.volume = _settings.sfxVolume * 0.5f;
+            _ambientSource.Play();
+        }
+    }
+
+    public void StopAmbient()
+    {
+        if (_ambientSource != null)
+        {
+            _ambientSource.Stop();
+        }
+    }
+
+    public void PlaySfxLoop(AudioClip clip)
+    {
+        if (_loopSfxSource != null && clip != null)
+        {
+            _loopSfxSource.Stop();
+            _loopSfxSource.clip = clip;
+            _loopSfxSource.volume = _settings.sfxVolume;
+            _loopSfxSource.Play();
+        }
+    }
+
+    public void StopSfxLoop()
+    {
+        if (_loopSfxSource != null)
+        {
+            _loopSfxSource.Stop();
         }
     }
 
@@ -198,6 +272,9 @@ public class Audio : MonoBehaviour
                 }
             }
         }
+        
+        StopAmbient();
+        StopSfxLoop();
     }
 
     private void OnApplicationQuit()

@@ -4,63 +4,90 @@ using System.Collections;
 public class Spawner : MonoBehaviour
 {
     [Header("Настройки")]
-    [SerializeField] private GameObject orePrefab;
-    [SerializeField] private float minSpawnTime = 1f;
-    [SerializeField] private float maxSpawnTime = 2f;
-    [SerializeField] private int maxOresOnScreen = 5;
+    [SerializeField] private GameObject _itemPrefab;
+    [SerializeField] private ItemData[] _itemTypes;
+    [SerializeField] private float _minSpawnTime = 1f;
+    [SerializeField] private float _maxSpawnTime = 2f;
+    [SerializeField] private int _maxItemsOnScreen = 5;
 
     [Header("Зона спавна")]
-    [SerializeField] private float spawnAreaWidth = 10f;
-    [SerializeField] private float spawnAreaHeight = 6f;
-    [SerializeField] private Vector2 spawnAreaCenter = new Vector2(0, 0);
+    [SerializeField] private float _spawnAreaWidth = 10f;
+    [SerializeField] private float _spawnAreaHeight = 6f;
+    [SerializeField] private Vector2 _spawnAreaCenter = new Vector2(0, 0);
 
-    private Mine mineController;
-    private int currentOresOnScreen = 0;
+    private Mine _mineController;
+    private int _currentItemsOnScreen = 0;
 
     private void Start()
     {
-        mineController = FindObjectOfType<Mine>();
+        _mineController = FindObjectOfType<Mine>();
         StartCoroutine(SpawnLoop());
     }
 
     private IEnumerator SpawnLoop()
     {
-        while (mineController != null && mineController.IsGameActive())
+        while (_mineController != null && _mineController.IsGameActive())
         {
-            if (currentOresOnScreen < maxOresOnScreen)
+            if (_currentItemsOnScreen < _maxItemsOnScreen)
             {
                 Spawn();
             }
             
-            float spawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+            float spawnTime = Random.Range(_minSpawnTime, _maxSpawnTime);
             yield return new WaitForSeconds(spawnTime);
         }
     }
 
     private void Spawn()
     {
-        float spawnX = spawnAreaCenter.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
-        float spawnY = spawnAreaCenter.y + Random.Range(-spawnAreaHeight / 2, spawnAreaHeight / 2);
+        float spawnX = _spawnAreaCenter.x + Random.Range(-_spawnAreaWidth / 2, _spawnAreaWidth / 2);
+        float spawnY = _spawnAreaCenter.y + Random.Range(-_spawnAreaHeight / 2, _spawnAreaHeight / 2);
         Vector3 spawnPos = new Vector3(spawnX, spawnY, 0);
         
-        GameObject ore = Instantiate(orePrefab, spawnPos, Quaternion.identity);
-        currentOresOnScreen++;
+        GameObject item = Instantiate(_itemPrefab, spawnPos, Quaternion.identity);
+        _currentItemsOnScreen++;
         
-        Ore oreComponent = ore.GetComponent<Ore>();
+        DragDropItem itemComponent = item.GetComponent<DragDropItem>();
         
-        if (oreComponent != null)
+        if (itemComponent != null)
         {
-            oreComponent.SetSpawner(this);
+            ItemData data = GetRandomItemData();
+            itemComponent.Initialize(_mineController, data);
         }
     }
 
-    public void OnOreBroken()
+    private ItemData GetRandomItemData()
     {
-        currentOresOnScreen--;
+        if (_itemTypes == null || _itemTypes.Length == 0)
+        {
+            return null;
+        }
+
+        float random = Random.value;
+        float cumulativeChance = 0;
+
+        foreach (ItemData data in _itemTypes)
+        {
+            if (data == null) continue;
+
+            cumulativeChance += data.spawnChance;
+
+            if (random <= cumulativeChance)
+            {
+                return data;
+            }
+        }
+
+        return _itemTypes[0];
     }
 
-    public int GetCurrentOresCount()
+    public void OnItemBroken()
     {
-        return currentOresOnScreen;
+        _currentItemsOnScreen--;
+    }
+
+    public int GetCurrentItemsCount()
+    {
+        return _currentItemsOnScreen;
     }
 }

@@ -12,19 +12,23 @@ public class Figurine : MonoBehaviour
     [SerializeField] private AudioClip _pushSound;
     [SerializeField] private AudioClip _endZoneSound;
     [SerializeField] private AudioClip _shredderSound;
+    [SerializeField] private AudioClip _gooseEatSound;
+    [SerializeField] private FloatingText _floatingTextPrefab;
 
     private Factory _factory;
     private bool _isPushed = false;
     private bool _isProcessed = false;
-    private bool _isCracked = false;
     private bool _isDragging = false;
+    private bool _isBadItem = false;
+    private bool _isEdible = false;
     private float _value;
     private Rigidbody2D _rb;
     private Vector3 _moveDirection;
     private Collider2D _collider;
     private Camera _mainCamera;
 
-    public bool IsCracked => _isCracked;
+    public bool IsBadItem => _isBadItem;
+    public bool IsEdible => _isEdible;
     public float Value => _value;
 
     private void Awake()
@@ -37,6 +41,8 @@ public class Figurine : MonoBehaviour
         if (_data != null)
         {
             _value = _data.baseValue;
+            _isBadItem = _data.isBadItem;
+            _isEdible = _data.isEdible;
         }
         
         if (_rb != null)
@@ -46,29 +52,40 @@ public class Figurine : MonoBehaviour
         }
     }
 
-    public void Initialize(Factory factory, bool isCracked, FigurineData data) 
+    public void Initialize(Factory factory, FigurineData data, bool isBadVariant = false) 
     {
         _factory = factory;
-        _isCracked = isCracked;
         _data = data; 
     
         if (_data != null)
         {
             _value = _data.baseValue;
+            _isBadItem = _data.isBadItem || isBadVariant;
+            _isEdible = _data.isEdible;
         }
     
-        if (_spriteRenderer != null)
+        if (_spriteRenderer != null && _data != null)
         {
-            if (isCracked && _data != null && _data.spriteCrackedVariants != null && _data.spriteCrackedVariants.Length > 0)
+            if (_isBadItem)
             {
-                _spriteRenderer.sprite = _data.spriteCrackedVariants[Random.Range(0, _data.spriteCrackedVariants.Length)];
+                if (_data.spriteBad != null)
+                {
+                    _spriteRenderer.sprite = _data.spriteBad;
+                }
+                else if (_data.spriteBadVariants != null && _data.spriteBadVariants.Length > 0)
+                {
+                    _spriteRenderer.sprite = _data.spriteBadVariants[Random.Range(0, _data.spriteBadVariants.Length)];
+                }
             }
-            else if (_data != null && _data.spriteGood != null)
+            else
             {
-                _spriteRenderer.sprite = _data.spriteGood;
+                if (_data.spriteGood != null)
+                {
+                    _spriteRenderer.sprite = _data.spriteGood;
+                }
             }
         
-            if (_data != null && _data.canHaveColor)
+            if (_data.canHaveColor)
             {
                 Color randomColor = new Color(
                     Random.value,
@@ -171,15 +188,34 @@ public class Figurine : MonoBehaviour
             _rb.AddForce(Vector2.down * _pushForce, ForceMode2D.Impulse);
         }
         
-        if (Audio.Instance != null && _pushSound != null)
+        if (Audio.Instance != null && _shredderSound != null)
         {
-            Audio.Instance.PlaySfx(_pushSound);
+            Audio.Instance.PlaySfx(_shredderSound);
         }
         
-        int reward = _isCracked ? 50 : -50;
+        int reward = 0;
+        
+        if (_isBadItem)
+        {
+            reward = 50;
+        }
+        else if (_isEdible)
+        {
+            reward = -25;
+        }
+        else
+        {
+            reward = -50;
+        }
+        
         if (_factory != null)
         {
             _factory.AddMoney(reward);
+        }
+        
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(reward);
         }
         
         StartCoroutine(FadeAndDestroy());
@@ -195,10 +231,55 @@ public class Figurine : MonoBehaviour
             Audio.Instance.PlaySfx(_endZoneSound);
         }
         
-        int reward = _isCracked ? -100 : 100;
+        int reward = 0;
+        
+        if (_isBadItem)
+        {
+            reward = -Mathf.FloorToInt(_value / 2);
+        }
+        else if (_isEdible)
+        {
+            reward = -Mathf.FloorToInt(_value);
+        }
+        else
+        {
+            reward = Mathf.FloorToInt(_value);
+        }
+        
         if (_factory != null)
         {
             _factory.AddMoney(reward);
+        }
+        
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(reward);
+        }
+        
+        Destroy(gameObject);
+    }
+
+    public void FeedToGoose()
+    {
+        if (_isProcessed || !_isEdible) return;
+        
+        _isProcessed = true;
+        
+        int reward = Mathf.FloorToInt(_value * 5f);
+        
+        if (Audio.Instance != null && _gooseEatSound != null)
+        {
+            Audio.Instance.PlaySfx(_gooseEatSound);
+        }
+        
+        if (_factory != null)
+        {
+            _factory.AddMoney(reward);
+        }
+        
+        if (_floatingTextPrefab != null)
+        {
+            ShowFloatingText(reward);
         }
         
         Destroy(gameObject);
@@ -227,6 +308,24 @@ public class Figurine : MonoBehaviour
         
             PushToShredder();
         }
+
+        if (other.CompareTag("GooseFeedingZone"))
+        {
+            if (_isEdible)
+            {
+                FeedToGoose();
+            }
+        }
+    }
+
+    private void ShowFloatingText(int amount)
+    {
+        FloatingText text = Instantiate(_floatingTextPrefab, transform.position, Quaternion.identity);
+        
+        string textString = amount >= 0 ? $"+{amount:N0} ₽" : $"{amount:N0} ₽";
+        bool isPositive = amount >= 0;
+        
+        text.Initialize(textString, isPositive, transform.position);
     }
 
     private IEnumerator FadeAndDestroy()

@@ -112,7 +112,7 @@ public class Ore : MonoBehaviour
             
             if (dragDrop != null)
             {
-                dragDrop.SetMineController(_mineController);
+                dragDrop.Initialize(_mineController, null);
             }
         }
     }
@@ -126,7 +126,7 @@ public class Ore : MonoBehaviour
     {
         if (_spawner != null)
         {
-            _spawner.OnOreBroken();
+            _spawner.OnItemBroken();
         }
     }
 }

@@ -139,9 +139,12 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 2218788806465609249}
   _moveSpeed: 2
   _pushForce: 5
+  _fadeDuration: 0.5
   _pushSound: {fileID: 8300000, guid: ed6eb5276b5f082459a408cd70f22c5e, type: 3}
   _endZoneSound: {fileID: 8300000, guid: dda706918dc259e499a95d7b940259dd, type: 3}
   _shredderSound: {fileID: 8300000, guid: ed6eb5276b5f082459a408cd70f22c5e, type: 3}
+  _gooseEatSound: {fileID: 8300000, guid: 894a35a4de9fd6b49af2f42ac6eefe7b, type: 3}
+  _floatingTextPrefab: {fileID: 4341076053612158216, guid: 337f0608609e8124c8ea796023b89fa7, type: 3}
 --- !u!60 &5180638418848544740
 PolygonCollider2D:
   m_ObjectHideFlags: 0

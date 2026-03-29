@@ -3,9 +3,6 @@ using UnityEngine.InputSystem;
 
 public class DragDropItem : MonoBehaviour
 {
-    [Header("Типы предметов")]
-    [SerializeField] private ItemData[] itemTypes;
-
     [Header("Физика предмета")]
     [SerializeField] private Rigidbody2D itemRigidbody;
     [SerializeField] private float dragSmoothness = 10f;
@@ -13,27 +10,25 @@ public class DragDropItem : MonoBehaviour
     [Header("Floating Text")]
     [SerializeField] private FloatingText _floatingTextPrefab;
 
-    private Mine mineController;
-    private Camera mainCamera;
-    private bool isDragging = false;
-    private bool isCollected = false;
-    private float itemValue = 100;
-    private SpriteRenderer spriteRenderer;
-    private bool isMouseOver = false;
+    [Header("Типы предметов (для Ore)")]
+    [SerializeField] private ItemData[] _itemTypes;
 
-    [System.Serializable]
-    public class ItemData
-    {
-        public string itemName;
-        public Sprite itemSprite;
-        public float value;
-        public float spawnChance;
-    }
+    [Header("Данные предмета")]
+    private ItemData _itemData;
+    private float _itemValue;
+    private float _itemWeight;
+
+    private Mine _mineController;
+    private Camera _mainCamera;
+    private bool _isDragging = false;
+    private bool _isCollected = false;
+    private SpriteRenderer _spriteRenderer;
+    private bool _isMouseOver = false;
 
     private void Awake()
     {
-        mainCamera = Camera.main;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _mainCamera = Camera.main;
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         
         if (itemRigidbody == null)
         {
@@ -49,13 +44,17 @@ public class DragDropItem : MonoBehaviour
 
     private void Start()
     {
-        RandomizeItemType();
         SetupCollider();
+        
+        if (_itemData == null && _itemTypes != null && _itemTypes.Length > 0)
+        {
+            RandomizeItemType();
+        }
     }
 
     private void SetupCollider()
     {
-        if (spriteRenderer != null && spriteRenderer.sprite != null)
+        if (_spriteRenderer != null && _spriteRenderer.sprite != null)
         {
             CircleCollider2D collider = GetComponent<CircleCollider2D>();
             if (collider == null)
@@ -63,63 +62,47 @@ public class DragDropItem : MonoBehaviour
                 collider = gameObject.AddComponent<CircleCollider2D>();
             }
             
-            float spriteSize = Mathf.Max(spriteRenderer.sprite.bounds.size.x, spriteRenderer.sprite.bounds.size.y);
+            float spriteSize = Mathf.Max(_spriteRenderer.sprite.bounds.size.x, _spriteRenderer.sprite.bounds.size.y);
             collider.radius = spriteSize / 2f;
-            collider.offset = spriteRenderer.sprite.bounds.center;
+            collider.offset = _spriteRenderer.sprite.bounds.center;
         }
     }
 
-    private void Update()
+    public void Initialize(Mine mineController, ItemData data)
     {
-        Vector2 mousePos = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-        if (hit.collider != null && hit.collider.gameObject == gameObject)
+        _mineController = mineController;
+        _itemData = data;
+        
+        if (_itemData != null)
         {
-            if (!isMouseOver)
+            _itemValue = _itemData.value;
+            _itemWeight = _itemData.weight;
+            
+            if (_spriteRenderer != null && _itemData.itemSprite != null)
             {
-                isMouseOver = true;
+                _spriteRenderer.sprite = _itemData.itemSprite;
             }
-
-            if (Mouse.current.leftButton.wasPressedThisFrame && !isDragging)
+            
+            if (itemRigidbody != null)
             {
-                StartDrag();
+                itemRigidbody.mass = _itemData.weight;
             }
         }
-        else
-        {
-            isMouseOver = false;
-        }
-
-        if (isDragging && itemRigidbody != null)
-        {
-            Vector2 targetPos = mousePos;
-            itemRigidbody.linearVelocity = (targetPos - (Vector2)transform.position) * dragSmoothness;
-        }
-
-        if (isDragging && Mouse.current.leftButton.wasReleasedThisFrame)
-        {
-            StopDrag();
-        }
-    }
-
-    public void SetMineController(Mine controller)
-    {
-        mineController = controller;
     }
 
     private void RandomizeItemType()
     {
-        if (itemTypes == null || itemTypes.Length == 0)
+        if (_itemTypes == null || _itemTypes.Length == 0)
         {
-            itemValue = 100;
+            _itemValue = 100;
+            _itemWeight = 1f;
             return;
         }
 
         float random = Random.value;
         float cumulativeChance = 0;
 
-        foreach (ItemData item in itemTypes)
+        foreach (ItemData item in _itemTypes)
         {
             cumulativeChance += item.spawnChance;
             
@@ -130,22 +113,62 @@ public class DragDropItem : MonoBehaviour
             }
         }
 
-        ApplyItemData(itemTypes[0]);
+        ApplyItemData(_itemTypes[0]);
     }
 
     private void ApplyItemData(ItemData data)
     {
-        itemValue = data.value;
+        _itemValue = data.value;
+        _itemWeight = data.weight;
         
-        if (spriteRenderer != null && data.itemSprite != null)
+        if (_spriteRenderer != null && data.itemSprite != null)
         {
-            spriteRenderer.sprite = data.itemSprite;
+            _spriteRenderer.sprite = data.itemSprite;
+        }
+        
+        if (itemRigidbody != null)
+        {
+            itemRigidbody.mass = data.weight;
+        }
+    }
+
+    private void Update()
+    {
+        Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+        if (hit.collider != null && hit.collider.gameObject == gameObject)
+        {
+            if (!_isMouseOver)
+            {
+                _isMouseOver = true;
+            }
+
+            if (Mouse.current.leftButton.wasPressedThisFrame && !_isDragging)
+            {
+                StartDrag();
+            }
+        }
+        else
+        {
+            _isMouseOver = false;
+        }
+
+        if (_isDragging && itemRigidbody != null)
+        {
+            Vector2 targetPos = mousePos;
+            itemRigidbody.linearVelocity = (targetPos - (Vector2)transform.position) * dragSmoothness;
+        }
+
+        if (_isDragging && Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            StopDrag();
         }
     }
 
     private void StartDrag()
     {
-        isDragging = true;
+        _isDragging = true;
         
         if (itemRigidbody != null)
         {
@@ -157,7 +180,7 @@ public class DragDropItem : MonoBehaviour
 
     private void StopDrag()
     {
-        isDragging = false;
+        _isDragging = false;
         
         if (itemRigidbody != null)
         {
@@ -167,14 +190,14 @@ public class DragDropItem : MonoBehaviour
 
     public void Collect()
     {
-        if (isCollected) return;
-        isCollected = true;
+        if (_isCollected) return;
+        _isCollected = true;
         
-        int reward = Mathf.FloorToInt(itemValue);
+        int reward = Mathf.FloorToInt(_itemValue);
         
-        if (mineController != null)
+        if (_mineController != null)
         {
-            mineController.AddMoney(reward);
+            _mineController.AddMoney(reward);
         }
         
         if (_floatingTextPrefab != null)
@@ -197,9 +220,9 @@ public class DragDropItem : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (!isCollected && mineController != null && !isDragging)
+        if (!_isCollected && _mineController != null && !_isDragging)
         {
-            mineController.AddMoney(Mathf.FloorToInt(itemValue));
+            _mineController.AddMoney(Mathf.FloorToInt(_itemValue));
         }
     }
 }

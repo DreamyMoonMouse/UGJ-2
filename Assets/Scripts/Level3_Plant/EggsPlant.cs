@@ -33,6 +33,7 @@ public class EggsPlant : MonoBehaviour
     private float _timeRemaining;
     private int _startBalance;
     private int _levelEarnings = 0;
+    private int _finalBalance = 0;
     private bool _isGameActive = false;
     private bool _isPaused = false;
     private bool _isLevelEnded = false;
@@ -198,12 +199,12 @@ public class EggsPlant : MonoBehaviour
             gooseGun.StopGame();
         }
         
-        int finalBalance = _startBalance + _levelEarnings;
-        bool isVictory = finalBalance >= 0;
+        _finalBalance = _startBalance + _levelEarnings;
+        bool isVictory = _finalBalance >= 0;
         
         if (_levelEndHandler != null)
         {
-            _levelEndHandler.EndLevel(isVictory, _levelEarnings, finalBalance);
+            _levelEndHandler.EndLevel(isVictory, _levelEarnings, _finalBalance);
         }
         
         if (isVictory && Economy.Instance != null)
@@ -211,8 +212,6 @@ public class EggsPlant : MonoBehaviour
             Economy.Instance.UnlockLevel(1);
             _gameState.currentLevel = 1;
         }
-        
-        StartCoroutine(LoadEndSceneAfterDelay(2f, finalBalance));
     }
 
     public void OnNextLevelClicked()
@@ -231,7 +230,7 @@ public class EggsPlant : MonoBehaviour
             Fade.Instance.FadeIn();
         }
     
-        StartCoroutine(LoadLetterAfterDelay(1f));
+        StartCoroutine(LoadEndSceneAfterDelay(1f));
     }
 
     public void OnRetryClicked()
@@ -282,11 +281,11 @@ public class EggsPlant : MonoBehaviour
         StartCoroutine(LoadMainMenuAfterDelay(1f));
     }
 
-    private IEnumerator LoadEndSceneAfterDelay(float delay, int finalBalance)
+    private IEnumerator LoadEndSceneAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
         
-        if (finalBalance > 0)
+        if (_finalBalance > 0)
         {
             SceneLoader.LoadVictory();
         }

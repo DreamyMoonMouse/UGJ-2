@@ -63,13 +63,13 @@ public class LevelEndHandler : MonoBehaviour
             Debug.Log("Economy instance не найден. Смотри сцену мэйнменю.");
         }
         
-        int result = Mathf.Max(5000, Mathf.FloorToInt(balance * 0.3f));
+        int result = Mathf.Max(50000, Mathf.FloorToInt(balance * 0.3f));
         expenses = Economy.Instance.CalculateExpenses(balance);
         
         _textSummary.text = $"Ура! Долг погашен!\nЗаработано за уровень: \n{balance:N0} ₽";
-        _textExpenses.text = $"Ежемесячные платежи:\nЕда: -{(result):N0} ₽" +
-                             $"\nАренда: -{(result):N0} ₽" +
-                             $"\nКоммуналка: -{(result):N0} ₽" +
+        _textExpenses.text = $"Ежемесячные платежи:\nКутеж по рестаранам: -{(result):N0} ₽" +
+                             $"\nАренда презеденского люкса: -{(result):N0} ₽" +
+                             $"\nVIP услуги: -{(result):N0} ₽" +
                              $"\nИтого: -{expenses:N0} ₽";
         _textFinalBalance.text = $"Итоговый баланс: {finalBalance:N0} ₽";
     }

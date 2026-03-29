@@ -139,6 +139,7 @@ MonoBehaviour:
   _attractSound: {fileID: 0}
   _rollPhysics: {fileID: 6200000, guid: 8c8fc901d1f2e4b418ee71580eaed48b, type: 2}
   _fadeDuration: 0.3
+  _floatingTextPrefab: {fileID: 4341076053612158216, guid: 337f0608609e8124c8ea796023b89fa7, type: 3}
 --- !u!70 &3595878511526308919
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -58,9 +58,9 @@ public class Economy : MonoBehaviour
 
     public int CalculateExpenses(int income)
     {
-        int foodExpense = Mathf.Max(5000, Mathf.FloorToInt(income * 0.3f));
-        int rentExpense = Mathf.Max(5000, Mathf.FloorToInt(income * 0.3f));
-        int utilityExpense = Mathf.Max(5000, Mathf.FloorToInt(income * 0.3f));
+        int foodExpense = Mathf.Max(50000, Mathf.FloorToInt(income * 0.3f));
+        int rentExpense = Mathf.Max(50000, Mathf.FloorToInt(income * 0.3f));
+        int utilityExpense = Mathf.Max(50000, Mathf.FloorToInt(income * 0.3f));
         
         return foodExpense + rentExpense + utilityExpense;
     }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8542891c62a3247afae2f51b051e7f, type: 3}
+  m_Name: 3 Red Vase2
+  m_EditorClassIdentifier: Assembly-CSharp::FigurineData
+  figurineName: 3 Red Vase2
+  baseValue: 100
+  spawnChance: 0.11
+  spriteGood: {fileID: 4995751240380439420, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  spriteBadVariants:
+  - {fileID: 2433958484559476887, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  - {fileID: 1512111373836093638, guid: e6c6d0ad27640d849a333e930ca344f7, type: 3}
+  spriteBad: {fileID: 0}
+  isBadItem: 0
+  isEdible: 0
+  canHaveColor: 0
+  minAlpha: 0.9
+  maxAlpha: 1

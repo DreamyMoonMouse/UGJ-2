@@ -8,7 +8,7 @@ public class FigurineSpawner : MonoBehaviour
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private float _minSpawnInterval = 0.8f;
     [SerializeField] private float _maxSpawnInterval = 1.5f;
-    [SerializeField] private float _crackedChance = 0.4f;
+    [SerializeField] private float _badVariantChance = 0.3f;
 
     private Factory _factory;
     private bool _isSpawning = false;
@@ -48,15 +48,20 @@ public class FigurineSpawner : MonoBehaviour
     
         FigurineData data = GetRandomFigurineData();
     
-        Debug.Log($"Spawning: {data.figurineName}");  
-    
-        bool isCracked = Random.value < _crackedChance;
+        if (data == null) return;
+        
+        bool isBadVariant = false;
+        
+        if (!data.isBadItem && data.spriteBadVariants != null && data.spriteBadVariants.Length > 0)
+        {
+            isBadVariant = Random.value < _badVariantChance;
+        }
     
         Figurine figurine = Instantiate(_figurinePrefab, _spawnPoint.position, Quaternion.identity);
     
         if (figurine != null)
         {
-            figurine.Initialize(_factory, isCracked, data);  
+            figurine.Initialize(_factory, data, isBadVariant);
         }
     }
 
@@ -65,14 +70,6 @@ public class FigurineSpawner : MonoBehaviour
         if (_figurineTypes == null || _figurineTypes.Length == 0)
         {
             return null;
-        }
-        
-        for (int i = 0; i < _figurineTypes.Length; i++)
-        {
-            if (_figurineTypes[i] == null)
-            {
-                Debug.LogWarning($"Element {i} is NULL!");
-            }
         }
     
         float random = Random.value;
@@ -86,7 +83,6 @@ public class FigurineSpawner : MonoBehaviour
         
             if (random <= cumulativeChance)
             {
-                Debug.Log($"Selected: {data.figurineName} (random={random:F2}, cumulative={cumulativeChance:F2})");
                 return data;
             }
         }
