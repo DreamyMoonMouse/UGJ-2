@@ -1034,6 +1034,7 @@ MonoBehaviour:
   _textFinalBalance: {fileID: 1655734583}
   _winSound: {fileID: 8300000, guid: 94897159c575f4540885404c67989d17, type: 3}
   _loseSound: {fileID: 8300000, guid: cc226b2b84c37654386a553b28eae461, type: 3}
+  _gameState: {fileID: 11400000, guid: 020f3b89110d25340af79889fe31f619, type: 2}
 --- !u!1 &280068756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1723623831366780275, guid: 43f92d3e56927604193af107ac2f2e82, type: 3}

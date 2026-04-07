@@ -8,6 +8,7 @@ public static class SceneLoader
         {
             Audio.Instance.FadeOutMusic(1f);
         }
+        
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -17,7 +18,8 @@ public static class SceneLoader
         {
             Audio.Instance.FadeOutMusic(1f);
         }
-        SceneManager.LoadScene("Letter_Level_1");
+        
+        SceneManager.LoadScene("Letter");
     }
 
     public static void LoadLevel(int levelNumber)
