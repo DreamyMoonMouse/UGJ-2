@@ -7,6 +7,7 @@ public class Wallet : MonoBehaviour
     
     public event Action<int> OnChanged;
     public int Balance => _balance;
+    public bool CanAfford(int amount) => _balance >= amount;
     
     public void Add(int amount) 
     { 
