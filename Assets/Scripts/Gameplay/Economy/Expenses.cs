@@ -1,11 +1,14 @@
-using System;
 using UnityEngine;
 
-public class ExpenseCalculator : MonoBehaviour
+public class Expenses : MonoBehaviour
 {
+    [SerializeField] private int _minExpensePerCategory = 50000;
+    [SerializeField] private float _expenseRate = 0.3f;
+    [SerializeField] private int _expenseCategories = 3;
+    
     public int Calculate(int income)
     {
-        int expense = Mathf.Max(50000, Mathf.FloorToInt(income * 0.3f));
-        return expense * 3; 
+        int expensePerCategory = Mathf.Max(_minExpensePerCategory, Mathf.FloorToInt(income * _expenseRate));
+        return expensePerCategory * _expenseCategories;
     }
 }

@@ -3,9 +3,9 @@ using UnityEngine.Events;
 
 public class VictoryCondition : MonoBehaviour
 {
-    [SerializeField] private int _targetAmount;
     [SerializeField] private Wallet _wallet;
     [SerializeField] private Debt _debt;
+    [SerializeField] private int _targetAmount;
     
     public UnityEvent<bool> OnConditionChecked;
     
