@@ -1,100 +1,153 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 
-public class LetterReader : MonoBehaviour
+public class VictoryUI : MonoBehaviour
 {
-    [SerializeField] private LetterContent _content;
-    [SerializeField] private LetterAnimator _animator;
-    [SerializeField] private LetterUI _ui;
-    [SerializeField] private GameStateSO _gameState;
+    [Header("Envelope")]
+    [SerializeField] private Image _envelopeClosed;
+    [SerializeField] private Image _envelopeOpen;
+    [SerializeField] private Image _paper;
     
-    private LetterTextSO _currentLetter;
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI _creditsText;
+    [SerializeField] private string[] _creditsLines;
     
-    public void StartReading()
+    [Header("Animation")]
+    [SerializeField] private float _fadeDuration = 1f;
+    [SerializeField] private float _scaleDuration = 1f;
+    [SerializeField] private float _typingSpeed = 0.03f;
+    [SerializeField] private float _startDelay = 1f;
+    [SerializeField] private float _envelopeOpenDelay = 0.5f;
+    
+    [Header("Audio")]
+    [SerializeField] private AudioClip _envelopeOpenSound;
+    [SerializeField] private AudioClip _paperAppearSound;
+    [SerializeField] private AudioClip _typingSound;
+    
+    private void Start()
     {
-        _currentLetter = _content.GetCurrentLetter();
-        if (_currentLetter == null) return;
-        
-        StartCoroutine(ReadSequence());
+        Initialize();
+        Invoke(nameof(StartSequence), _startDelay);
     }
     
-    private IEnumerator ReadSequence()
+    private void Initialize()
     {
-        _ui.Initialize();
+        _envelopeClosed.gameObject.SetActive(true);
+        _envelopeClosed.color = new Color(1, 1, 1, 1);
         
-        yield return ShowEnvelope();
-        yield return ShowLetter1();
+        _envelopeOpen.gameObject.SetActive(true);
+        _envelopeOpen.color = new Color(1, 1, 1, 0);
         
-        if (_currentLetter.hasRefuseButton)
+        _paper.gameObject.SetActive(false);
+        _paper.color = new Color(1, 1, 1, 0);
+        _paper.rectTransform.localScale = Vector3.zero;
+        
+        _creditsText.text = "";
+        _creditsText.color = new Color(1, 1, 1, 0);
+    }
+    
+    private void StartSequence() => StartCoroutine(PlayOpenEnvelopeSequence());
+    
+    private IEnumerator PlayOpenEnvelopeSequence()
+    {
+        _envelopeOpen.gameObject.SetActive(true);
+        _envelopeOpen.color = new Color(1, 1, 1, 0);
+        
+        yield return RunParallel(
+            FadeAlpha(_envelopeClosed, 1, 0, _fadeDuration),
+            FadeAlpha(_envelopeOpen, 0, 1, _fadeDuration)
+        );
+        
+        Audio.Instance?.PlaySfx(_envelopeOpenSound);
+        yield return new WaitForSeconds(_envelopeOpenDelay);
+        
+        _envelopeOpen.gameObject.SetActive(false);
+        _paper.gameObject.SetActive(true);
+        
+        Audio.Instance?.PlaySfx(_paperAppearSound);
+        
+        yield return RunParallel(
+            FadeAlpha(_envelopeOpen, 1, 0, _fadeDuration),
+            ScaleAnimation(_paper.rectTransform, Vector3.one, _scaleDuration),
+            FadeAlpha(_paper, 0, 1, _fadeDuration)
+        );
+        
+        _creditsText.color = new Color(1, 1, 1, 1);
+        _creditsText.text = "";
+        
+        yield return TypeCredits();
+    }
+    
+    private IEnumerator TypeCredits()
+    {
+        string fullText = string.Join("\n", _creditsLines);
+        
+        Audio.Instance?.PlaySfxLoop(_typingSound);
+        
+        foreach (char c in fullText)
         {
-            _ui.ShowRefuseButton(true);
+            _creditsText.text += c;
+            yield return new WaitForSeconds(_typingSpeed);
         }
         
-        yield return WaitForAccept();
+        Audio.Instance?.StopSfxLoop();
+    }
+    
+    private IEnumerator FadeAlpha(Image target, float from, float to, float duration)
+    {
+        if (target == null) yield break;
         
-        if (_gameState.currentStage >= 2)
+        float elapsed = 0;
+        Color originalColor = target.color;
+        
+        while (elapsed < duration)
         {
-            yield return ShowLetter2();
+            elapsed += Time.deltaTime;
+            float t = Mathf.SmoothStep(0, 1, elapsed / duration);
+            target.color = new Color(originalColor.r, originalColor.g, originalColor.b, Mathf.Lerp(from, to, t));
+            yield return null;
         }
         
-        yield return ShowStartWorkButton();
+        target.color = new Color(originalColor.r, originalColor.g, originalColor.b, to);
     }
     
-    private IEnumerator ShowEnvelope()
+    private IEnumerator ScaleAnimation(RectTransform targetRect, Vector3 targetScale, float duration)
     {
-        yield return _animator.FadeAlpha(_ui.EnvelopeClosed, 0, 1);
+        if (targetRect == null) yield break;
+        
+        float elapsed = 0;
+        Vector3 startScale = targetRect.localScale;
+        
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = 1 - Mathf.Pow(1 - (elapsed / duration), 3);
+            targetRect.localScale = Vector3.Lerp(startScale, targetScale, t);
+            yield return null;
+        }
+        
+        targetRect.localScale = targetScale;
     }
     
-    private IEnumerator ShowLetter1()
+    private IEnumerator RunParallel(params IEnumerator[] coroutines)
     {
-        _ui.EnvelopeClosed.gameObject.SetActive(false);
-        _ui.EnvelopeOpen.gameObject.SetActive(true);
+        var running = new System.Collections.Generic.List<bool>();
         
-        yield return _animator.FadeAlpha(_ui.EnvelopeOpen, 0, 1);
+        foreach (var coro in coroutines)
+        {
+            running.Add(true);
+            StartCoroutine(RunAndMark(coro, running, running.Count - 1));
+        }
         
-        _ui.PanelLetter1.SetActive(true);
-        yield return _animator.ScaleAnimation(_ui.Paper1.rectTransform, _ui.Paper1InitialScale);
-        yield return _animator.FadeAlpha(_ui.Paper1, 0, 1);
-        
-        yield return _animator.FadeAlphaUI(_ui.TextTitle1, 0, 1);
-        yield return _animator.TypeText(_ui.TextContent1, _currentLetter.content1);
+        while (running.Contains(true))
+            yield return null;
     }
     
-    private IEnumerator ShowLetter2()
+    private IEnumerator RunAndMark(IEnumerator coroutine, System.Collections.Generic.List<bool> running, int index)
     {
-        _ui.ShowLetter2();
-        yield return _animator.ScaleAnimation(_ui.Paper2.rectTransform, _ui.Paper2InitialScale);
-        yield return _animator.FadeAlpha(_ui.Paper2, 0, 1);
-        
-        yield return _animator.FadeAlphaUI(_ui.TextTitle2, 0, 1);
-        yield return _animator.TypeText(_ui.TextContent2, _currentLetter.content2);
-        
-        _ui.ShowStamp();
-    }
-    
-    private IEnumerator WaitForAccept()
-    {
-        _ui.ButtonAccept.gameObject.SetActive(true);
-        
-        bool accepted = false;
-        _ui.ButtonAccept.onClick.AddListener(() => accepted = true);
-        
-        yield return new WaitUntil(() => accepted);
-        
-        _ui.ButtonAccept.onClick.RemoveAllListeners();
-    }
-    
-    private IEnumerator ShowStartWorkButton()
-    {
-        _ui.ShowStartWorkButton();
-        
-        bool started = false;
-        _ui.ButtonStartWork.onClick.AddListener(() => started = true);
-        
-        yield return new WaitUntil(() => started);
-        
-        _ui.ButtonStartWork.onClick.RemoveAllListeners();
-        
-        SceneLoader.LoadLevel(_currentLetter.targetLevel);
+        yield return StartCoroutine(coroutine);
+        running[index] = false;
     }
 }
