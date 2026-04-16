@@ -1,35 +1,14 @@
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public static class SceneLoader
 {
-    public static void LoadMainMenu()
+    public static void LoadMainMenu() => SceneManager.LoadScene("MainMenu");
+    public static void LoadLetterScene(int level) => SceneManager.LoadScene("Letter");
+    public static void LoadLevel(int level)
     {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    public static void LoadLetterScene(int level = 1)
-    {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        
-        SceneManager.LoadScene("Letter");
-    }
-
-    public static void LoadLevel(int levelNumber)
-    {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        
-        string sceneName = levelNumber switch
+        string sceneName = level switch
         {
             1 => "Level1_Mine",
             2 => "Level2_Factory",
@@ -38,22 +17,14 @@ public static class SceneLoader
         };
         SceneManager.LoadScene(sceneName);
     }
-
-    public static void LoadVictory()
+    
+    public static void LoadVictory() => SceneManager.LoadScene("Victory");
+    public static void LoadLoseVictory() => SceneManager.LoadScene("LoseVictory");
+    public static void ReloadCurrentScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    
+    public static IEnumerator LoadWithFade(SceneTransition transition, string sceneName)
     {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        SceneManager.LoadScene("Victory");
-    }
-
-    public static void LoadLoseVictory()
-    {
-        if (Audio.Instance != null)
-        {
-            Audio.Instance.FadeOutMusic(1f);
-        }
-        SceneManager.LoadScene("LoseVictory");
+        yield return transition.FadeIn();
+        SceneManager.LoadScene(sceneName);
     }
 }
