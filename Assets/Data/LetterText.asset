@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1795bea0e3b1bf54ba0904ee3ee6d06a, type: 3}
-  m_Name: Event_LevelComplete
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventSO
-  onInvoke:
-    m_PersistentCalls:
-      m_Calls: []
+  m_Script: {fileID: 11500000, guid: 4747c3c6703b3cd488ce203e4a697771, type: 3}
+  m_Name: LetterText
+  m_EditorClassIdentifier: Assembly-CSharp::LetterTextSO
+  title1: 
+  content1: 
+  title2: 
+  content2: 
+  title3: 
+  content3: 
+  hasRefuseButton: 0
+  targetLevel: 0

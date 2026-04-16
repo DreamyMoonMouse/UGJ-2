@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1795bea0e3b1bf54ba0904ee3ee6d06a, type: 3}
-  m_Name: Event_ReturnToMenu
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventSO
-  onInvoke:
-    m_PersistentCalls:
-      m_Calls: []
+  m_Script: {fileID: 11500000, guid: 8e46ff1f21b50254bbee8dbbca149a5b, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: Assembly-CSharp::LevelConfigSO
+  duration: 0
+  debtAmount: 0
+  targetBalance: 0
+  music: {fileID: 0}
+  type: 0
