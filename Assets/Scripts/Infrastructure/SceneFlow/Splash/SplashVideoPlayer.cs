@@ -33,8 +33,15 @@ public class SplashVideoPlayer : MonoBehaviour
     {
         float startTime = Time.time;
         
-        while (_videoPlayer.isPlaying && (Time.time - startTime) < minDuration)
+        while (true)
         {
+            float elapsed = Time.time - startTime;
+            bool videoFinished = !_videoPlayer.isPlaying && elapsed > 0.5f;
+            bool minTimeReached = elapsed >= minDuration;
+            
+            if ((videoFinished && minTimeReached) || minTimeReached)
+                break;
+                
             yield return null;
         }
     }

@@ -7,7 +7,6 @@ public class SplashScene : MonoBehaviour
     [SerializeField] private SplashDataLoader _dataLoader;
     [SerializeField] private SceneTransition _sceneTransition;
     [SerializeField] private float _minSplashDuration = 3f;
-    [SerializeField] private string _nextScene = "MainMenu";
     
     private void Start()
     {
@@ -27,7 +26,7 @@ public class SplashScene : MonoBehaviour
         _videoPlayer.Stop();
         
         yield return _sceneTransition.FadeIn();
-        
+
         SceneLoader.LoadMainMenu();
     }
 }

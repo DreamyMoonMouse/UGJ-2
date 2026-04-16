@@ -199,8 +199,7 @@ MonoBehaviour:
   _videoPlayer: {fileID: 403599033}
   _dataLoader: {fileID: 403599034}
   _sceneTransition: {fileID: 1436683248}
-  _minSplashDuration: 3
-  _nextScene: MainMenu
+  _minSplashDuration: 5
 --- !u!114 &403599036
 MonoBehaviour:
   m_ObjectHideFlags: 0
